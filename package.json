@@ -1,0 +1,26 @@
+{
+  "name": "dependency-managers-benchmark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zkochan/dependency-managers-benchmark.git"
+  },
+  "author": "Zoltan Kochan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zkochan/dependency-managers-benchmark/issues"
+  },
+  "homepage": "https://github.com/zkochan/dependency-managers-benchmark#readme",
+  "dependencies": {
+    "cross-spawn": "^4.0.2",
+    "mkdirp": "^0.5.1",
+    "npm": "^3.10.8",
+    "pnpm": "^0.40.0",
+    "rimraf": "^2.5.4"
+  }
+}
