@@ -4,17 +4,9 @@ const child = require('child_process')
 const mkdirp = require('mkdirp').sync
 const rimraf = require('rimraf').sync
 const fs = require('fs')
+const pathKey = require('path-key')
 
-let PATH = 'PATH'
-// windows calls it's path 'Path' usually, but this is not guaranteed.
-if (process.platform === 'win32') {
-  PATH = 'Path'
-  Object.keys(process.env).forEach(e => {
-    if (e.match(/^PATH$/i)) {
-      PATH = e
-    }
-  })
-}
+const PATH = pathKey()
 
 const env = createEnv()
 
@@ -26,11 +18,11 @@ child.spawnSync('pnpm', ['cache', 'clean'], {env, stdio: 'inherit'})
 
 console.log('start')
 
-benchmark('npm', ['install', 'babel-cli', '--force', '--ignore-scripts'])
+benchmark('npm', ['install', 'babel-cli', '-S', '--force', '--ignore-scripts'])
 
 benchmark('yarn', ['add', 'babel-cli', '--force', '--ignore-scripts'])
 
-benchmark('pnpm', ['install', 'babel-cli', '--force', '--ignore-scripts'])
+benchmark('pnpm', ['install', 'babel-cli', '-S', '--ignore-scripts', '--store-path', '"node_modules/.store"'])
 
 function createEnv () {
   const env = Object.create(process.env)
