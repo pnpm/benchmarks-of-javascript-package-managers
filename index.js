@@ -7,6 +7,7 @@ const fs = require('fs')
 const pathKey = require('path-key')
 const thenify = require('thenify')
 const getFolderSize = thenify(require('get-folder-size'))
+const copy = thenify(require('fs-extra').copy)
 
 const PATH = pathKey()
 
@@ -28,31 +29,31 @@ function createEnv () {
   return env
 }
 
-function benchmark (cmd, args) {
-  const timeName = `${cmd} ${args.join(' ')}`
-  const cwd = path.join(__dirname, '.tmp', cmd)
-  mkdirp(cwd)
-  const startTime = Date.now()
-  fs.writeFileSync(path.join(cwd, 'package.json'), '{"name":"foo","version":"1.0.0"}', 'utf-8')
-  const result = child.spawnSync(cmd, args, {env, cwd, stdio: 'inherit'})
-  if (result.status !== 0) {
-    throw new Error(`${timeName} failed with status code ${result.status}`)
-  }
-  const endTime = Date.now()
-  return getFolderSize(path.join(cwd, 'node_modules'))
-    .then(size => {
-      rimraf(cwd)
-      return {
-        time: endTime - startTime,
-        size,
+function benchmark (fixture, cmd, args) {
+  const cwd = path.join(__dirname, '.tmp', cmd, fixture)
+  return copy(path.join(__dirname, 'fixtures', fixture), cwd)
+    .then(() => {
+      const startTime = Date.now()
+      const result = child.spawnSync(cmd, args, {env, cwd, stdio: 'inherit'})
+      if (result.status !== 0) {
+        throw new Error(`${timeName} failed with status code ${result.status}`)
       }
+      const endTime = Date.now()
+      return getFolderSize(path.join(cwd, 'node_modules'))
+        .then(size => {
+          rimraf(cwd)
+          return {
+            time: endTime - startTime,
+            size,
+          }
+        })
     })
 }
 
 Promise.all([
-  benchmark('npm', ['install', 'babel-cli', '-S', '--force', '--ignore-scripts']),
-  benchmark('yarn', ['add', 'babel-cli', '--force', '--ignore-scripts']),
-  benchmark('pnpm', ['install', 'babel-cli', '-S', '--ignore-scripts', '--store-path', 'node_modules/.store']),
+  benchmark('react-app', 'npm', ['install', '--force', '--ignore-scripts']),
+  benchmark('react-app', 'yarn', ['--force', '--ignore-scripts']),
+  benchmark('react-app', 'pnpm', ['install', '--ignore-scripts', '--store-path', 'node_modules/.store']),
 ])
 .then(results => {
   const [npmResults, yarnResults, pnpmResults] = results
@@ -61,10 +62,14 @@ Promise.all([
 
 This benchmark compares the performance of [npm](https://github.com/npm/npm), [pnpm](https://github.com/rstacruz/pnpm) and [yarn](https://github.com/yarnpkg/yarn).
 
+## React app
+
+The app's \`package.json\` [here](./fixtures/react-app/package.json)
+
 | command | time in ms | size in bytes |
 | --- | --- | --- |
-| npm install babel-cli | ${npmResults.time} | ${npmResults.size} |
-| yarn add babel-cli | ${yarnResults.time} | ${yarnResults.size} |
-| pnpm install babel-cli | ${pnpmResults.time} | ${pnpmResults.size} |
+| npm install | ${npmResults.time} | ${npmResults.size} |
+| yarn | ${yarnResults.time} | ${yarnResults.size} |
+| pnpm install | ${pnpmResults.time} | ${pnpmResults.size} |
 `, 'utf8')
 })

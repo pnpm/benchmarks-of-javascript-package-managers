@@ -18,6 +18,7 @@
   "homepage": "https://github.com/zkochan/dependency-managers-benchmark#readme",
   "dependencies": {
     "cross-spawn": "^4.0.2",
+    "fs-extra": "^1.0.0",
     "get-folder-size": "^1.0.0",
     "mkdirp": "^0.5.1",
     "npm": "^3.10.8",
