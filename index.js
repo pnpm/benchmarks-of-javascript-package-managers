@@ -5,6 +5,8 @@ const mkdirp = require('mkdirp').sync
 const rimraf = require('rimraf').sync
 const fs = require('fs')
 const pathKey = require('path-key')
+const thenify = require('thenify')
+const getFolderSize = thenify(require('get-folder-size'))
 
 const PATH = pathKey()
 
@@ -37,24 +39,32 @@ function benchmark (cmd, args) {
     throw new Error(`${timeName} failed with status code ${result.status}`)
   }
   const endTime = Date.now()
-  rimraf(cwd)
-  return endTime - startTime
+  return getFolderSize(path.join(cwd, 'node_modules'))
+    .then(size => {
+      rimraf(cwd)
+      return {
+        time: endTime - startTime,
+        size,
+      }
+    })
 }
 
-const npmTime = benchmark('npm', ['install', 'babel-cli', '-S', '--force', '--ignore-scripts'])
-
-const yarnTime = benchmark('yarn', ['add', 'babel-cli', '--force', '--ignore-scripts'])
-
-const pnpmTime = benchmark('pnpm', ['install', 'babel-cli', '-S', '--ignore-scripts', '--store-path', '"node_modules/.store"'])
-
-fs.writeFile('README.md', `
+Promise.all([
+  benchmark('npm', ['install', 'babel-cli', '-S', '--force', '--ignore-scripts']),
+  benchmark('yarn', ['add', 'babel-cli', '--force', '--ignore-scripts']),
+  benchmark('pnpm', ['install', 'babel-cli', '-S', '--ignore-scripts', '--store-path', 'node_modules/.store']),
+])
+.then(results => {
+  const [npmResults, yarnResults, pnpmResults] = results
+  fs.writeFile('README.md', `
 # Node package manager benchmark
 
 This benchmark compares the performance of [npm](https://github.com/npm/npm), [pnpm](https://github.com/rstacruz/pnpm) and [yarn](https://github.com/yarnpkg/yarn).
 
-| command | time in ms |
-| --- | --- |
-| npm install babel-cli | ${npmTime} |
-| yarn add babel-cli | ${yarnTime} |
-| pnpm install babel-cli | ${pnpmTime} |
+| command | time in ms | size in bytes |
+| --- | --- | --- |
+| npm install babel-cli | ${npmResults.time} | ${npmResults.size} |
+| yarn add babel-cli | ${yarnResults.time} | ${yarnResults.size} |
+| pnpm install babel-cli | ${pnpmResults.time} | ${pnpmResults.size} |
 `, 'utf8')
+})

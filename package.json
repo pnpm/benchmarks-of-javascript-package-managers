@@ -18,11 +18,13 @@
   "homepage": "https://github.com/zkochan/dependency-managers-benchmark#readme",
   "dependencies": {
     "cross-spawn": "^4.0.2",
+    "get-folder-size": "^1.0.0",
     "mkdirp": "^0.5.1",
     "npm": "^3.10.8",
     "path-key": "^2.0.1",
     "pnpm": "^0.44.1",
     "rimraf": "^2.5.4",
+    "thenify": "^3.2.1",
     "yarn": "^0.16.1"
   }
 }
