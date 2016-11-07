@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "benchmark": "node index"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
     "mkdirp": "^0.5.1",
     "npm": "^3.10.8",
     "path-key": "^2.0.1",
-    "pnpm": "^0.43.0",
-    "rimraf": "^2.5.4"
+    "pnpm": "^0.44.1",
+    "rimraf": "^2.5.4",
+    "yarn": "^0.16.1"
   }
 }
