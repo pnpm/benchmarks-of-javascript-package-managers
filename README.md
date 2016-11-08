@@ -6,9 +6,15 @@ This benchmark compares the performance of [npm](https://github.com/npm/npm), [p
 ## React app
 
 The app's `package.json` [here](./fixtures/react-app/package.json)
+      | command | time in ms | size in bytes |
+      | --- | --- | --- |
+      | yarn | 31875 | 175712562 |
+      | pnpm install | 8589 | 91086578 |
 
-| command | time in ms | size in bytes |
-| --- | --- | --- |
-| npm install | 65479 | 96825002 |
-| yarn | 32558 | 175712562 |
-| pnpm install | 8324 | 91086578 |
+## Ember app
+
+The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
+      | command | time in ms | size in bytes |
+      | --- | --- | --- |
+      | yarn | 17532 | 120189948 |
+      | pnpm install | 13916 | 102686940 |
