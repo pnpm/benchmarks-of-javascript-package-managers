@@ -8,7 +8,7 @@ const pathKey = require('path-key')
 const thenify = require('thenify')
 const getFolderSize = thenify(require('get-folder-size'))
 const copy = thenify(require('fs-extra').copy)
-const stripIndents = require('common-tags').stripIndent
+const stripIndents = require('common-tags').stripIndents
 
 const PATH = pathKey()
 
@@ -54,6 +54,10 @@ const fixtures = [
   {
     name: 'ember-quickstart',
     mdDesc: '## Ember app\n\nThe app\'s `package.json` [here](./fixtures/ember-quickstart/package.json)'
+  },
+  {
+    name: 'angular-quickstart',
+    mdDesc: '## Angular app\n\nThe app\'s `package.json` [here](./fixtures/angular-quickstart/package.json)'
   },
 ]
 
