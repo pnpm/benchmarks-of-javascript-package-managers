@@ -8,16 +8,11 @@ const pathKey = require('path-key')
 const thenify = require('thenify')
 const getFolderSize = thenify(require('get-folder-size'))
 const copy = thenify(require('fs-extra').copy)
+const stripIndents = require('common-tags').stripIndent
 
 const PATH = pathKey()
 
 const env = createEnv()
-
-console.log('prepare')
-
-child.spawnSync('npm', ['cache', 'clean'], {env, stdio: 'inherit'})
-child.spawnSync('yarn', ['cache', 'clean'], {env, stdio: 'inherit'})
-child.spawnSync('pnpm', ['cache', 'clean'], {env, stdio: 'inherit'})
 
 function createEnv () {
   const env = Object.create(process.env)
@@ -33,6 +28,7 @@ function benchmark (fixture, cmd, args) {
   const cwd = path.join(__dirname, '.tmp', cmd, fixture)
   return copy(path.join(__dirname, 'fixtures', fixture), cwd)
     .then(() => {
+      child.spawnSync(cmd, ['cache', 'clean'], {env, stdio: 'inherit'})
       const startTime = Date.now()
       const result = child.spawnSync(cmd, args, {env, cwd, stdio: 'inherit'})
       if (result.status !== 0) {
@@ -50,26 +46,40 @@ function benchmark (fixture, cmd, args) {
     })
 }
 
-Promise.all([
-  benchmark('react-app', 'npm', ['install', '--force', '--ignore-scripts']),
-  benchmark('react-app', 'yarn', ['--force', '--ignore-scripts']),
-  benchmark('react-app', 'pnpm', ['install', '--ignore-scripts', '--store-path', 'node_modules/.store']),
-])
-.then(results => {
-  const [npmResults, yarnResults, pnpmResults] = results
-  fs.writeFile('README.md', `
-# Node package manager benchmark
+const fixtures = [
+  {
+    name: 'react-app',
+    mdDesc: '## React app\n\nThe app\'s `package.json` [here](./fixtures/react-app/package.json)'
+  },
+  {
+    name: 'ember-quickstart',
+    mdDesc: '## Ember app\n\nThe app\'s `package.json` [here](./fixtures/ember-quickstart/package.json)'
+  },
+]
 
-This benchmark compares the performance of [npm](https://github.com/npm/npm), [pnpm](https://github.com/rstacruz/pnpm) and [yarn](https://github.com/yarnpkg/yarn).
+Promise.all(fixtures.map(fixture => {
+  return Promise.all([
+    benchmark(fixture.name, 'npm', ['install', '--force', '--ignore-scripts']),
+    benchmark(fixture.name, 'yarn', ['--force', '--ignore-scripts']),
+    benchmark(fixture.name, 'pnpm', ['install', '--ignore-scripts', '--store-path', 'node_modules/.store']),
+  ])
+  .then(results => {
+    const [npmResults, yarnResults, pnpmResults] = results
+    return stripIndents`
+      ${fixture.mdDesc}
 
-## React app
+      | command | time in ms | size in bytes |
+      | --- | --- | --- |
+      | npm install | ${npmResults.time} | ${npmResults.size} |
+      | yarn | ${yarnResults.time} | ${yarnResults.size} |
+      | pnpm install | ${pnpmResults.time} | ${pnpmResults.size} |`
+  })
+}))
+.then(sections => {
+  fs.writeFile('README.md', stripIndents`
+    # Node package manager benchmark
 
-The app's \`package.json\` [here](./fixtures/react-app/package.json)
+    This benchmark compares the performance of [npm](https://github.com/npm/npm), [pnpm](https://github.com/rstacruz/pnpm) and [yarn](https://github.com/yarnpkg/yarn).
 
-| command | time in ms | size in bytes |
-| --- | --- | --- |
-| npm install | ${npmResults.time} | ${npmResults.size} |
-| yarn | ${yarnResults.time} | ${yarnResults.size} |
-| pnpm install | ${pnpmResults.time} | ${pnpmResults.size} |
-`, 'utf8')
+    ${sections.join('\n\n')}`, 'utf8')
 })
