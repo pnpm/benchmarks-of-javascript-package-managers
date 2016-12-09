@@ -1,10 +1,6 @@
 import React from 'react';
 
 const BenchmarkResults = ({data}) => {
-    let result = [];
-    data.map(singleBenchmark => {
-        result.push(<TemplateBenchmarkResult data={singleBenchmark} key={singleBenchmark.id}/>);
-    });
     return (
         <div>
             <h1>Node package manager benchmark</h1>
@@ -12,7 +8,7 @@ const BenchmarkResults = ({data}) => {
             <p>This benchmark compares the performance of <a href="https://github.com/npm/npm">npm</a>, <a
                 href="https://github.com/rstacruz/pnpm">pnpm</a> and <a href="https://github.com/yarnpkg/yarn">yarn</a>.
             </p>
-            {result}
+            {data.map(singleBenchmark => <TemplateBenchmarkResult data={singleBenchmark} key={singleBenchmark.id}/>)}
         </div>
     )
 };
