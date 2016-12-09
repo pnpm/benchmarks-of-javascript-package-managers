@@ -2,7 +2,7 @@ import React from 'react';
 
 const BenchmarkResults = ({data}) => {
     let result = [];
-    data.forEach(singleBenchmark => {
+    data.map(singleBenchmark => {
         result.push(<TemplateBenchmarkResult data={singleBenchmark} key={singleBenchmark.id}/>);
     });
     return (
