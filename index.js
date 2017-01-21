@@ -65,7 +65,7 @@ Promise.all(fixtures.map(fixture => {
   return Promise.all([
     benchmark(fixture.name, 'npm', ['install', '--force', '--ignore-scripts']),
     benchmark(fixture.name, 'yarn', ['--force', '--ignore-scripts']),
-    benchmark(fixture.name, 'pnpm', ['install', '--ignore-scripts', '--store-path', 'node_modules/.store']),
+    benchmark(fixture.name, 'pnpm', ['install', '--ignore-scripts', '--store-path', `../${fixture.name}+store`]),
   ])
   .then(results => {
     const [npmResults, yarnResults, pnpmResults] = results
