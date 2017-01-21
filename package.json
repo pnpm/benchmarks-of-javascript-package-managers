@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prebenchmark": "rimraf .tmp",
     "benchmark": "node index"
   },
   "repository": {
