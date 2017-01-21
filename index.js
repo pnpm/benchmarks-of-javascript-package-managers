@@ -9,6 +9,8 @@ const thenify = require('thenify')
 const getFolderSize = thenify(require('get-folder-size'))
 const copy = thenify(require('fs-extra').copy)
 const stripIndents = require('common-tags').stripIndents
+const prettyBytes = require('pretty-bytes')
+const prettyMs = require('pretty-ms')
 
 const PATH = pathKey()
 
@@ -74,9 +76,9 @@ Promise.all(fixtures.map(fixture => {
 
       | command | time in ms | size in bytes |
       | --- | --- | --- |
-      | npm install | ${npmResults.time} | ${npmResults.size} |
-      | yarn | ${yarnResults.time} | ${yarnResults.size} |
-      | pnpm install | ${pnpmResults.time} | ${pnpmResults.size} |`
+      | npm install | ${prettyMs(npmResults.time)} | ${prettyBytes(npmResults.size)} |
+      | yarn | ${prettyMs(yarnResults.time)} | ${prettyBytes(yarnResults.size)} |
+      | pnpm install | ${prettyMs(pnpmResults.time)} | ${prettyBytes(pnpmResults.size)} |`
   })
 }))
 .then(sections => {
