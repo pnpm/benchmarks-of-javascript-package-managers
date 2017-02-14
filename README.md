@@ -8,9 +8,9 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 
 | command | time in ms | size in bytes |
 | --- | --- | --- |
-| npm install | 1m 6.4s | 96.4 MB |
-| yarn | 1m 41.6s | 298 MB |
-| pnpm install | 11.6s | 90.7 MB |
+| npm install | 1m 9s | 96.4 MB |
+| yarn | 1m 5s | 280 MB |
+| pnpm install | 29.7s | 90.7 MB |
 
 ## Ember app
 
@@ -18,9 +18,9 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 
 | command | time in ms | size in bytes |
 | --- | --- | --- |
-| npm install | 1m 9.8s | 108 MB |
-| yarn | 22s | 119 MB |
-| pnpm install | 23.1s | 107 MB |
+| npm install | 1m 22.2s | 107 MB |
+| yarn | 21.5s | 119 MB |
+| pnpm install | 36s | 106 MB |
 
 ## Angular app
 
@@ -28,6 +28,6 @@ The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 
 | command | time in ms | size in bytes |
 | --- | --- | --- |
-| npm install | 37.2s | 90.8 MB |
-| yarn | 15s | 84.5 MB |
-| pnpm install | 12.6s | 87.9 MB |
+| npm install | 37.5s | 91.4 MB |
+| yarn | 14s | 85.1 MB |
+| pnpm install | 18s | 88.5 MB |
