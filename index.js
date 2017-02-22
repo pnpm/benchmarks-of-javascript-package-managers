@@ -1,52 +1,11 @@
 'use strict'
 const path = require('path')
-const child = require('child_process')
-const mkdirp = require('mkdirp').sync
-const rimraf = require('rimraf').sync
 const fs = require('fs')
-const pathKey = require('path-key')
-const thenify = require('thenify')
-const getFolderSize = thenify(require('get-folder-size'))
-const copy = thenify(require('fs-extra').copy)
 const stripIndents = require('common-tags').stripIndents
 const prettyBytes = require('pretty-bytes')
 const prettyMs = require('pretty-ms')
-
-const PATH = pathKey()
-
-const env = createEnv()
-
-function createEnv () {
-  const env = Object.create(process.env)
-  env[PATH] = [
-    path.join(__dirname, 'node_modules/.bin'),
-    path.dirname(process.execPath),
-    process.env[PATH]
-  ].join(path.delimiter)
-  return env
-}
-
-function benchmark (fixture, cmd, args) {
-  const cwd = path.join(__dirname, '.tmp', cmd, fixture)
-  return copy(path.join(__dirname, 'fixtures', fixture), cwd)
-    .then(() => {
-      child.spawnSync(cmd, ['cache', 'clean'], {env, stdio: 'inherit'})
-      const startTime = Date.now()
-      const result = child.spawnSync(cmd, args, {env, cwd, stdio: 'inherit'})
-      if (result.status !== 0) {
-        throw new Error(`${timeName} failed with status code ${result.status}`)
-      }
-      const endTime = Date.now()
-      return getFolderSize(path.join(cwd, 'node_modules'))
-        .then(size => {
-          rimraf(cwd)
-          return {
-            time: endTime - startTime,
-            size,
-          }
-        })
-    })
-}
+const benchmark = require('./lib/benchmarkFixture')
+const commandsMap = require('./lib/commandsMap')
 
 const fixtures = [
   {
@@ -63,29 +22,34 @@ const fixtures = [
   },
 ]
 
-Promise.all(fixtures.map(fixture => {
-  return Promise.all([
-    benchmark(fixture.name, 'npm', ['install', '--force', '--ignore-scripts']),
-    benchmark(fixture.name, 'yarn', ['--force', '--ignore-scripts']),
-    benchmark(fixture.name, 'pnpm', ['install', '--ignore-scripts', '--store-path', `../${fixture.name}+store`]),
-  ])
-  .then(results => {
-    const [npmResults, yarnResults, pnpmResults] = results
-    return stripIndents`
-      ${fixture.mdDesc}
+run()
+  .then(() => console.log('done'))
+  .catch(err => console.error(err))
 
-      | command | time in ms | size in bytes |
-      | --- | --- | --- |
-      | npm install | ${prettyMs(npmResults.time)} | ${prettyBytes(npmResults.size)} |
-      | yarn | ${prettyMs(yarnResults.time)} | ${prettyBytes(yarnResults.size)} |
-      | pnpm install | ${prettyMs(pnpmResults.time)} | ${prettyBytes(pnpmResults.size)} |`
-  })
-}))
-.then(sections => {
+async function run () {
+  const sections = await Promise.all(
+    fixtures.map(async fixture => {
+      const results = await Promise.all([
+        benchmark('npm', fixture.name),
+        benchmark('yarn', fixture.name),
+        benchmark('pnpm', fixture.name),
+      ])
+      const [npmResults, yarnResults, pnpmResults] = results
+      return stripIndents`
+        ${fixture.mdDesc}
+
+        | command | time in ms | size in bytes |
+        | --- | --- | --- |
+        | npm install | ${prettyMs(npmResults.time)} | ${prettyBytes(npmResults.size)} |
+        | yarn | ${prettyMs(yarnResults.time)} | ${prettyBytes(yarnResults.size)} |
+        | pnpm install | ${prettyMs(pnpmResults.time)} | ${prettyBytes(pnpmResults.size)} |`
+    })
+  )
+
   fs.writeFile('README.md', stripIndents`
     # Node package manager benchmark
 
     This benchmark compares the performance of [npm](https://github.com/npm/npm), [pnpm](https://github.com/pnpm/pnpm) and [yarn](https://github.com/yarnpkg/yarn).
 
     ${sections.join('\n\n')}`, 'utf8')
-})
+}
