@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - 7
+
+cache:
+  directories:
+    - $HOME/.pnpm-store
+
+sudo: false
+before_install:
+  - git config --global user.email "nobody@nobody.org"
+  - git config --global user.name "Travis-CI"
+  - npm install -g pnpm
+install:
+  - pnpm install
+script:
+  - npm run benchmark
+  - git add .
+  - 'git commit -m "ci: benchmark tests executed"'
+  - git push -q upstream HEAD
