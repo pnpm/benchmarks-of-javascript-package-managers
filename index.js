@@ -1,11 +1,9 @@
 'use strict'
-const path = require('path')
 const fs = require('fs')
 const stripIndents = require('common-tags').stripIndents
 const prettyBytes = require('pretty-bytes')
 const prettyMs = require('pretty-ms')
 const benchmark = require('./lib/benchmarkFixture')
-const commandsMap = require('./lib/commandsMap')
 
 const fixtures = [
   {
@@ -19,7 +17,7 @@ const fixtures = [
   {
     name: 'angular-quickstart',
     mdDesc: '## Angular app\n\nThe app\'s `package.json` [here](./fixtures/angular-quickstart/package.json)'
-  },
+  }
 ]
 
 run()
@@ -32,7 +30,7 @@ async function run () {
       const results = await Promise.all([
         benchmark('npm', fixture.name),
         benchmark('yarn', fixture.name),
-        benchmark('pnpm', fixture.name),
+        benchmark('pnpm', fixture.name)
       ])
       const [npmResults, yarnResults, pnpmResults] = results
       return stripIndents`
