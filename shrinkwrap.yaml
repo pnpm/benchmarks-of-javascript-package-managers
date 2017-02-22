@@ -6,12 +6,12 @@ dependencies:
   mkdirp: registry.npmjs.org/mkdirp/0.5.1
   npm: registry.npmjs.org/npm/4.2.0
   path-key: registry.npmjs.org/path-key/2.0.1
-  pnpm: registry.npmjs.org/pnpm/0.55.3
+  pnpm: registry.npmjs.org/pnpm/0.57.0
   pretty-bytes: registry.npmjs.org/pretty-bytes/4.0.2
   pretty-ms: registry.npmjs.org/pretty-ms/2.1.0
-  rimraf: registry.npmjs.org/rimraf/2.5.4
+  rimraf: registry.npmjs.org/rimraf/2.6.0
   thenify: registry.npmjs.org/thenify/3.2.1
-  yarn: registry.npmjs.org/yarn/0.19.1
+  yarn: registry.npmjs.org/yarn/0.20.3
 packages:
   registry.npmjs.org/abbrev/1.1.0:
     resolution:
@@ -929,10 +929,10 @@ packages:
       shasum: db85c6814f5e5e5a3b49efc28d604fec62975156
       tarball: 'https://registry.npmjs.org/plur/-/plur-1.0.0.tgz'
       type: tarball
-  registry.npmjs.org/pnpm/0.55.3:
+  registry.npmjs.org/pnpm/0.57.0:
     resolution:
-      shasum: 0b8a1db67b55d9b38923c571fb0e0d16f88b6661
-      tarball: 'https://registry.npmjs.org/pnpm/-/pnpm-0.55.3.tgz'
+      shasum: 95418804b64458a2e59dc76e8232370043421c55
+      tarball: 'https://registry.npmjs.org/pnpm/-/pnpm-0.57.0.tgz'
       type: tarball
   registry.npmjs.org/pretty-bytes/4.0.2:
     resolution:
@@ -1058,6 +1058,13 @@ packages:
     resolution:
       shasum: 96800093cbf1a0c86bd95b4625467535c29dfa04
       tarball: 'https://registry.npmjs.org/rimraf/-/rimraf-2.5.4.tgz'
+      type: tarball
+  registry.npmjs.org/rimraf/2.6.0:
+    dependencies:
+      glob: registry.npmjs.org/glob/7.1.1
+    resolution:
+      shasum: 89b8a0fe432b9ff9ec9a925a00b6cdb3a91bbada
+      tarball: 'https://registry.npmjs.org/rimraf/-/rimraf-2.6.0.tgz'
       type: tarball
   registry.npmjs.org/roadrunner/1.1.0:
     resolution:
@@ -1314,7 +1321,7 @@ packages:
       shasum: 306c543835f09ee1a4cb23b7bce9ab341c91cdd4
       tarball: 'https://registry.npmjs.org/yallist/-/yallist-2.0.0.tgz'
       type: tarball
-  registry.npmjs.org/yarn/0.19.1:
+  registry.npmjs.org/yarn/0.20.3:
     dependencies:
       babel-runtime: registry.npmjs.org/babel-runtime/6.23.0
       bytes: registry.npmjs.org/bytes/2.4.0
@@ -1341,7 +1348,6 @@ packages:
       object-path: registry.npmjs.org/object-path/0.11.3
       proper-lockfile: registry.npmjs.org/proper-lockfile/2.0.0
       read: registry.npmjs.org/read/1.0.7
-      repeating: registry.npmjs.org/repeating/2.0.1
       request: registry.npmjs.org/request/2.79.0
       request-capture-har: registry.npmjs.org/request-capture-har/1.1.4
       rimraf: registry.npmjs.org/rimraf/2.5.4
@@ -1353,7 +1359,7 @@ packages:
       user-home: registry.npmjs.org/user-home/2.0.0
       validate-npm-package-license: registry.npmjs.org/validate-npm-package-license/3.0.1
     resolution:
-      shasum: 102ca03ce7fc910a73f719c70bba9e9f9e3b2b4d
-      tarball: 'https://registry.npmjs.org/yarn/-/yarn-0.19.1.tgz'
+      shasum: 1031e394721d689ab8c558c67032931bac5b3052
+      tarball: 'https://registry.npmjs.org/yarn/-/yarn-0.20.3.tgz'
       type: tarball
 version: 0
