@@ -3,7 +3,7 @@ const fs = require('fs')
 const stripIndents = require('common-tags').stripIndents
 const prettyBytes = require('pretty-bytes')
 const prettyMs = require('pretty-ms')
-const benchmark = require('./lib/benchmarkFixture')
+const benchmark = require('./lib/recordBenchmark')
 
 const fixtures = [
   {
@@ -32,7 +32,7 @@ async function run () {
         benchmark('yarn', fixture.name),
         benchmark('pnpm', fixture.name)
       ])
-      const [npmResults, yarnResults, pnpmResults] = results
+      const [npmResults, yarnResults, pnpmResults] = results.map(average)
       return stripIndents`
         ${fixture.mdDesc}
 
@@ -50,4 +50,15 @@ async function run () {
     This benchmark compares the performance of [npm](https://github.com/npm/npm), [pnpm](https://github.com/pnpm/pnpm) and [yarn](https://github.com/yarnpkg/yarn).
 
     ${sections.join('\n\n')}`, 'utf8')
+}
+
+function average (benchmarkResults) {
+  return {
+    size: benchmarkResults.map(res => res.size).reduce(sum, 0) / benchmarkResults.length,
+    time: benchmarkResults.map(res => res.time).reduce(sum, 0) / benchmarkResults.length
+  }
+}
+
+function sum (a, b) {
+  return a + b
 }

@@ -23,6 +23,7 @@
     "cross-spawn": "^5.0.1",
     "fs-extra": "^1.0.0",
     "get-folder-size": "^1.0.0",
+    "load-yaml-file": "^0.1.0",
     "mkdirp": "^0.5.1",
     "npm": "^4.2.0",
     "path-key": "^2.0.1",
@@ -31,6 +32,7 @@
     "pretty-ms": "^2.1.0",
     "rimraf": "^2.5.4",
     "thenify": "^3.2.1",
+    "write-yaml-file": "^1.0.0",
     "yarn": "^0.20.3"
   },
   "devDependencies": {
