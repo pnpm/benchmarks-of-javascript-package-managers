@@ -17,4 +17,4 @@ script:
   - npm run benchmark
   - git add .
   - 'git commit -m "ci: benchmark tests executed"'
-  - git push -q upstream HEAD
+  - git push
