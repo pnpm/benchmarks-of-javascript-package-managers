@@ -17,4 +17,4 @@ script:
   - npm run benchmark
   - git add .
   - 'git commit -m "ci: benchmark tests executed"'
-  - git push -f -q https://zkochan:$GH_TOKEN@github.com/pnpm/node-package-manager-benchmark HEAD
+  - git push -f -q https://zkochan:$GH_TOKEN@github.com/pnpm/node-package-manager-benchmark
