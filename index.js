@@ -5,6 +5,8 @@ const prettyBytes = require('pretty-bytes')
 const prettyMs = require('pretty-ms')
 const benchmark = require('./lib/recordBenchmark')
 
+const LIMIT_RUNS = 3
+
 const fixtures = [
   {
     name: 'react-app',
@@ -28,9 +30,9 @@ async function run () {
   const sections = await Promise.all(
     fixtures.map(async fixture => {
       const results = await Promise.all([
-        benchmark('npm', fixture.name),
-        benchmark('yarn', fixture.name),
-        benchmark('pnpm', fixture.name)
+        benchmark('npm', fixture.name, {limitRuns: LIMIT_RUNS}),
+        benchmark('yarn', fixture.name, {limitRuns: LIMIT_RUNS}),
+        benchmark('pnpm', fixture.name, {limitRuns: LIMIT_RUNS})
       ])
       const [npmResults, yarnResults, pnpmResults] = results.map(average)
       return stripIndents`
