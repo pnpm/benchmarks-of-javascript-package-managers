@@ -7,7 +7,7 @@ dependencies:
   mkdirp: registry.npmjs.org/mkdirp/0.5.1
   npm: registry.npmjs.org/npm/4.2.0
   path-key: registry.npmjs.org/path-key/2.0.1
-  pnpm: registry.npmjs.org/pnpm/0.57.0
+  pnpm: registry.npmjs.org/pnpm/0.57.2
   pretty-bytes: registry.npmjs.org/pretty-bytes/4.0.2
   pretty-ms: registry.npmjs.org/pretty-ms/2.1.0
   rimraf: registry.npmjs.org/rimraf/2.6.0
@@ -1461,10 +1461,10 @@ packages:
       shasum: d1a21483fd22bb41e58a12fa3421823140897c45
       tarball: 'https://registry.npmjs.org/pluralize/-/pluralize-1.2.1.tgz'
       type: tarball
-  registry.npmjs.org/pnpm/0.57.0:
+  registry.npmjs.org/pnpm/0.57.2:
     resolution:
-      shasum: 95418804b64458a2e59dc76e8232370043421c55
-      tarball: 'https://registry.npmjs.org/pnpm/-/pnpm-0.57.0.tgz'
+      shasum: 762960376f36311ed46ec3138b151b00443d797f
+      tarball: 'https://registry.npmjs.org/pnpm/-/pnpm-0.57.2.tgz'
       type: tarball
   registry.npmjs.org/prelude-ls/1.1.2:
     resolution:
