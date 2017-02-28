@@ -1,20 +1,20 @@
 dependencies:
   common-tags: registry.npmjs.org/common-tags/1.4.0
-  cross-spawn: registry.npmjs.org/cross-spawn/5.0.1
+  cross-spawn: registry.npmjs.org/cross-spawn/5.1.0
   fs-extra: registry.npmjs.org/fs-extra/1.0.0
   get-folder-size: registry.npmjs.org/get-folder-size/1.0.0
   load-yaml-file: registry.npmjs.org/load-yaml-file/0.1.0
   mkdirp: registry.npmjs.org/mkdirp/0.5.1
-  npm: registry.npmjs.org/npm/4.2.0
+  npm: registry.npmjs.org/npm/4.3.0
   path-key: registry.npmjs.org/path-key/2.0.1
-  pnpm: registry.npmjs.org/pnpm/0.57.2
+  pnpm: registry.npmjs.org/pnpm/0.58.0
   pretty-bytes: registry.npmjs.org/pretty-bytes/4.0.2
   pretty-ms: registry.npmjs.org/pretty-ms/2.1.0
-  rimraf: registry.npmjs.org/rimraf/2.6.0
+  rimraf: registry.npmjs.org/rimraf/2.6.1
   standard: registry.npmjs.org/standard/8.6.0
   thenify: registry.npmjs.org/thenify/3.2.1
   write-yaml-file: registry.npmjs.org/write-yaml-file/1.0.0
-  yarn: registry.npmjs.org/yarn/0.20.3
+  yarn: registry.npmjs.org/yarn/0.21.3
 packages:
   registry.npmjs.org/abbrev/1.1.0:
     resolution:
@@ -349,14 +349,14 @@ packages:
       shasum: b5fd54220aa2bc5ab57aab7140c940754503c1a7
       tarball: 'https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz'
       type: tarball
-  registry.npmjs.org/cross-spawn/5.0.1:
+  registry.npmjs.org/cross-spawn/5.1.0:
     dependencies:
       lru-cache: registry.npmjs.org/lru-cache/4.0.2
       shebang-command: registry.npmjs.org/shebang-command/1.2.0
       which: registry.npmjs.org/which/1.2.12
     resolution:
-      shasum: a3bbb302db2297cbea3c04edf36941f4613aa399
-      tarball: 'https://registry.npmjs.org/cross-spawn/-/cross-spawn-5.0.1.tgz'
+      shasum: e8bd0efee58fcff6f8f94510a0a554bbfa235449
+      tarball: 'https://registry.npmjs.org/cross-spawn/-/cross-spawn-5.1.0.tgz'
       type: tarball
   registry.npmjs.org/cryptiles/2.0.5:
     dependencies:
@@ -456,11 +456,6 @@ packages:
     resolution:
       shasum: f76d064352cdf43a1cb6ce619c4ee3a9475de208
       tarball: 'https://registry.npmjs.org/detect-indent/-/detect-indent-4.0.0.tgz'
-      type: tarball
-  registry.npmjs.org/diff/2.2.3:
-    resolution:
-      shasum: 60eafd0d28ee906e4e8ff0a52c1229521033bf99
-      tarball: 'https://registry.npmjs.org/diff/-/diff-2.2.3.tgz'
       type: tarball
   registry.npmjs.org/doctrine/1.5.0:
     dependencies:
@@ -1316,10 +1311,10 @@ packages:
       shasum: c6465dbf08abcd4db359317f79ac68a646b28ff9
       tarball: 'https://registry.npmjs.org/nopt/-/nopt-3.0.6.tgz'
       type: tarball
-  registry.npmjs.org/npm/4.2.0:
+  registry.npmjs.org/npm/4.3.0:
     resolution:
-      shasum: d4eeb6791b996fe3085535d749338d1fe48df13a
-      tarball: 'https://registry.npmjs.org/npm/-/npm-4.2.0.tgz'
+      shasum: 78e97142408c8383bff10a0e4036e9f77f00ce28
+      tarball: 'https://registry.npmjs.org/npm/-/npm-4.3.0.tgz'
       type: tarball
   registry.npmjs.org/npmlog/4.0.2:
     dependencies:
@@ -1461,10 +1456,10 @@ packages:
       shasum: d1a21483fd22bb41e58a12fa3421823140897c45
       tarball: 'https://registry.npmjs.org/pluralize/-/pluralize-1.2.1.tgz'
       type: tarball
-  registry.npmjs.org/pnpm/0.57.2:
+  registry.npmjs.org/pnpm/0.58.0:
     resolution:
-      shasum: 762960376f36311ed46ec3138b151b00443d797f
-      tarball: 'https://registry.npmjs.org/pnpm/-/pnpm-0.57.2.tgz'
+      shasum: 8a977da33d09144d848b842ab56a548826905366
+      tarball: 'https://registry.npmjs.org/pnpm/-/pnpm-0.58.0.tgz'
       type: tarball
   registry.npmjs.org/prelude-ls/1.1.2:
     resolution:
@@ -1654,6 +1649,13 @@ packages:
     resolution:
       shasum: 89b8a0fe432b9ff9ec9a925a00b6cdb3a91bbada
       tarball: 'https://registry.npmjs.org/rimraf/-/rimraf-2.6.0.tgz'
+      type: tarball
+  registry.npmjs.org/rimraf/2.6.1:
+    dependencies:
+      glob: registry.npmjs.org/glob/7.1.1
+    resolution:
+      shasum: c2338ec643df7a1b7fe5c54fa86f57428a55f33d
+      tarball: 'https://registry.npmjs.org/rimraf/-/rimraf-2.6.1.tgz'
       type: tarball
   registry.npmjs.org/roadrunner/1.1.0:
     resolution:
@@ -2060,7 +2062,7 @@ packages:
       shasum: 306c543835f09ee1a4cb23b7bce9ab341c91cdd4
       tarball: 'https://registry.npmjs.org/yallist/-/yallist-2.0.0.tgz'
       type: tarball
-  registry.npmjs.org/yarn/0.20.3:
+  registry.npmjs.org/yarn/0.21.3:
     dependencies:
       babel-runtime: registry.npmjs.org/babel-runtime/6.23.0
       bytes: registry.npmjs.org/bytes/2.4.0
@@ -2072,7 +2074,6 @@ packages:
       debug: registry.npmjs.org/debug/2.6.1
       defaults: registry.npmjs.org/defaults/1.0.3
       detect-indent: registry.npmjs.org/detect-indent/4.0.0
-      diff: registry.npmjs.org/diff/2.2.3
       ini: registry.npmjs.org/ini/1.3.4
       inquirer: registry.npmjs.org/inquirer/1.2.3
       invariant: registry.npmjs.org/invariant/2.2.2
@@ -2095,10 +2096,9 @@ packages:
       strip-bom: registry.npmjs.org/strip-bom/2.0.0
       tar: registry.npmjs.org/tar/2.2.1
       tar-stream: registry.npmjs.org/tar-stream/1.5.2
-      user-home: registry.npmjs.org/user-home/2.0.0
       validate-npm-package-license: registry.npmjs.org/validate-npm-package-license/3.0.1
     resolution:
-      shasum: 1031e394721d689ab8c558c67032931bac5b3052
-      tarball: 'https://registry.npmjs.org/yarn/-/yarn-0.20.3.tgz'
+      shasum: 8dda3a63c798b383cfa577452c2b3cb3e4aa87e0
+      tarball: 'https://registry.npmjs.org/yarn/-/yarn-0.21.3.tgz'
       type: tarball
 version: 0

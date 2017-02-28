@@ -27,13 +27,13 @@
     "mkdirp": "^0.5.1",
     "npm": "^4.2.0",
     "path-key": "^2.0.1",
-    "pnpm": "^0.57.2",
+    "pnpm": "^0.58.0",
     "pretty-bytes": "^4.0.2",
     "pretty-ms": "^2.1.0",
     "rimraf": "^2.5.4",
     "thenify": "^3.2.1",
     "write-yaml-file": "^1.0.0",
-    "yarn": "^0.20.3"
+    "yarn": "^0.21.3"
   },
   "devDependencies": {
     "standard": "^8.6.0"
