@@ -1,0 +1,63 @@
+- tool:
+    name: npm
+    version: 4.3.0
+  date: 2017-3-3
+  fixture: react-app
+  time: 51949
+  size: 96363131
+- tool:
+    name: yarn
+    version: 0.21.3
+  date: 2017-3-3
+  fixture: react-app
+  time: 44014
+  size: 159117859
+- tool:
+    name: pnpm
+    version: 0.59.0
+  date: 2017-3-3
+  fixture: react-app
+  time: 11108
+  size: 90836426
+- tool:
+    name: npm
+    version: 4.3.0
+  date: 2017-3-3
+  fixture: ember-quickstart
+  time: 56077
+  size: 105405050
+- tool:
+    name: yarn
+    version: 0.21.3
+  date: 2017-3-3
+  fixture: ember-quickstart
+  time: 28406
+  size: 109924588
+- tool:
+    name: pnpm
+    version: 0.59.0
+  date: 2017-3-3
+  fixture: ember-quickstart
+  time: 18447
+  size: 107972030
+- tool:
+    name: npm
+    version: 4.3.0
+  date: 2017-3-3
+  fixture: angular-quickstart
+  time: 33050
+  size: 92004057
+- tool:
+    name: yarn
+    version: 0.21.3
+  date: 2017-3-3
+  fixture: angular-quickstart
+  time: 11327
+  size: 85589285
+- tool:
+    name: pnpm
+    version: 0.59.0
+  date: 2017-3-3
+  fixture: angular-quickstart
+  time: 12351
+  size: 90145742

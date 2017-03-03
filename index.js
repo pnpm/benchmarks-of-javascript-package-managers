@@ -1,11 +1,8 @@
 'use strict'
 const fs = require('fs')
-const stripIndents = require('common-tags').stripIndents
-const prettyBytes = require('pretty-bytes')
-const prettyMs = require('pretty-ms')
-const benchmark = require('./lib/recordBenchmark')
-
-const LIMIT_RUNS = 3
+const loadYamlFile = require('load-yaml-file')
+const writeYamlFile = require('write-yaml-file')
+const benchmark = require('./lib/benchmarkFixture')
 
 const fixtures = [
   {
@@ -22,45 +19,37 @@ const fixtures = [
   }
 ]
 
+const pms = ['npm', 'yarn', 'pnpm']
+
 run()
   .then(() => console.log('done'))
   .catch(err => console.error(err))
 
 async function run () {
-  const sections = await Promise.all(
-    fixtures.map(async fixture => {
-      const results = await Promise.all([
-        benchmark('npm', fixture.name, {limitRuns: LIMIT_RUNS}),
-        benchmark('yarn', fixture.name, {limitRuns: LIMIT_RUNS}),
-        benchmark('pnpm', fixture.name, {limitRuns: LIMIT_RUNS})
-      ])
-      const [npmResults, yarnResults, pnpmResults] = results.map(average)
-      return stripIndents`
-        ${fixture.mdDesc}
-
-        | command | time in ms | size in bytes |
-        | --- | --- | --- |
-        | npm install | ${prettyMs(npmResults.time)} | ${prettyBytes(npmResults.size)} |
-        | yarn | ${prettyMs(yarnResults.time)} | ${prettyBytes(yarnResults.size)} |
-        | pnpm install | ${prettyMs(pnpmResults.time)} | ${prettyBytes(pnpmResults.size)} |`
-    })
+  const stats = await loadYamlFile('stats.yaml') || []
+  const newStats = stats.concat(
+    await Promise.all(
+      fixtures.reduce((acc, fixture) => 
+        acc.concat(pms.map(pm => runBenchmark(pm, fixture.name)))
+      , [])
+    )
   )
-
-  fs.writeFile('README.md', stripIndents`
-    # Node package manager benchmark
-
-    This benchmark compares the performance of [npm](https://github.com/npm/npm), [pnpm](https://github.com/pnpm/pnpm) and [yarn](https://github.com/yarnpkg/yarn).
-
-    ${sections.join('\n\n')}`, 'utf8')
+  await writeYamlFile('stats.yaml', newStats)
 }
 
-function average (benchmarkResults) {
-  return {
-    size: benchmarkResults.map(res => res.size).reduce(sum, 0) / benchmarkResults.length,
-    time: benchmarkResults.map(res => res.time).reduce(sum, 0) / benchmarkResults.length
-  }
+async function runBenchmark(pm, fixture) {
+  const pmVersion = require(`${pm}/package.json`).version
+  return Object.assign({
+    tool: {
+      name: pm,
+      version: pmVersion
+    },
+    date: date(),
+    fixture
+  }, await benchmark(pm, fixture))
 }
 
-function sum (a, b) {
-  return a + b
+function date() {
+  var now = new Date()
+  return `${now.getUTCFullYear()}-${now.getUTCMonth() + 1}-${now.getUTCDate()}`
 }
