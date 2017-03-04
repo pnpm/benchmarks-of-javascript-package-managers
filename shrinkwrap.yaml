@@ -5,9 +5,9 @@ dependencies:
   get-folder-size@^1.0.0: registry.npmjs.org/get-folder-size/1.0.0
   load-yaml-file@^0.1.0: registry.npmjs.org/load-yaml-file/0.1.0
   mkdirp@^0.5.1: registry.npmjs.org/mkdirp/0.5.1
-  npm@^4.2.0: registry.npmjs.org/npm/4.3.0
+  npm@^4.3.0: registry.npmjs.org/npm/4.3.0
   path-key@^2.0.1: registry.npmjs.org/path-key/2.0.1
-  pnpm@^0.59.0: registry.npmjs.org/pnpm/0.59.0
+  pnpm@^0.60.2: registry.npmjs.org/pnpm/0.60.2
   pretty-bytes@^4.0.2: registry.npmjs.org/pretty-bytes/4.0.2
   pretty-ms@^2.1.0: registry.npmjs.org/pretty-ms/2.1.0
   rimraf@^2.5.4: registry.npmjs.org/rimraf/2.6.1
@@ -1260,10 +1260,10 @@ packages:
     resolution:
       shasum: d1a21483fd22bb41e58a12fa3421823140897c45
       tarball: 'https://registry.npmjs.org/pluralize/-/pluralize-1.2.1.tgz'
-  registry.npmjs.org/pnpm/0.59.0:
+  registry.npmjs.org/pnpm/0.60.2:
     resolution:
-      shasum: 68c8be4d4afe27e2da6b05e876a4dbe7c24690db
-      tarball: 'https://registry.npmjs.org/pnpm/-/pnpm-0.59.0.tgz'
+      shasum: c024458e994b95184054ed87919014cd532edf5b
+      tarball: 'https://registry.npmjs.org/pnpm/-/pnpm-0.60.2.tgz'
   registry.npmjs.org/prelude-ls/1.1.2:
     resolution:
       shasum: 21932a549f5e52ffd9a827f570e04be62a97da54
