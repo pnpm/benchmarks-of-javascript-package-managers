@@ -7,7 +7,7 @@ dependencies:
   mkdirp@^0.5.1: 0.5.1
   npm@^4.3.0: 4.4.1
   path-key@^2.0.1: 2.0.1
-  pnpm@^0.60.2: 0.60.3
+  pnpm@^0.62.1: 0.62.1
   pretty-bytes@^4.0.2: 4.0.2
   pretty-ms@^2.1.0: 2.1.0
   rimraf@^2.5.4: 2.6.1
@@ -714,7 +714,7 @@ packages:
     resolution: 557ef22d73da3c8837107766c52eadabde298fe4
   /plur/1.0.0: db85c6814f5e5e5a3b49efc28d604fec62975156
   /pluralize/1.2.1: d1a21483fd22bb41e58a12fa3421823140897c45
-  /pnpm/0.60.3: e8c8b7c0c42bf2b5c7c6b8291998889510030d5f
+  /pnpm/0.62.1: ad5374b0e4b66e28b15e99cdde29fa9831a1fd3e
   /prelude-ls/1.1.2: 21932a549f5e52ffd9a827f570e04be62a97da54
   /pretty-bytes/4.0.2: b2bf82e7350d65c6c33aa95aaa5a4f6327f61cd9
   /pretty-ms/2.1.0:
