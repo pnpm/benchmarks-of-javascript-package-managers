@@ -25,15 +25,15 @@
     "get-folder-size": "^1.0.0",
     "load-yaml-file": "^0.1.0",
     "mkdirp": "^0.5.1",
-    "npm": "^4.3.0",
+    "npm": "^4.4.4",
     "path-key": "^2.0.1",
-    "pnpm": "^0.62.1",
+    "pnpm": "^0.64.2",
     "pretty-bytes": "^4.0.2",
     "pretty-ms": "^2.1.0",
     "rimraf": "^2.5.4",
     "thenify": "^3.2.1",
     "write-yaml-file": "^1.0.0",
-    "yarn": "^0.21.3"
+    "yarn": "^0.22.0"
   },
   "devDependencies": {
     "standard": "^8.6.0"
