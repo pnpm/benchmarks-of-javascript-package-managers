@@ -5,9 +5,9 @@ dependencies:
   get-folder-size@^1.0.0: 1.0.0
   load-yaml-file@^0.1.0: 0.1.0
   mkdirp@^0.5.1: 0.5.1
-  npm@^4.4.4: 4.4.4
+  npm@^4.5.0: 4.5.0
   path-key@^2.0.1: 2.0.1
-  pnpm@^0.64.2: 0.64.2
+  pnpm@^0.64.4: 0.64.4
   pretty-bytes@^4.0.2: 4.0.2
   pretty-ms@^2.1.0: 2.1.0
   rimraf@^2.5.4: 2.6.1
@@ -361,12 +361,12 @@ packages:
       write: 0.2.1
     resolution: fa86714e72c21db88601761ecf2f555d1abc6b96
   /forever-agent/0.6.1: fbc71f0c41adeb37f96c577ad1ed42d8fdacca91
-  /form-data/2.1.2:
+  /form-data/2.1.4:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.5
       mime-types: 2.1.15
-    resolution: 89c3534008b97eada4cbb157d58f6f5df025eae4
+    resolution: 33c183acf193276ecaa98143a69e94bfee1750d1
   /fs-extra/1.0.0:
     dependencies:
       graceful-fs: 4.1.11
@@ -456,7 +456,7 @@ packages:
     dependencies:
       assert-plus: 0.2.0
       jsprim: 1.4.0
-      sshpk: 1.11.0
+      sshpk: 1.13.0
     resolution: df72e267066cd0ac67fb76adf8e134a8fbcf91bf
   /ignore/3.2.6: 26e8da0644be0bb4cb39516f6c79f0e0f4ffe48c
   /imurmurhash/0.1.4: 9218b9b2b928a238b13dc4fb6b6d576f231453ea
@@ -658,7 +658,7 @@ packages:
     dependencies:
       abbrev: 1.1.0
     resolution: c6465dbf08abcd4db359317f79ac68a646b28ff9
-  /npm/4.4.4: d5ec661923a06bcd6a6eec3d0433a9da3fd67e37
+  /npm/4.5.0: dc6a31f28807e6db980ed5083315667dcc8d0475
   /npmlog/4.0.2:
     dependencies:
       are-we-there-yet: 1.1.2
@@ -715,7 +715,7 @@ packages:
     resolution: 557ef22d73da3c8837107766c52eadabde298fe4
   /plur/1.0.0: db85c6814f5e5e5a3b49efc28d604fec62975156
   /pluralize/1.2.1: d1a21483fd22bb41e58a12fa3421823140897c45
-  /pnpm/0.64.2: c3ef37f8468135dd8c654fc6559fd2fab7e3c13a
+  /pnpm/0.64.4: eebcce36a8011aac77da4fe90ea261b39b1fcada
   /prelude-ls/1.1.2: 21932a549f5e52ffd9a827f570e04be62a97da54
   /pretty-bytes/4.0.2: b2bf82e7350d65c6c33aa95aaa5a4f6327f61cd9
   /pretty-ms/2.1.0:
@@ -778,7 +778,7 @@ packages:
       combined-stream: 1.0.5
       extend: 3.0.0
       forever-agent: 0.6.1
-      form-data: 2.1.2
+      form-data: 2.1.4
       har-validator: 4.2.1
       hawk: 3.1.3
       http-signature: 1.1.1
@@ -860,7 +860,7 @@ packages:
   /spdx-expression-parse/1.0.4: 9bdf2f20e1f40ed447fbe273266191fced51626c
   /spdx-license-ids/1.2.2: c9df7a3424594ade6bd11900d596696dc06bac57
   /sprintf-js/1.0.3: 04e6926f662895354f3dd015203633b857297e2c
-  /sshpk/1.11.0:
+  /sshpk/1.13.0:
     dependencies:
       asn1: 0.2.3
       assert-plus: 1.0.0
@@ -871,7 +871,7 @@ packages:
       jodid25519: 1.0.2
       jsbn: 0.1.1
       tweetnacl: 0.14.5
-    resolution: 2d8d5ebb4a6fab28ffba37fa62a90f4a3ea59d77
+    resolution: ff2a3e4fd04497555fed97b39a0fd82fafb3a33c
   /standard-engine/5.2.0:
     dependencies:
       deglob: 2.1.0
