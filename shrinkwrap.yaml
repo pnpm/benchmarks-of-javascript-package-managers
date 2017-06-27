@@ -5,9 +5,9 @@ dependencies:
   get-folder-size: 1.0.0
   load-yaml-file: 0.1.0
   mkdirp: 0.5.1
-  npm: 5.0.3
+  npm: 5.0.4
   path-key: 2.0.1
-  pnpm: 0.74.3
+  pnpm: 0.75.0
   pretty-bytes: 4.0.2
   pretty-ms: 2.1.0
   rimraf: 2.6.1
@@ -54,6 +54,9 @@ packages:
   /ansi-regex/2.1.1:
     resolution:
       integrity: sha1-w7M6te42DYbg5ijwRorn7yfWVN8=
+  /ansi-regex/3.0.0:
+    resolution:
+      integrity: sha1-7QMXwyIGT3lGbAKWa922Bas32Zg=
   /ansi-styles/2.2.1:
     resolution:
       integrity: sha1-tDLdM1i2NM914eRmQ2gkBTPB3b4=
@@ -878,7 +881,7 @@ packages:
       run-async: 2.3.0
       rx-lite: 4.0.8
       rx-lite-aggregates: 4.0.8
-      string-width: 2.0.0
+      string-width: 2.1.0
       strip-ansi: 3.0.1
       through: 2.3.8
     resolution:
@@ -1154,9 +1157,9 @@ packages:
       string.prototype.codepointat: 0.2.0
     resolution:
       integrity: sha1-/ZGOQSdpv4xEgFEjgjOECyr/FqE=
-  /npm/5.0.3:
+  /npm/5.0.4:
     resolution:
-      integrity: sha1-q9HDl+3m7dj5NFPnrSt6GIeGGFY=
+      integrity: sha1-Z6IB3W+03nsn0CdhQy+yffEuNc4=
   /number-is-nan/1.0.1:
     resolution:
       integrity: sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
@@ -1321,9 +1324,9 @@ packages:
     dev: true
     resolution:
       integrity: sha1-0aIUg/0iu0HlihL6NCGCMUCJfEU=
-  /pnpm/0.74.3:
+  /pnpm/0.75.0:
     resolution:
-      integrity: sha1-Hibyh2GrCa9NPysBogBB9xeYmsQ=
+      integrity: sha1-2ngOUdVpnZFJ2L+XiLAAXeLWZS4=
   /prelude-ls/1.1.2:
     dev: true
     resolution:
@@ -1602,8 +1605,15 @@ packages:
     dependencies:
       is-fullwidth-code-point: 2.0.0
       strip-ansi: 3.0.1
+    dev: true
     resolution:
       integrity: sha1-Y1xUNsxypuDDh87KJ41OLuxSaH4=
+  /string-width/2.1.0:
+    dependencies:
+      is-fullwidth-code-point: 2.0.0
+      strip-ansi: 4.0.0
+    resolution:
+      integrity: sha1-AwZkVh/BRslCPsfZeP4kV0N/5tA=
   /string.prototype.codepointat/0.2.0:
     resolution:
       integrity: sha1-aybpvTr8qnvjtCabUm3huCAArHg=
@@ -1620,6 +1630,11 @@ packages:
       ansi-regex: 2.1.1
     resolution:
       integrity: sha1-ajhfuIU9lS1f8F0Oiq+UJ43GPc8=
+  /strip-ansi/4.0.0:
+    dependencies:
+      ansi-regex: 3.0.0
+    resolution:
+      integrity: sha1-qEeQIusaw2iocTibY1JixQXuNo8=
   /strip-bom/3.0.0:
     resolution:
       integrity: sha1-IzTBjpx1n3vdVv3vfprj1YjmjtM=
@@ -1824,9 +1839,9 @@ specifiers:
   get-folder-size: ^1.0.0
   load-yaml-file: ^0.1.0
   mkdirp: ^0.5.1
-  npm: ^5.0.3
+  npm: ^5.0.4
   path-key: ^2.0.1
-  pnpm: ^0.74.3
+  pnpm: ^0.75.0
   pretty-bytes: ^4.0.2
   pretty-ms: ^2.1.0
   rimraf: ^2.5.4
