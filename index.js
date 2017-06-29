@@ -38,7 +38,7 @@ async function run () {
       return stripIndents`
         ${fixture.mdDesc}
 
-        | command | time in ms | size in bytes |
+        | command | time | size in bytes |
         | --- | --- | --- |
         | npm install | ${prettyMs(npmResults.time)} | ${prettyBytes(npmResults.size)} |
         | yarn | ${prettyMs(yarnResults.time)} | ${prettyBytes(yarnResults.size)} |

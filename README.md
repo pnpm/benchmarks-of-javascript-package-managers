@@ -6,7 +6,7 @@ This benchmark compares the performance of [npm](https://github.com/npm/npm), [p
 
 The app's `package.json` [here](./fixtures/react-app/package.json)
 
-| command | time in ms | size in bytes |
+| command | time | size in bytes |
 | --- | --- | --- |
 | npm install | 34.6s | 99.2 MB |
 | yarn | 34.7s | 163 MB |
@@ -16,7 +16,7 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 
 The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 
-| command | time in ms | size in bytes |
+| command | time | size in bytes |
 | --- | --- | --- |
 | npm install | 49.9s | 205 MB |
 | yarn | 21.9s | 110 MB |
@@ -26,7 +26,7 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 
 The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 
-| command | time in ms | size in bytes |
+| command | time | size in bytes |
 | --- | --- | --- |
 | npm install | 15.3s | 95.4 MB |
 | yarn | 14.5s | 85.8 MB |
