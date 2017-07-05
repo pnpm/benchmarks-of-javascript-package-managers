@@ -33,7 +33,7 @@
     "rimraf": "^2.5.4",
     "thenify": "^3.2.1",
     "write-yaml-file": "^1.0.0",
-    "yarn": "^0.24.5"
+    "yarn": "^0.27.5"
   },
   "devDependencies": {
     "standard": "^10.0.2"
