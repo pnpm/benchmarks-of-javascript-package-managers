@@ -4,3 +4,9 @@
   withWarmCache: 4015
   withLockfile: 12061
   size: 91200490
+- firstInstall: 10756
+  repeatInstall: 1032
+  withWarmCacheAndLockfile: 4152
+  withWarmCache: 3955
+  withLockfile: 11055
+  size: 91200490
