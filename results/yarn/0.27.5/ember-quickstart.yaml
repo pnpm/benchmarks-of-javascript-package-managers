@@ -1,6 +1,6 @@
-- time: 19108
-  size: 127658156
-- time: 19074
-  size: 127658156
-- time: 19061
-  size: 127658156
+- firstInstall: 19668
+  repeatInstall: 861
+  withWarmCacheAndLockfile: 5785
+  withWarmCache: 10128
+  withLockfile: 14989
+  size: 127657976
