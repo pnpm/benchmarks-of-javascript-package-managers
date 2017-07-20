@@ -1,7 +1,6 @@
 'use strict'
 const fs = require('fs')
 const stripIndents = require('common-tags').stripIndents
-const prettyBytes = require('pretty-bytes')
 const prettyMs = require('pretty-ms')
 const benchmark = require('./lib/recordBenchmark')
 
@@ -38,11 +37,14 @@ async function run () {
       return stripIndents`
         ${fixture.mdDesc}
 
-        | command | time | size in bytes |
-        | --- | --- | --- |
-        | npm install | ${prettyMs(npmResults.time)} | ${prettyBytes(npmResults.size)} |
-        | yarn | ${prettyMs(yarnResults.time)} | ${prettyBytes(yarnResults.size)} |
-        | pnpm install | ${prettyMs(pnpmResults.time)} | ${prettyBytes(pnpmResults.size)} |`
+        | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
+        | ---     | ---   | ---      | ---         | --- | --- | --- |
+        | install |       |          |             | ${npmResults.firstInstall} | ${yarnResults.firstInstall} | ${pnpmResults.firstInstall} |
+        | install | ✔    | ✔        | ✔           | ${npmResults.repeatInstall} | ${yarnResults.repeatInstall} | ${pnpmResults.repeatInstall} |
+        | install | ✔    | ✔        |             | ${npmResults.withWarmCacheAndLockfile} | ${yarnResults.withWarmCacheAndLockfile} | ${pnpmResults.withWarmCacheAndLockfile} |
+        | install | ✔    |          |             | ${npmResults.withWarmCache} | ${yarnResults.withWarmCache} | ${pnpmResults.withWarmCache} |
+        | install |      | ✔        |             | ${npmResults.withLockfile} | ${yarnResults.withLockfile} | ${pnpmResults.withLockfile} |
+        `
     })
   )
 
@@ -55,10 +57,12 @@ async function run () {
 }
 
 function average (benchmarkResults) {
-  return {
-    size: benchmarkResults.map(res => res.size).reduce(sum, 0) / benchmarkResults.length,
-    time: benchmarkResults.map(res => res.time).reduce(sum, 0) / benchmarkResults.length
-  }
+  const results = {}
+  ;['firstInstall', 'repeatInstall', 'withWarmCacheAndLockfile', 'withWarmCache', 'withLockfile']
+    .forEach(measurmentName => {
+      results[measurmentName] = prettyMs(benchmarkResults.map(res => res[measurmentName]).reduce(sum, 0) / benchmarkResults.length)
+    })
+  return results
 }
 
 function sum (a, b) {
