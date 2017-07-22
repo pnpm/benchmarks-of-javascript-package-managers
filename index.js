@@ -26,27 +26,23 @@ run()
   .catch(err => console.error(err))
 
 async function run () {
-  const sections = await Promise.all(
-    fixtures.map(async fixture => {
-      const results = await Promise.all([
-        benchmark('npm', fixture.name, {limitRuns: LIMIT_RUNS}),
-        benchmark('yarn', fixture.name, {limitRuns: LIMIT_RUNS}),
-        benchmark('pnpm', fixture.name, {limitRuns: LIMIT_RUNS})
-      ])
-      const [npmResults, yarnResults, pnpmResults] = results.map(average)
-      return stripIndents`
-        ${fixture.mdDesc}
+  const sections = []
+  for (const fixture of fixtures) {
+    const npmResults = average(await benchmark('npm', fixture.name, {limitRuns: LIMIT_RUNS}))
+    const yarnResults = average(await benchmark('yarn', fixture.name, {limitRuns: LIMIT_RUNS}))
+    const pnpmResults = average(await benchmark('pnpm', fixture.name, {limitRuns: LIMIT_RUNS}))
+    sections.push(stripIndents`
+      ${fixture.mdDesc}
 
-        | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
-        | ---     | ---   | ---      | ---         | --- | --- | --- |
-        | install |       |          |             | ${npmResults.firstInstall} | ${yarnResults.firstInstall} | ${pnpmResults.firstInstall} |
-        | install | ✔    | ✔        | ✔           | ${npmResults.repeatInstall} | ${yarnResults.repeatInstall} | ${pnpmResults.repeatInstall} |
-        | install | ✔    | ✔        |             | ${npmResults.withWarmCacheAndLockfile} | ${yarnResults.withWarmCacheAndLockfile} | ${pnpmResults.withWarmCacheAndLockfile} |
-        | install | ✔    |          |             | ${npmResults.withWarmCache} | ${yarnResults.withWarmCache} | ${pnpmResults.withWarmCache} |
-        | install |      | ✔        |             | ${npmResults.withLockfile} | ${yarnResults.withLockfile} | ${pnpmResults.withLockfile} |
-        `
-    })
-  )
+      | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
+      | ---     | ---   | ---      | ---         | --- | --- | --- |
+      | install |       |          |             | ${npmResults.firstInstall} | ${yarnResults.firstInstall} | ${pnpmResults.firstInstall} |
+      | install | ✔    | ✔        | ✔           | ${npmResults.repeatInstall} | ${yarnResults.repeatInstall} | ${pnpmResults.repeatInstall} |
+      | install | ✔    | ✔        |             | ${npmResults.withWarmCacheAndLockfile} | ${yarnResults.withWarmCacheAndLockfile} | ${pnpmResults.withWarmCacheAndLockfile} |
+      | install | ✔    |          |             | ${npmResults.withWarmCache} | ${yarnResults.withWarmCache} | ${pnpmResults.withWarmCache} |
+      | install |      | ✔        |             | ${npmResults.withLockfile} | ${yarnResults.withLockfile} | ${pnpmResults.withLockfile} |
+    `)
+  }
 
   fs.writeFile('README.md', stripIndents`
     # Node package manager benchmark
