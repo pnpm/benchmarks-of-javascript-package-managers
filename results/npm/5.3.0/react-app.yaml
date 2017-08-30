@@ -1,18 +1,18 @@
-- firstInstall: 35440
-  repeatInstall: 6455
-  withWarmCacheAndLockfile: 9524
-  withWarmCache: 23395
-  withLockfile: 10261
+- firstInstall: 39711
+  repeatInstall: 6147
+  withWarmCacheAndLockfile: 9091
+  withWarmCache: 22933
+  withLockfile: 10496
   size: 93591469
-- firstInstall: 35004
-  repeatInstall: 6355
-  withWarmCacheAndLockfile: 9515
-  withWarmCache: 23369
-  withLockfile: 10656
+- firstInstall: 35042
+  repeatInstall: 6315
+  withWarmCacheAndLockfile: 9894
+  withWarmCache: 23539
+  withLockfile: 14333
   size: 93591469
-- firstInstall: 33424
-  repeatInstall: 6336
-  withWarmCacheAndLockfile: 9306
-  withWarmCache: 23369
-  withLockfile: 10354
+- firstInstall: 43701
+  repeatInstall: 6338
+  withWarmCacheAndLockfile: 9512
+  withWarmCache: 22944
+  withLockfile: 18932
   size: 93591469
