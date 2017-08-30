@@ -7,7 +7,7 @@ dependencies:
   mkdirp: 0.5.1
   npm: 5.3.0
   path-key: 2.0.1
-  pnpm: 1.9.0
+  pnpm: 1.11.0
   pretty-bytes: 4.0.2
   pretty-ms: 2.1.0
   rimraf: 2.6.1
@@ -1502,9 +1502,9 @@ packages:
     dev: true
     resolution:
       integrity: sha1-0aIUg/0iu0HlihL6NCGCMUCJfEU=
-  /pnpm/1.9.0:
+  /pnpm/1.11.0:
     resolution:
-      integrity: sha512-tsACRoMN32bQUIXKxTX/CMqYP2nL5vF3C82bRkAPDqAjYMethhnYnFCsXIQVcTfH4f49haR97OYooeq4SA6VMw==
+      integrity: sha512-xr3dsVubkWfHD+Q1XG4sJ/V4rurJOXEoGYi9/BXInC5fhZgrYK6rV5fGqx337vfr/y7TgDASjgj/E9wgIr42hQ==
   /prelude-ls/1.1.2:
     dev: true
     resolution:
@@ -2058,7 +2058,7 @@ specifiers:
   mkdirp: ^0.5.1
   npm: ^5.3.0
   path-key: ^2.0.1
-  pnpm: ^1.9.0
+  pnpm: ^1.11.0
   pretty-bytes: ^4.0.2
   pretty-ms: ^2.1.0
   rimraf: ^2.5.4
