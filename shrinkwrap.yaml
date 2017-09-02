@@ -5,9 +5,9 @@ dependencies:
   get-folder-size: 1.0.0
   load-yaml-file: 0.1.0
   mkdirp: 0.5.1
-  npm: 5.3.0
+  npm: 5.4.0
   path-key: 2.0.1
-  pnpm: 1.11.0
+  pnpm: 1.12.0
   pretty-bytes: 4.0.2
   pretty-ms: 2.1.0
   rimraf: 2.6.1
@@ -1313,9 +1313,9 @@ packages:
       remove-trailing-separator: 1.1.0
     resolution:
       integrity: sha1-GrKLVW4Zg2Oowab35vogE3/mrtk=
-  /npm/5.3.0:
+  /npm/5.4.0:
     resolution:
-      integrity: sha512-ZJsOWVJ25E2C5Qedf4w9ePIv5hrPCdDIsHhq89tRxSJCqyIfDAMh0KoU9xeTu7yHT9ZrxPF7mopq1TCWxtMfkw==
+      integrity: sha512-jw7Gq2dMM3RWBUaQmuJTB/dcZEiTL2c6VUrXvlWU/37SXR0GCCGysKfwQcjQerTmmrycIpfLZS2msHa26FsAKQ==
   /number-is-nan/1.0.1:
     resolution:
       integrity: sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
@@ -1489,9 +1489,9 @@ packages:
     dev: true
     resolution:
       integrity: sha1-0aIUg/0iu0HlihL6NCGCMUCJfEU=
-  /pnpm/1.11.0:
+  /pnpm/1.12.0:
     resolution:
-      integrity: sha512-xr3dsVubkWfHD+Q1XG4sJ/V4rurJOXEoGYi9/BXInC5fhZgrYK6rV5fGqx337vfr/y7TgDASjgj/E9wgIr42hQ==
+      integrity: sha512-L/oCRl5mnfhhoW/t1JBHTQ8OgFlu0w+3mA1yDZgaSsti25p+02zFsJFLnfIYwH2ZABtkaRhJWdfwuOvhMpt6BA==
   /prelude-ls/1.1.2:
     dev: true
     resolution:
@@ -2030,9 +2030,9 @@ specifiers:
   get-folder-size: ^1.0.0
   load-yaml-file: ^0.1.0
   mkdirp: ^0.5.1
-  npm: ^5.3.0
+  npm: ^5.4.0
   path-key: ^2.0.1
-  pnpm: ^1.11.0
+  pnpm: ^1.12.0
   pretty-bytes: ^4.0.2
   pretty-ms: ^2.1.0
   rimraf: ^2.5.4
