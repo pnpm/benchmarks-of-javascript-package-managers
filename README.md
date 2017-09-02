@@ -8,11 +8,11 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
 | ---     | ---   | ---      | ---         | --- | --- | --- |
-| install |       |          |             | 39.5s | 24.9s | 16.5s |
-| install | ✔    | ✔        | ✔           | 6.3s | 1.1s | 952ms |
-| install | ✔    | ✔        |             | 9.5s | 6.9s | 4.2s |
-| install | ✔    |          |             | 23.1s | 12.8s | 4.5s |
-| install |      | ✔        |             | 14.6s | 19s | 13.5s |
+| install |       |          |             | 28.4s | 26.1s | 11.1s |
+| install | ✔    | ✔        | ✔           | 5.8s | 1.3s | 976ms |
+| install | ✔    | ✔        |             | 8.8s | 8s | 4.2s |
+| install | ✔    |          |             | 18.7s | 14.6s | 5.4s |
+| install |      | ✔        |             | 9.9s | 19.3s | 11.8s |
 
 ## Ember app
 
@@ -20,11 +20,11 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
 | ---     | ---   | ---      | ---         | --- | --- | --- |
-| install |       |          |             | 41s | 24.7s | 23.8s |
-| install | ✔    | ✔        | ✔           | 11.6s | 1.1s | 1.3s |
-| install | ✔    | ✔        |             | 18.8s | 6s | 8.3s |
-| install | ✔    |          |             | 27s | 12.1s | 12.1s |
-| install |      | ✔        |             | 20.7s | 17.5s | 20.7s |
+| install |       |          |             | 40.9s | 23.5s | 22.5s |
+| install | ✔    | ✔        | ✔           | 11.6s | 1.2s | 1.3s |
+| install | ✔    | ✔        |             | 22.7s | 6.4s | 8s |
+| install | ✔    |          |             | 29.8s | 11s | 11.5s |
+| install |      | ✔        |             | 26.7s | 16.3s | 21s |
 
 ## Angular app
 
@@ -32,8 +32,8 @@ The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
 | ---     | ---   | ---      | ---         | --- | --- | --- |
-| install |       |          |             | 16s | 11.2s | 13.8s |
-| install | ✔    | ✔        | ✔           | 4.3s | 723ms | 1.1s |
-| install | ✔    | ✔        |             | 6.7s | 2.5s | 3.8s |
-| install | ✔    |          |             | 8.9s | 6.4s | 5.7s |
-| install |      | ✔        |             | 8.9s | 9.9s | 10.8s |
+| install |       |          |             | 14.2s | 11.7s | 11.4s |
+| install | ✔    | ✔        | ✔           | 3.8s | 730ms | 1s |
+| install | ✔    | ✔        |             | 7.2s | 2.6s | 3.9s |
+| install | ✔    |          |             | 9.1s | 6.3s | 5.4s |
+| install |      | ✔        |             | 9.4s | 8s | 11.3s |
