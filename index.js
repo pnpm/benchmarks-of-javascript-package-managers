@@ -3,6 +3,7 @@ const fs = require('fs')
 const stripIndents = require('common-tags').stripIndents
 const prettyMs = require('pretty-ms')
 const benchmark = require('./lib/recordBenchmark')
+const generateSvg = require('./lib/generateSvg')
 
 const LIMIT_RUNS = 3
 
@@ -31,6 +32,11 @@ async function run () {
     const npmResults = average(await benchmark('npm', fixture.name, {limitRuns: LIMIT_RUNS}))
     const yarnResults = average(await benchmark('yarn', fixture.name, {limitRuns: LIMIT_RUNS}))
     const pnpmResults = average(await benchmark('pnpm', fixture.name, {limitRuns: LIMIT_RUNS}))
+    generateSvg({
+      'npm': npmResults,
+      'yarn': yarnResults,
+      'pnpm': pnpmResults
+    }, fixture.name)
     sections.push(stripIndents`
       ${fixture.mdDesc}
 
@@ -41,6 +47,8 @@ async function run () {
       | install | ✔    | ✔        |             | ${npmResults.withWarmCacheAndLockfile} | ${yarnResults.withWarmCacheAndLockfile} | ${pnpmResults.withWarmCacheAndLockfile} |
       | install | ✔    |          |             | ${npmResults.withWarmCache} | ${yarnResults.withWarmCache} | ${pnpmResults.withWarmCache} |
       | install |      | ✔        |             | ${npmResults.withLockfile} | ${yarnResults.withLockfile} | ${pnpmResults.withLockfile} |
+
+      ![results](./results/imgs/${fixture.name}.svg "Graph of the ${fixture.name} results")
     `)
   }
 
