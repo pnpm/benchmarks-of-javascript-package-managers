@@ -91,13 +91,15 @@ async function run () {
   mkdirp.sync(join(__dirname, 'results', 'imgs'))
 
   await Promise.all(
-    svgs.map((file) => writeFile(file.path, file.file, 'utf-8')),
-    writeFile('README.md', stripIndents`
-      # Node package manager benchmark
+    [
+      Promise.all(svgs.map((file) => writeFile(file.path, file.file, 'utf-8'))),
+      writeFile('README.md', stripIndents`
+        # Node package manager benchmark
 
-      This benchmark compares the performance of [npm](https://github.com/npm/npm), [pnpm](https://github.com/pnpm/pnpm) and [yarn](https://github.com/yarnpkg/yarn).
+        This benchmark compares the performance of [npm](https://github.com/npm/npm), [pnpm](https://github.com/pnpm/pnpm) and [yarn](https://github.com/yarnpkg/yarn).
 
-      ${sections.join('\n\n')}`, 'utf8')
+        ${sections.join('\n\n')}`, 'utf8')
+    ]
   ).catch((err) => { throw err })
 }
 
