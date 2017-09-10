@@ -2,6 +2,7 @@
 const { promisify } = require('util')
 const writeFile = promisify(require('fs').writeFile)
 const { join } = require('path')
+const mkdirp = require('mkdirp')
 const stripIndents = require('common-tags').stripIndents
 const prettyMs = require('pretty-ms')
 const benchmark = require('./lib/recordBenchmark')
@@ -85,6 +86,9 @@ async function run () {
       file: generateSvg(resArray, pms)
     })
   }
+
+  // make sure folder exists
+  mkdirp.sync(join(__dirname, 'results', 'imgs'))
 
   await Promise.all(
     svgs.map((file) => writeFile(file.path, file.file, 'utf-8')),
