@@ -48,7 +48,7 @@ async function run () {
       | install | ✔    |          |             | ${npmResults.withWarmCache} | ${yarnResults.withWarmCache} | ${pnpmResults.withWarmCache} |
       | install |      | ✔        |             | ${npmResults.withLockfile} | ${yarnResults.withLockfile} | ${pnpmResults.withLockfile} |
 
-      ![results](./results/imgs/${fixture.name}.svg "Graph of the ${fixture.name} results")
+      ![Graph of the ${fixture.name} results](./results/imgs/${fixture.name}.svg)
     `)
   }
 
