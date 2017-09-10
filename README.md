@@ -14,6 +14,8 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 | install | ✔    |          |             | 17.3s | 16.1s | 5.7s |
 | install |      | ✔        |             | 11s | 21.2s | 11.9s |
 
+![Graph of the react-app results](./results/imgs/react-app.svg)
+
 ## Ember app
 
 The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
@@ -26,6 +28,8 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 | install | ✔    |          |             | 28.2s | 18.5s | 10.6s |
 | install |      | ✔        |             | 25.2s | 18.2s | 20s |
 
+![Graph of the ember-quickstart results](./results/imgs/ember-quickstart.svg)
+
 ## Angular app
 
 The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
@@ -37,3 +41,5 @@ The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 | install | ✔    | ✔        |             | 6.9s | 3.5s | 3.8s |
 | install | ✔    |          |             | 8.5s | 10.5s | 6.5s |
 | install |      | ✔        |             | 8.9s | 11.1s | 10.1s |
+
+![Graph of the angular-quickstart results](./results/imgs/angular-quickstart.svg)
