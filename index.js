@@ -64,7 +64,9 @@ function average (benchmarkResults) {
   const results = {}
   ;['firstInstall', 'repeatInstall', 'withWarmCacheAndLockfile', 'withWarmCache', 'withLockfile']
     .forEach(measurmentName => {
-      results[measurmentName] = prettyMs(benchmarkResults.map(res => res[measurmentName]).reduce(sum, 0) / benchmarkResults.length)
+      const avgMs = benchmarkResults.map(res => res[measurmentName]).reduce(sum, 0) / benchmarkResults.length
+      results[measurmentName] = prettyMs(avgMs)
+      results[measurmentName + 'Ms' ] = avgMs
     })
   return results
 }
