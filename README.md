@@ -8,11 +8,11 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
 | ---     | ---   | ---      | ---         | --- | --- | --- |
-| install |       |          |             | 24.5s | 29.7s | 10.4s |
-| install | ✔    | ✔        | ✔           | 5.3s | 1.1s | 941ms |
-| install | ✔    | ✔        |             | 7.8s | 10.5s | 3.9s |
-| install | ✔    |          |             | 17.3s | 16.1s | 5.7s |
-| install |      | ✔        |             | 11s | 21.2s | 11.9s |
+| install |       |          |             | 24.7s | 30.7s | 11.9s |
+| install | ✔    | ✔        | ✔           | 5.8s | 1.3s | 993ms |
+| install | ✔    | ✔        |             | 8.3s | 11s | 4.2s |
+| install | ✔    |          |             | 19.1s | 17.7s | 4.1s |
+| install |      | ✔        |             | 12.3s | 23.3s | 12.4s |
 
 ![Graph of the react-app results](./results/imgs/react-app.svg)
 
@@ -22,11 +22,11 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
 | ---     | ---   | ---      | ---         | --- | --- | --- |
-| install |       |          |             | 36.8s | 28.2s | 23.2s |
-| install | ✔    | ✔        | ✔           | 10.9s | 1.2s | 1.2s |
-| install | ✔    | ✔        |             | 21.6s | 9.1s | 8.1s |
-| install | ✔    |          |             | 28.2s | 18.5s | 10.6s |
-| install |      | ✔        |             | 25.2s | 18.2s | 20s |
+| install |       |          |             | 36.9s | 30.4s | 22.5s |
+| install | ✔    | ✔        | ✔           | 11.4s | 1.3s | 1.3s |
+| install | ✔    | ✔        |             | 22.7s | 9.7s | 8.7s |
+| install | ✔    |          |             | 29.5s | 16.8s | 11.4s |
+| install |      | ✔        |             | 26.2s | 19s | 21.4s |
 
 ![Graph of the ember-quickstart results](./results/imgs/ember-quickstart.svg)
 
@@ -36,10 +36,10 @@ The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
 | ---     | ---   | ---      | ---         | --- | --- | --- |
-| install |       |          |             | 13.5s | 16s | 10.4s |
-| install | ✔    | ✔        | ✔           | 3.6s | 805ms | 1.1s |
-| install | ✔    | ✔        |             | 6.9s | 3.5s | 3.8s |
-| install | ✔    |          |             | 8.5s | 10.5s | 6.5s |
-| install |      | ✔        |             | 8.9s | 11.1s | 10.1s |
+| install |       |          |             | 14.5s | 17.6s | 12.1s |
+| install | ✔    | ✔        | ✔           | 3.7s | 904ms | 1.1s |
+| install | ✔    | ✔        |             | 7.1s | 4s | 4.2s |
+| install | ✔    |          |             | 8.9s | 9.2s | 5.2s |
+| install |      | ✔        |             | 9s | 11.4s | 10.9s |
 
 ![Graph of the angular-quickstart results](./results/imgs/angular-quickstart.svg)
