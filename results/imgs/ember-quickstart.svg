@@ -17,20 +17,20 @@
   <text x="9" y="105" fill="#cacaca" font-size="6" font-family="system-ui" alignment-baseline="middle" text-anchor="end">8</text>
   <text x="9" y="125" fill="#cacaca" font-size="6" font-family="system-ui" alignment-baseline="middle" text-anchor="end">0</text>
   <rect x="20" y="33" width="15" height="92" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="36" y="49" width="15" height="76" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="36" y="56" width="15" height="69" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="52" y="69" width="15" height="56" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="83" y="96" width="15" height="29" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="99" y="122" width="15" height="3" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="115" y="122" width="15" height="3" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="146" y="68" width="15" height="57" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="162" y="101" width="15" height="24" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="178" y="103" width="15" height="22" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="162" y="103" width="15" height="22" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="178" y="104" width="15" height="21" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="209" y="51" width="15" height="74" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="225" y="83" width="15" height="42" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="241" y="96" width="15" height="29" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="225" y="85" width="15" height="40" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="241" y="97" width="15" height="28" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="272" y="59" width="15" height="66" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="288" y="77" width="15" height="48" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="304" y="71" width="15" height="54" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="288" y="79" width="15" height="46" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="304" y="54" width="15" height="71" fill="#fbae00" rx="1" ry="1"></rect>
   <line x1="10" y1="125" x2="330" y2="125" stroke-width="1" stroke="#cacaca"></line>
   <text x="21" y="127" font-size="5" font-family="system-ui" alignment-baseline="hanging" text-anchor="start">clean install</text>
   <text x="84" y="127" font-size="5" font-family="system-ui" alignment-baseline="hanging" text-anchor="start">with cache</text>

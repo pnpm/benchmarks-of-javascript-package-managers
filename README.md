@@ -8,11 +8,11 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
 | ---     | ---   | ---      | ---         | --- | --- | --- |
-| install |       |          |             | 24.7s | 30.7s | 11.9s |
-| install | ✔    | ✔        | ✔           | 5.8s | 1.3s | 993ms |
-| install | ✔    | ✔        |             | 8.3s | 11s | 4.2s |
-| install | ✔    |          |             | 19.1s | 17.7s | 4.1s |
-| install |      | ✔        |             | 12.3s | 23.3s | 12.4s |
+| install |       |          |             | 24.7s | 27.5s | 11.2s |
+| install | ✔    | ✔        | ✔           | 5.8s | 1.2s | 1.1s |
+| install | ✔    | ✔        |             | 8.3s | 10.4s | 4.1s |
+| install | ✔    |          |             | 19.1s | 15.8s | 7.1s |
+| install |      | ✔        |             | 12.3s | 21.5s | 11.6s |
 
 ![Graph of the react-app results](./results/imgs/react-app.svg)
 
@@ -22,11 +22,11 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
 | ---     | ---   | ---      | ---         | --- | --- | --- |
-| install |       |          |             | 36.9s | 30.4s | 22.5s |
+| install |       |          |             | 36.9s | 27.5s | 22.4s |
 | install | ✔    | ✔        | ✔           | 11.4s | 1.3s | 1.3s |
-| install | ✔    | ✔        |             | 22.7s | 9.7s | 8.7s |
-| install | ✔    |          |             | 29.5s | 16.8s | 11.4s |
-| install |      | ✔        |             | 26.2s | 19s | 21.4s |
+| install | ✔    | ✔        |             | 22.7s | 8.7s | 8.5s |
+| install | ✔    |          |             | 29.5s | 15.9s | 11.1s |
+| install |      | ✔        |             | 26.2s | 18.2s | 28.2s |
 
 ![Graph of the ember-quickstart results](./results/imgs/ember-quickstart.svg)
 
@@ -36,10 +36,10 @@ The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
 | ---     | ---   | ---      | ---         | --- | --- | --- |
-| install |       |          |             | 14.5s | 17.6s | 12.1s |
-| install | ✔    | ✔        | ✔           | 3.7s | 904ms | 1.1s |
-| install | ✔    | ✔        |             | 7.1s | 4s | 4.2s |
-| install | ✔    |          |             | 8.9s | 9.2s | 5.2s |
-| install |      | ✔        |             | 9s | 11.4s | 10.9s |
+| install |       |          |             | 14.5s | 19.2s | 11.3s |
+| install | ✔    | ✔        | ✔           | 3.7s | 847ms | 1.2s |
+| install | ✔    | ✔        |             | 7.1s | 3.5s | 4s |
+| install | ✔    |          |             | 8.9s | 11.7s | 7.4s |
+| install |      | ✔        |             | 9s | 11.5s | 10.3s |
 
 ![Graph of the angular-quickstart results](./results/imgs/angular-quickstart.svg)
