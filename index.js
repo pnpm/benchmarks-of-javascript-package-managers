@@ -22,6 +22,10 @@ const fixtures = [
   {
     name: 'angular-quickstart',
     mdDesc: '## Angular app\n\nThe app\'s `package.json` [here](./fixtures/angular-quickstart/package.json)'
+  },
+  {
+    name: 'medium-size-app',
+    mdDesc: '## Medium Size App\n\nThe app\'s `package.json` [here](./fixtures/medium-size-app/package.json)'
   }
 ]
 

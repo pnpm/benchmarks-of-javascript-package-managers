@@ -43,3 +43,17 @@ The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 | install |      | ✔        |             | 9s | 11.5s | 10.3s |
 
 ![Graph of the angular-quickstart results](./results/imgs/angular-quickstart.svg)
+
+## Medium Size App
+
+The app's `package.json` [here](./fixtures/medium-size-app/package.json)
+
+| action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
+| ---     | ---   | ---      | ---         | --- | --- | --- |
+| install |       |          |             | 45s | 38.1s | 40.8s |
+| install | ✔    | ✔        | ✔           | 5.1s | 915ms | 1.9s |
+| install | ✔    | ✔        |             | 10.2s | 6.1s | 13.1s |
+| install | ✔    |          |             | 19s | 14.2s | 20.7s |
+| install |      | ✔        |             | 23.2s | 23.8s | 34.5s |
+
+![Graph of the medium-size-app results](./results/imgs/medium-size-app.svg)
