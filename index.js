@@ -26,6 +26,10 @@ const fixtures = [
   {
     name: 'medium-size-app',
     mdDesc: '## Medium Size App\n\nThe app\'s `package.json` [here](./fixtures/medium-size-app/package.json)'
+  },
+  {
+    name: 'alotta-files',
+    mdDesc: '## Lots of Files\n\nThe app\'s `package.json` [here](./fixtures/alotta-files/package.json)'
   }
 ]
 

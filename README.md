@@ -57,3 +57,17 @@ The app's `package.json` [here](./fixtures/medium-size-app/package.json)
 | install |      | ✔        |             | 23.2s | 23.8s | 34.5s |
 
 ![Graph of the medium-size-app results](./results/imgs/medium-size-app.svg)
+
+## Lots of Files
+
+The app's `package.json` [here](./fixtures/alotta-files/package.json)
+
+| action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
+| ---     | ---   | ---      | ---         | --- | --- | --- |
+| install |       |          |             | 55.4s | 1m 10.1s | 39.6s |
+| install | ✔    | ✔        | ✔           | 5.4s | 1.4s | 2s |
+| install | ✔    | ✔        |             | 12.5s | 16.1s | 12.3s |
+| install | ✔    |          |             | 21.2s | 27s | 21.3s |
+| install |      | ✔        |             | 26.7s | 27.2s | 37.4s |
+
+![Graph of the alotta-files results](./results/imgs/alotta-files.svg)
