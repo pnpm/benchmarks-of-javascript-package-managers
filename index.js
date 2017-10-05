@@ -53,7 +53,7 @@ const toArray = (pms, resultsObj) => {
   return tests
     .map((test) => pms
       .map((pm) => resultsObj[pm][test])
-        .map((time) => Math.round(time / 100) / 10) // round to `x.x` seconds
+      .map((time) => Math.round(time / 100) / 10) // round to `x.x` seconds
     )
 }
 
