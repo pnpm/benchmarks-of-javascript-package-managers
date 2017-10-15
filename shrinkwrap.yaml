@@ -5,15 +5,15 @@ dependencies:
   get-folder-size: 1.0.0
   load-yaml-file: 0.1.0
   mkdirp: 0.5.1
-  npm: 5.4.2
+  npm: 5.5.1
   path-key: 2.0.1
-  pnpm: 1.16.3
+  pnpm: 1.17.0
   pretty-bytes: 4.0.2
   pretty-ms: 2.1.0
   rimraf: 2.6.1
   thenify: 3.3.0
   write-yaml-file: 1.0.0
-  yarn: 1.2.0
+  yarn: 1.2.1
 devDependencies:
   standard: 10.0.3
 packages:
@@ -24,7 +24,7 @@ packages:
       npm-registry-client: 8.5.0
       package-store: /package-store/0.4.2/pnpm-logger@0.6.2
       pnpm-logger: 0.6.2
-      pnpm-shrinkwrap: /pnpm-shrinkwrap/3.3.3/pnpm-logger@0.6.2
+      pnpm-shrinkwrap: /pnpm-shrinkwrap/3.4.0/pnpm-logger@0.6.2
     id: registry.npmjs.org/@pnpm/outdated/0.0.1
     resolution:
       integrity: sha512-mPPxGGVHpXwJIaR8wARtZEWrQGxGMZmjwuB9JBFY/B2Tt1q64wV5lgFtA94wgHKsAib69xG/2crQfk1wcvbFMA==
@@ -33,15 +33,12 @@ packages:
       integrity: sha1-OIlyozH5YdxxrqcMCLu9ZZN3RgU=
   /@types/byline/4.2.31:
     dependencies:
-      '@types/node': 8.0.28
+      '@types/node': 8.0.34
     resolution:
       integrity: sha1-DmH8ucA+BH0hxEllVMcRYperYM0=
   /@types/chalk/0.4.31:
     resolution:
       integrity: sha1-ox10JBprHtu5c8822XooloNKUfk=
-  /@types/common-tags/1.2.5:
-    resolution:
-      integrity: sha1-FPKYk5kusyVZS4PXOa8C8rZSD0Y=
   /@types/common-tags/1.4.0:
     resolution:
       integrity: sha512-HI1tSO87vmd1sPS3DOVSK4gvVKROvCBFvAnXlLiQtAus/+1xXMQcNyu9TX2ChwRXFeQZeB9+f+nMo99xLd5DdA==
@@ -53,15 +50,17 @@ packages:
       '@types/node': 8.0.34
     resolution:
       integrity: sha1-pNgMCC/v5x5Ap8DwfR5lVbu8e1I=
+  /@types/mz/0.0.32:
+    dependencies:
+      '@types/node': 8.0.34
+    resolution:
+      integrity: sha512-cy3yebKhrHuOcrJGkfwNHhpTXQLgmXSv1BX+4p32j+VUQ6aP2eJ5cL7OvGcAQx75fCTFaAIIAKewvqL+iwSd4g==
   /@types/node/7.0.43:
     resolution:
       integrity: sha512-7scYwwfHNppXvH/9JzakbVxk0o0QUILVk1Lv64GRaxwPuGpnF1QBiwdvhDpLcymb8BpomQL3KYoWKq3wUdDMhQ==
   /@types/node/8.0.28:
     resolution:
       integrity: sha512-HupkFXEv3O3KSzcr3Ylfajg0kaerBg1DyaZzRBBQfrU3NN1mTBRE7sCveqHwXLS5Yrjvww8qFzkzYQQakG9FuQ==
-  /@types/node/8.0.33:
-    resolution:
-      integrity: sha512-vmCdO8Bm1ExT+FWfC9sd9r4jwqM7o97gGy2WBshkkXbf/2nLAJQUrZfIhw27yVOtLUev6kSZc4cav/46KbDd8A==
   /@types/node/8.0.34:
     resolution:
       integrity: sha512-Jnmm57+nHqvJUPwUzt1CLoLzFtF2B2vgG7cWFut+a4nqTp9/L6pL0N+o0Jt3V7AQnCKMsPEqQpLFZYleBCdq3w==
@@ -79,12 +78,9 @@ packages:
   /@types/ramda/0.0.11:
     resolution:
       integrity: sha512-RcraK0229RAIJERTfgoCY/eSbxFEkPlj/TbUUb6aGSS9UfLj1THpt2Uj4uuCJsQrYRQUQB8tFlv7eTTWzE4QjQ==
-  /@types/ramda/0.24.14:
+  /@types/ramda/0.24.17:
     resolution:
-      integrity: sha512-kxdtZ1MiYjwZxGHSFgNxbnYWgv/kfyhB21gLBQwp6jwYyq1Bifk4TQ4C2wKxGEqYxMRAskyetl0BgPxfJfJbCA==
-  /@types/ramda/0.24.16:
-    resolution:
-      integrity: sha512-EXvoA6TTwe/+6k99JRSKiPmgAY+Ww0h2FpEgwHuS9mOEQGuFeTPmvNONPmGVaacpQeDRJHJsVVRT/d+jKY/13Q==
+      integrity: sha512-1zj7HQqHEdzjueCIRMiTSZteGavafmc12SWV3hp4yseKbXdebCsWGGoc+a9ywrJ4c7hQCLOBsoGQjc6wRXJyVA==
   /@types/rc/0.0.1:
     resolution:
       integrity: sha1-H1uKGzsaxtH+4TfFP6xfoPKK4Nc=
@@ -2274,9 +2270,9 @@ packages:
   /npm-user-validate/1.0.0:
     resolution:
       integrity: sha1-jOyg9c6gTU6TUZ73LQVXp1Ei6VE=
-  /npm/5.4.2:
+  /npm/5.5.1:
     resolution:
-      integrity: sha512-F6LLCAHriKyKQ9Ff03UKCjkXZoRBp281I42K42+VeHfjAXZ3TJdg3RccinzoCFV1kDxCedVm7AstIpb1Uf5UkQ==
+      integrity: sha512-M3aO8EjHebaCw6uur4C86SZqkypnoaEVo5R63FEEU0dw9wLxf/JlwWtJItShYVyQS2WDxG2It10GEe5GmVEM2Q==
   /npmlog/4.1.2:
     dependencies:
       are-we-there-yet: 1.1.4
@@ -2412,7 +2408,7 @@ packages:
     dependencies:
       '@types/load-json-file': 2.0.6
       '@types/node': 7.0.43
-      '@types/ramda': 0.24.16
+      '@types/ramda': 0.24.17
       '@types/retry': 0.10.1
       '@types/semver': 5.4.0
       credentials-by-uri: 1.0.0
@@ -2444,7 +2440,7 @@ packages:
       symlink-dir: 1.1.0
       thenify: 3.3.0
       unpack-stream: 2.1.1
-      write-json-file: 2.2.0
+      write-json-file: 2.3.0
     id: registry.npmjs.org/package-store/0.4.2
     resolution:
       integrity: sha512-4odJeu7vMnahTtarRRuDRVnTGyIGVmC1PPfYKnFMrSPL/UyisZgI01wM6X+ZV/3zdmqWZqcnau4PQWkmpIMW/A==
@@ -2558,6 +2554,9 @@ packages:
   /pify/2.3.0:
     resolution:
       integrity: sha1-7RQaasBDqEnqWISY59yosVMw6Qw=
+  /pify/3.0.0:
+    resolution:
+      integrity: sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
   /pinkie-promise/2.0.1:
     dependencies:
       pinkie: 2.0.4
@@ -2607,7 +2606,7 @@ packages:
       '@types/chalk': 0.4.31
       '@types/common-tags': 1.4.0
       '@types/node': 7.0.43
-      '@types/ramda': 0.24.16
+      '@types/ramda': 0.24.17
       chalk: 2.1.0
       common-tags: 1.4.0
       log-update: 2.1.0
@@ -2681,7 +2680,7 @@ packages:
       write-file-atomic: 2.3.0
     resolution:
       integrity: sha512-mFMdm0fCmh+kwxmGVD8Bl5QO4E7h/SCWdayKRtdzexHon0nN7YNkEz/llj1lHrb99pzQmE4NCI6BEvTYP/XeIg==
-  /pnpm-shrinkwrap/3.3.3/pnpm-logger@0.6.2:
+  /pnpm-shrinkwrap/3.4.0/pnpm-logger@0.6.2:
     dependencies:
       '@types/node': 7.0.43
       '@types/ramda': 0.0.11
@@ -2694,20 +2693,12 @@ packages:
       rimraf-then: 1.0.1
       thenify: 3.3.0
       write-file-atomic: 2.3.0
-    id: registry.npmjs.org/pnpm-shrinkwrap/3.3.3
+    id: registry.npmjs.org/pnpm-shrinkwrap/3.4.0
     resolution:
-      integrity: sha512-8+pD1IU2jtRzf4BbMSAnTZsRDs6Pg00xSNSunhak2sxVIzJaxyBqnE1flh8YbQO2tQJ8xbs5v3eTb2PUU6Ga8Q==
-  /pnpm/1.16.3:
+      integrity: sha512-Cn1df7tvv5qIC+3AYRhF4h8266ehLzC/lcnjeumU13TUGU4Vwi+5prPXxj/7IWnZiTAzESjfYag3S5bi6xHBqw==
+  /pnpm/1.17.0:
     dependencies:
       '@pnpm/outdated': /@pnpm/outdated/0.0.1/pnpm-logger@0.6.2
-      '@types/byline': 4.2.31
-      '@types/chalk': 0.4.31
-      '@types/common-tags': 1.2.5
-      '@types/load-json-file': 2.0.6
-      '@types/node': 8.0.33
-      '@types/nopt': 3.0.29
-      '@types/ramda': 0.24.14
-      '@types/update-notifier': 1.0.2
       byline: 5.0.0
       camelcase: 4.1.0
       chalk: 2.1.0
@@ -2724,13 +2715,13 @@ packages:
       pnpm-file-reporter: 0.0.1
       pnpm-list: 1.0.0
       pnpm-logger: 0.6.2
-      ramda: 0.24.1
+      ramda: 0.25.0
       strip-color: 0.1.0
-      supi: /supi/0.2.34/pnpm-logger@0.6.2
+      supi: /supi/0.2.35/pnpm-logger@0.6.2
       text-table: 0.2.0
       update-notifier: 2.2.0
     resolution:
-      integrity: sha1-kbIaNMGmN3idXSOntd+DU50QspQ=
+      integrity: sha1-kPma0X2/DzFpFpy7/fvymHd7MbA=
   /prebuild-install/2.3.0:
     dependencies:
       expand-template: 1.1.0
@@ -2742,7 +2733,7 @@ packages:
       npmlog: 4.1.2
       os-homedir: 1.0.2
       pump: 1.0.2
-      rc: 1.2.1
+      rc: 1.2.2
       simple-get: 1.4.3
       tar-fs: 1.16.0
       tunnel-agent: 0.6.0
@@ -2839,6 +2830,9 @@ packages:
   /ramda/0.24.1:
     resolution:
       integrity: sha1-w7d1UZfzW43DUCIoJixMkd22uFc=
+  /ramda/0.25.0:
+    resolution:
+      integrity: sha512-GXpfrYVPwx3K7RQ6aYT8KPS8XViSXUVJT1ONhoKPE9VAleW42YE+U+8VEyGWt41EnEQW7gwecYJriTI0pKoecQ==
   /rc/1.2.1:
     dependencies:
       deep-extend: 0.4.2
@@ -2847,6 +2841,15 @@ packages:
       strip-json-comments: 2.0.1
     resolution:
       integrity: sha1-LgPo5C7kULjLPc5lvhv4l04d/ZU=
+  /rc/1.2.2:
+    dependencies:
+      deep-extend: 0.4.2
+      ini: 1.3.4
+      minimist: 1.2.0
+      strip-json-comments: 2.0.1
+    optional: true
+    resolution:
+      integrity: sha1-2M6ctX6NZNnHut2YdsfDTL48cHc=
   /read-cmd-shim/1.0.1:
     dependencies:
       graceful-fs: 4.1.11
@@ -3201,11 +3204,6 @@ packages:
       smart-buffer: 1.1.15
     resolution:
       integrity: sha1-W4t/x8jzQcU+0FbpKbe/Tei6e1o=
-  /sort-keys/1.1.2:
-    dependencies:
-      is-plain-obj: 1.1.0
-    resolution:
-      integrity: sha1-RBttTTRnmPG05J6JIK37oOVD+a0=
   /sort-keys/2.0.0:
     dependencies:
       is-plain-obj: 1.1.0
@@ -3350,17 +3348,17 @@ packages:
   /strip-json-comments/2.0.1:
     resolution:
       integrity: sha1-PFMZQukIwml8DsNEhYwobHygpgo=
-  /supi/0.2.34/pnpm-logger@0.6.2:
+  /supi/0.2.35/pnpm-logger@0.6.2:
     dependencies:
       '@types/byline': 4.2.31
       '@types/common-tags': 1.4.0
       '@types/load-json-file': 2.0.6
-      '@types/mz': 0.0.31
-      '@types/node': 7.0.43
+      '@types/mz': 0.0.32
+      '@types/node': 8.0.34
       '@types/nopt': 3.0.29
       '@types/npm': 2.0.29
       '@types/p-series': 1.0.0
-      '@types/ramda': 0.24.16
+      '@types/ramda': 0.24.17
       '@types/rc': 0.0.1
       '@types/semver': 5.4.0
       '@types/update-notifier': 1.0.2
@@ -3400,9 +3398,9 @@ packages:
       path-name: 1.0.0
       pnpm-install-checks: 1.1.0
       pnpm-logger: 0.6.2
-      pnpm-shrinkwrap: /pnpm-shrinkwrap/3.3.3/pnpm-logger@0.6.2
+      pnpm-shrinkwrap: /pnpm-shrinkwrap/3.4.0/pnpm-logger@0.6.2
       proper-lockfile: 2.0.1
-      ramda: 0.24.1
+      ramda: 0.25.0
       read-package-json: 2.0.12
       remove-all-except-outer-links: 1.0.3
       rimraf-then: 1.0.1
@@ -3411,9 +3409,9 @@ packages:
       thenify: 3.3.0
       write-pkg: 3.1.0
       write-yaml-file: 1.0.0
-    id: registry.npmjs.org/supi/0.2.34
+    id: registry.npmjs.org/supi/0.2.35
     resolution:
-      integrity: sha1-YN24MN108O8h0h0N1FdbC5s6DHg=
+      integrity: sha512-f1/RhWUCzB/Gu/7VVyz2OgJHpo+wPEQMHftTStS9NGKI7lSqhhAeMWKmy6ssuJF+lL8/02tIyUVCI7ORFv8oEw==
   /supports-color/2.0.0:
     resolution:
       integrity: sha1-U10EXOa2Nj+kARcIRimZXp3zJMc=
@@ -3727,20 +3725,20 @@ packages:
       signal-exit: 3.0.2
     resolution:
       integrity: sha512-xuPeK4OdjWqtfi59ylvVL0Yn35SF3zgcAcv7rBPFHVaEapaDr4GdGgm3j7ckTwH9wHL7fGmgfAnb0+THrHb8tA==
-  /write-json-file/2.2.0:
+  /write-json-file/2.3.0:
     dependencies:
       detect-indent: 5.0.0
       graceful-fs: 4.1.11
       make-dir: 1.0.0
-      pify: 2.3.0
-      sort-keys: 1.1.2
+      pify: 3.0.0
+      sort-keys: 2.0.0
       write-file-atomic: 2.3.0
     resolution:
-      integrity: sha1-UYYlBruzthnu+reFnx/WxtBTCHY=
+      integrity: sha1-K2TIozAE1UuGmMdtWFp3zrYdoy8=
   /write-pkg/3.1.0:
     dependencies:
       sort-keys: 2.0.0
-      write-json-file: 2.2.0
+      write-json-file: 2.3.0
     resolution:
       integrity: sha1-AwqZlMyZk9JbTnWp8aGSNgcpHOk=
   /write-yaml-file/1.0.0:
@@ -3800,9 +3798,9 @@ packages:
       yargs-parser: 7.0.0
     resolution:
       integrity: sha1-YpmpBVsc78lp/355wdkY3Osiw2A=
-  /yarn/1.2.0:
+  /yarn/1.2.1:
     resolution:
-      integrity: sha1-xQBEmettx+zdD5N0P0Y7vFmYMkw=
+      integrity: sha1-DWKNwBQ4iBoWY6b4PL96xdt6dfw=
 registry: 'https://registry.npmjs.org/'
 shrinkwrapVersion: 3
 specifiers:
@@ -3812,13 +3810,13 @@ specifiers:
   get-folder-size: ^1.0.0
   load-yaml-file: ^0.1.0
   mkdirp: ^0.5.1
-  npm: ^5.4.2
+  npm: ^5.5.1
   path-key: ^2.0.1
-  pnpm: ^1.16.3
+  pnpm: ^1.17.0
   pretty-bytes: ^4.0.2
   pretty-ms: ^2.1.0
   rimraf: ^2.5.4
   standard: ^10.0.2
   thenify: ^3.2.1
   write-yaml-file: ^1.0.0
-  yarn: ^1.2.0
+  yarn: ^1.2.1
