@@ -4,10 +4,10 @@
   <text x="27.5" y="23.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="middle">v5.5.1</text>
   <circle cx="43.5" cy="7.5" r="5" fill="#248ebd"></circle>
   <text x="43.5" y="17.5" font-size="5" font-family="system-ui" alignment-baseline="middle" text-anchor="middle">yarn</text>
-  <text x="43.5" y="23.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="middle">v1.2.1</text>
+  <text x="43.5" y="23.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="middle">v1.3.2</text>
   <circle cx="59.5" cy="7.5" r="5" fill="#fbae00"></circle>
   <text x="59.5" y="17.5" font-size="5" font-family="system-ui" alignment-baseline="middle" text-anchor="middle">pnpm</text>
-  <text x="59.5" y="23.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="middle">v1.17.0</text>
+  <text x="59.5" y="23.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="middle">v1.23.0</text>
   <text x="83" y="17.5" font-size="5" font-family="system-ui" font-style="italic" alignment-baseline="middle" fill="#888">using Node.js v8.6.0</text>
   <line x1="10" y1="30" x2="330" y2="30" stroke-width="0.5" stroke="#cacaca"></line>
   <text x="9" y="30" fill="#cacaca" font-size="6" font-family="system-ui" alignment-baseline="middle" text-anchor="end">25</text>
@@ -21,20 +21,20 @@
   <text x="9" y="110" fill="#cacaca" font-size="6" font-family="system-ui" alignment-baseline="middle" text-anchor="end">5</text>
   <text x="9" y="130" fill="#cacaca" font-size="6" font-family="system-ui" alignment-baseline="middle" text-anchor="end">0</text>
   <rect x="20" y="33" width="15" height="97" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="36" y="36" width="15" height="94" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="52" y="88" width="15" height="42" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="36" y="38" width="15" height="92" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="52" y="89" width="15" height="41" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="83" y="108" width="15" height="22" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="99" y="126" width="15" height="4" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="115" y="126" width="15" height="4" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="146" y="98" width="15" height="32" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="162" y="100" width="15" height="30" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="162" y="101" width="15" height="29" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="178" y="115" width="15" height="15" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="209" y="62" width="15" height="68" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="225" y="83" width="15" height="47" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="225" y="84" width="15" height="46" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="241" y="114" width="15" height="16" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="272" y="93" width="15" height="37" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="288" y="59" width="15" height="71" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="304" y="85" width="15" height="45" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="288" y="57" width="15" height="73" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="304" y="89" width="15" height="41" fill="#fbae00" rx="1" ry="1"></rect>
   <line x1="10" y1="130" x2="330" y2="130" stroke-width="1" stroke="#cacaca"></line>
   <text x="21" y="132" font-size="5" font-family="system-ui" alignment-baseline="hanging" text-anchor="start">clean install</text>
   <text x="84" y="132" font-size="5" font-family="system-ui" alignment-baseline="hanging" text-anchor="start">with cache</text>
