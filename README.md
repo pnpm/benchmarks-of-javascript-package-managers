@@ -8,11 +8,11 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
 | ---     | ---   | ---      | ---         | --- | --- | --- |
-| install |       |          |             | 24.3s | 22.9s | 10.3s |
-| install | ✔    | ✔        | ✔           | 5.4s | 976ms | 930ms |
-| install | ✔    | ✔        |             | 7.9s | 7.3s | 3.7s |
-| install | ✔    |          |             | 17.1s | 11.5s | 3.9s |
-| install |      | ✔        |             | 9.2s | 18.3s | 10.3s |
+| install |       |          |             | 24.3s | 22s | 11.1s |
+| install | ✔    | ✔        | ✔           | 5.4s | 942ms | 1.3s |
+| install | ✔    | ✔        |             | 7.9s | 7s | 4s |
+| install | ✔    |          |             | 17.1s | 13.4s | 5.8s |
+| install |      | ✔        |             | 9.2s | 17.6s | 11.1s |
 
 ![Graph of the react-app results](./results/imgs/react-app.svg)
 
@@ -22,11 +22,11 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
 | ---     | ---   | ---      | ---         | --- | --- | --- |
-| install |       |          |             | 34.7s | 22.5s | 20.4s |
-| install | ✔    | ✔        | ✔           | 9.5s | 993ms | 1.2s |
-| install | ✔    | ✔        |             | 19.1s | 6.2s | 8s |
-| install | ✔    |          |             | 26s | 11.6s | 9.9s |
-| install |      | ✔        |             | 22.1s | 15.4s | 19.2s |
+| install |       |          |             | 34.7s | 23.2s | 19.6s |
+| install | ✔    | ✔        | ✔           | 9.5s | 990ms | 1.6s |
+| install | ✔    | ✔        |             | 19.1s | 5.9s | 7.9s |
+| install | ✔    |          |             | 26s | 11.8s | 10.3s |
+| install |      | ✔        |             | 22.1s | 15s | 18.1s |
 
 ![Graph of the ember-quickstart results](./results/imgs/ember-quickstart.svg)
 
@@ -36,11 +36,11 @@ The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
 | ---     | ---   | ---      | ---         | --- | --- | --- |
-| install |       |          |             | 12.3s | 16.4s | 10.3s |
-| install | ✔    | ✔        | ✔           | 3.4s | 624ms | 1.1s |
-| install | ✔    | ✔        |             | 6.3s | 2.3s | 4s |
-| install | ✔    |          |             | 8.1s | 8.7s | 5.9s |
-| install |      | ✔        |             | 8.5s | 10.5s | 10.3s |
+| install |       |          |             | 12.3s | 16.5s | 10.6s |
+| install | ✔    | ✔        | ✔           | 3.4s | 605ms | 1.4s |
+| install | ✔    | ✔        |             | 6.3s | 2.3s | 4.4s |
+| install | ✔    |          |             | 8.1s | 9.8s | 7.3s |
+| install |      | ✔        |             | 8.5s | 10.2s | 10.6s |
 
 ![Graph of the angular-quickstart results](./results/imgs/angular-quickstart.svg)
 
@@ -50,11 +50,11 @@ The app's `package.json` [here](./fixtures/medium-size-app/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
 | ---     | ---   | ---      | ---         | --- | --- | --- |
-| install |       |          |             | 28.8s | 22.2s | 19.5s |
-| install | ✔    | ✔        | ✔           | 7.1s | 862ms | 1.3s |
-| install | ✔    | ✔        |             | 14.7s | 4.1s | 7.6s |
-| install | ✔    |          |             | 19.4s | 12.5s | 10.1s |
-| install |      | ✔        |             | 18s | 13s | 17.8s |
+| install |       |          |             | 28.8s | 22.4s | 18.1s |
+| install | ✔    | ✔        | ✔           | 7.1s | 871ms | 1.6s |
+| install | ✔    | ✔        |             | 14.7s | 4s | 7.4s |
+| install | ✔    |          |             | 19.4s | 13.5s | 9.9s |
+| install |      | ✔        |             | 18s | 13.1s | 17.1s |
 
 ![Graph of the medium-size-app results](./results/imgs/medium-size-app.svg)
 
@@ -64,10 +64,10 @@ The app's `package.json` [here](./fixtures/alotta-files/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
 | ---     | ---   | ---      | ---         | --- | --- | --- |
-| install |       |          |             | 39.6s | 32.6s | 22.6s |
-| install | ✔    | ✔        | ✔           | 7.3s | 944ms | 1.5s |
-| install | ✔    | ✔        |             | 21s | 7.9s | 10.3s |
-| install | ✔    |          |             | 28.5s | 20s | 11.8s |
-| install |      | ✔        |             | 25.5s | 18.7s | 22s |
+| install |       |          |             | 39.6s | 35s | 21.4s |
+| install | ✔    | ✔        | ✔           | 7.3s | 939ms | 1.9s |
+| install | ✔    | ✔        |             | 21s | 7.9s | 10.2s |
+| install | ✔    |          |             | 28.5s | 20.4s | 12.9s |
+| install |      | ✔        |             | 25.5s | 17.8s | 20.6s |
 
 ![Graph of the alotta-files results](./results/imgs/alotta-files.svg)
