@@ -38,7 +38,10 @@ const tests = [
   'repeatInstall',
   'withWarmCacheAndLockfile',
   'withWarmCache',
-  'withLockfile'
+  'withLockfile',
+  'withWarmCacheAndModules',
+  'withWarmModulesAndLockfile',
+  'withWarmModules'
 ]
 
 const toArray = (pms, resultsObj) => {
@@ -85,6 +88,9 @@ async function run () {
       | install | ✔    | ✔        |             | ${prettyMs(npmRes.withWarmCacheAndLockfile)} | ${prettyMs(yarnRes.withWarmCacheAndLockfile)} | ${prettyMs(pnpmRes.withWarmCacheAndLockfile)} |
       | install | ✔    |          |             | ${prettyMs(npmRes.withWarmCache)} | ${prettyMs(yarnRes.withWarmCache)} | ${prettyMs(pnpmRes.withWarmCache)} |
       | install |      | ✔        |             | ${prettyMs(npmRes.withLockfile)} | ${prettyMs(yarnRes.withLockfile)} | ${prettyMs(pnpmRes.withLockfile)} |
+      | install | ✔    |          | ✔           | ${prettyMs(npmRes.withWarmCacheAndModules)} | ${prettyMs(yarnRes.withWarmCacheAndModules)} | ${prettyMs(pnpmRes.withWarmCacheAndModules)} |
+      | install |      | ✔        | ✔           | ${prettyMs(npmRes.withWarmModulesAndLockfile)} | ${prettyMs(yarnRes.withWarmModulesAndLockfile)} | ${prettyMs(pnpmRes.withWarmModulesAndLockfile)} |
+      | install |      |          | ✔           | ${prettyMs(npmRes.withWarmModules)} | ${prettyMs(yarnRes.withWarmModules)} | ${prettyMs(pnpmRes.withWarmModules)} |
 
       ![Graph of the ${fixture.name} results](./results/imgs/${fixture.name}.svg)
     `)
