@@ -1,4 +1,4 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 148">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 529 148">
   <circle cx="27.5" cy="7.5" r="5" fill="#cd3731"></circle>
   <text x="27.5" y="17.5" font-size="5" font-family="system-ui" alignment-baseline="middle" text-anchor="middle">npm</text>
   <text x="27.5" y="23.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="middle">v5.5.1</text>
@@ -8,16 +8,16 @@
   <circle cx="59.5" cy="7.5" r="5" fill="#fbae00"></circle>
   <text x="59.5" y="17.5" font-size="5" font-family="system-ui" alignment-baseline="middle" text-anchor="middle">pnpm</text>
   <text x="59.5" y="23.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="middle">v1.23.2</text>
-  <text x="83" y="17.5" font-size="5" font-family="system-ui" font-style="italic" alignment-baseline="middle" fill="#888">using Node.js v8.6.0</text>
-  <line x1="10" y1="30" x2="330" y2="30" stroke-width="0.5" stroke="#cacaca"></line>
+  <text x="83" y="17.5" font-size="5" font-family="system-ui" font-style="italic" alignment-baseline="middle" fill="#888">using Node.js v8.9.3</text>
+  <line x1="10" y1="30" x2="519" y2="30" stroke-width="0.5" stroke="#cacaca"></line>
   <text x="9" y="30" fill="#cacaca" font-size="6" font-family="system-ui" alignment-baseline="middle" text-anchor="end">25</text>
-  <line x1="10" y1="50" x2="330" y2="50" stroke-width="0.5" stroke="#cacaca"></line>
+  <line x1="10" y1="50" x2="519" y2="50" stroke-width="0.5" stroke="#cacaca"></line>
   <text x="9" y="50" fill="#cacaca" font-size="6" font-family="system-ui" alignment-baseline="middle" text-anchor="end">20</text>
-  <line x1="10" y1="70" x2="330" y2="70" stroke-width="0.5" stroke="#cacaca"></line>
+  <line x1="10" y1="70" x2="519" y2="70" stroke-width="0.5" stroke="#cacaca"></line>
   <text x="9" y="70" fill="#cacaca" font-size="6" font-family="system-ui" alignment-baseline="middle" text-anchor="end">15</text>
-  <line x1="10" y1="90" x2="330" y2="90" stroke-width="0.5" stroke="#cacaca"></line>
+  <line x1="10" y1="90" x2="519" y2="90" stroke-width="0.5" stroke="#cacaca"></line>
   <text x="9" y="90" fill="#cacaca" font-size="6" font-family="system-ui" alignment-baseline="middle" text-anchor="end">10</text>
-  <line x1="10" y1="110" x2="330" y2="110" stroke-width="0.5" stroke="#cacaca"></line>
+  <line x1="10" y1="110" x2="519" y2="110" stroke-width="0.5" stroke="#cacaca"></line>
   <text x="9" y="110" fill="#cacaca" font-size="6" font-family="system-ui" alignment-baseline="middle" text-anchor="end">5</text>
   <text x="9" y="130" fill="#cacaca" font-size="6" font-family="system-ui" alignment-baseline="middle" text-anchor="end">0</text>
   <rect x="20" y="34" width="15" height="96" fill="#cd3731" rx="1" ry="1"></rect>
@@ -44,7 +44,7 @@
   <rect x="461" y="104" width="15" height="26" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="477" y="38" width="15" height="92" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="493" y="70" width="15" height="60" fill="#fbae00" rx="1" ry="1"></rect>
-  <line x1="10" y1="130" x2="330" y2="130" stroke-width="1" stroke="#cacaca"></line>
+  <line x1="10" y1="130" x2="519" y2="130" stroke-width="1" stroke="#cacaca"></line>
   <text x="21" y="132" font-size="5" font-family="system-ui" alignment-baseline="hanging" text-anchor="start">clean install</text>
   <text x="84" y="132" font-size="5" font-family="system-ui" alignment-baseline="hanging" text-anchor="start">with cache</text>
   <text x="84" y="137" font-size="5" font-family="system-ui" alignment-baseline="hanging" text-anchor="start">with lockfile</text>
@@ -53,4 +53,9 @@
   <text x="147" y="137" font-size="5" font-family="system-ui" alignment-baseline="hanging" text-anchor="start">with lockfile</text>
   <text x="210" y="132" font-size="5" font-family="system-ui" alignment-baseline="hanging" text-anchor="start">with cache</text>
   <text x="273" y="132" font-size="5" font-family="system-ui" alignment-baseline="hanging" text-anchor="start">with lockfile</text>
+  <text x="336" y="132" font-size="5" font-family="system-ui" alignment-baseline="hanging" text-anchor="start">with cache</text>
+  <text x="336" y="137" font-size="5" font-family="system-ui" alignment-baseline="hanging" text-anchor="start">with node_modules</text>
+  <text x="399" y="132" font-size="5" font-family="system-ui" alignment-baseline="hanging" text-anchor="start">with node_modules</text>
+  <text x="399" y="137" font-size="5" font-family="system-ui" alignment-baseline="hanging" text-anchor="start">with lockfile</text>
+  <text x="462" y="132" font-size="5" font-family="system-ui" alignment-baseline="hanging" text-anchor="start">with node_modules</text>
 </svg>

@@ -44,6 +44,38 @@ const tests = [
   'withWarmModules'
 ]
 
+const testDescriptions = [
+  [ // firstInstall
+    'clean install'
+  ],
+  [ // repeatInstall
+    'with cache',
+    'with lockfile',
+    'with node_modules'
+  ],
+  [ // withWarmCacheAndLockfile
+    'with cache',
+    'with lockfile'
+  ],
+  [ // withWarmCache
+    'with cache'
+  ],
+  [ // withLockfile
+    'with lockfile'
+  ],
+  [ // withWarmCacheAndModules
+    'with cache',
+    'with node_modules'
+  ],
+  [ // withWarmModulesAndLockfile
+    'with node_modules',
+    'with lockfile'
+  ],
+  [ // withWarmModules
+    'with node_modules'
+  ]
+]
+
 const toArray = (pms, resultsObj) => {
   /**
    * Make array of all similar installs grouped together:
@@ -97,7 +129,7 @@ async function run () {
 
     svgs.push({
       path: join(__dirname, 'results', 'imgs', `${fixture.name}.svg`),
-      file: generateSvg(resArray, pms)
+      file: generateSvg(resArray, pms, testDescriptions)
     })
   }
 
