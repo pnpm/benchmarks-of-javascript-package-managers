@@ -2905,6 +2905,7 @@ packages:
       minimist: 1.2.0
       split2: 2.2.0
       through2: 2.0.3
+    dev: false
     resolution:
       integrity: sha1-rmA7NrE0vOw0e0UkIrC/mNWDLsg=
   /nerf-dart/1.0.0:
