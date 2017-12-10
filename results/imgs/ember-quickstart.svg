@@ -8,24 +8,24 @@
   <circle cx="68" cy="6" r="4" fill="#fbae00"></circle>
   <text x="68" y="11" font-size="4" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">pnpm</text>
   <text x="68" y="16" font-size="3" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">v1.23.2</text>
-  <text x="40" y="28" fill="#cacaca" font-size="5" font-family="system-ui" text-anchor="middle">0</text>
-  <text x="40" y="256" fill="#cacaca" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">0</text>
+  <text x="40" y="28" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle">0</text>
+  <text x="40" y="256" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">0</text>
   <line x1="70" y1="30" x2="70" y2="255" stroke-width="0.5" stroke="#cacaca"></line>
-  <text x="70" y="28" fill="#cacaca" font-size="5" font-family="system-ui" text-anchor="middle">7</text>
-  <text x="70" y="256" fill="#cacaca" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">7</text>
+  <text x="70" y="28" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle">7</text>
+  <text x="70" y="256" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">7</text>
   <line x1="100" y1="30" x2="100" y2="255" stroke-width="0.5" stroke="#cacaca"></line>
-  <text x="100" y="28" fill="#cacaca" font-size="5" font-family="system-ui" text-anchor="middle">14</text>
-  <text x="100" y="256" fill="#cacaca" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">14</text>
+  <text x="100" y="28" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle">14</text>
+  <text x="100" y="256" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">14</text>
   <line x1="130" y1="30" x2="130" y2="255" stroke-width="0.5" stroke="#cacaca"></line>
-  <text x="130" y="28" fill="#cacaca" font-size="5" font-family="system-ui" text-anchor="middle">21</text>
-  <text x="130" y="256" fill="#cacaca" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">21</text>
+  <text x="130" y="28" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle">21</text>
+  <text x="130" y="256" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">21</text>
   <line x1="160" y1="30" x2="160" y2="255" stroke-width="0.5" stroke="#cacaca"></line>
-  <text x="160" y="28" fill="#cacaca" font-size="5" font-family="system-ui" text-anchor="middle">28</text>
-  <text x="160" y="256" fill="#cacaca" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">28</text>
+  <text x="160" y="28" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle">28</text>
+  <text x="160" y="256" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">28</text>
   <line x1="190" y1="30" x2="190" y2="255" stroke-width="0.5" stroke="#cacaca"></line>
-  <text x="190" y="28" fill="#cacaca" font-size="5" font-family="system-ui" text-anchor="middle">35</text>
-  <text x="190" y="256" fill="#cacaca" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">35</text>
-  <text x="190" y="20" font-size="4" font-family="system-ui" font-style="italic" text-anchor="end" fill="#cacaca">Installation time in seconds (lower is better)</text>
+  <text x="190" y="28" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle">35</text>
+  <text x="190" y="256" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">35</text>
+  <text x="190" y="20" font-size="4" font-family="system-ui" font-style="italic" text-anchor="end" fill="#888">Installation time in seconds (lower is better)</text>
   <rect x="40" y="35" width="132" height="7" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="42.5" width="94" height="7" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="50" width="88" height="7" fill="#fbae00" rx="1" ry="1"></rect>
