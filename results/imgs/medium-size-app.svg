@@ -7,7 +7,7 @@
   <text x="56" y="16" font-size="3" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">v1.3.2</text>
   <circle cx="68" cy="6" r="4" fill="#fbae00"></circle>
   <text x="68" y="11" font-size="4" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">pnpm</text>
-  <text x="68" y="16" font-size="3" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">v1.23.2</text>
+  <text x="68" y="16" font-size="3" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">v1.24.2</text>
   <text x="40" y="28" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle">0</text>
   <text x="40" y="224" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">0</text>
   <line x1="90" y1="31" x2="90" y2="223" stroke-width="0.5" stroke="#cacaca"></line>
@@ -28,28 +28,28 @@
   <text x="290" y="20" font-size="4" font-family="system-ui" font-style="italic" text-anchor="end" fill="#888">Installation time in seconds (lower is better)</text>
   <rect x="40" y="35" width="240" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="41.5" width="234" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="48" width="184" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="48" width="197" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="58.5" width="68" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="65" width="9" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="71.5" width="11" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="71.5" width="12" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="82" width="91" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="88.5" width="43" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="95" width="76" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="95" width="77" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="105.5" width="169" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="112" width="151" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="118.5" width="95" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="118.5" width="93" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="129" width="155" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="135.5" width="117" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="142" width="180" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="142" width="187" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="152.5" width="65" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="159" width="157" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="165.5" width="60" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="165.5" width="64" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="176" width="69" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="182.5" width="10" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="189" width="13" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="189" width="12" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="199.5" width="66" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="206" width="231" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="212.5" width="149" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="212.5" width="159" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <line x1="40" y1="31" x2="40" y2="223" stroke-width="1" stroke="#cacaca"></line>
   <text x="38" y="44.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">clean install</text>
   <text x="38" y="64" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">with cache</text>
@@ -64,5 +64,5 @@
   <text x="38" y="183.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">with node_modules</text>
   <text x="38" y="187.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">with lockfile</text>
   <text x="38" y="209" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">with node_modules</text>
-  <text x="290" y="235" font-size="4" font-family="system-ui" text-anchor="end" fill="#888">Tests were run using Node.js v8.9.3</text>
+  <text x="290" y="235" font-size="4" font-family="system-ui" text-anchor="end" fill="#888">Tests were run using Node.js v8.6.0</text>
 </svg>
