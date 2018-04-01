@@ -5,9 +5,9 @@ dependencies:
   get-folder-size: 1.0.1
   load-yaml-file: 0.1.0
   mkdirp: 0.5.1
-  npm: 5.7.1
+  npm: 5.8.0
   path-key: 2.0.1
-  pnpm: 1.36.1
+  pnpm: 1.38.0
   pretty-bytes: 4.0.2
   pretty-ms: 2.1.0
   rimraf: 2.6.2
@@ -1060,7 +1060,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-yobR/ogoFpsBICCOPchCS524NCw=
-  /npm/5.7.1:
+  /npm/5.8.0:
     bundledDependencies:
       - abbrev
       - ansi-regex
@@ -1079,6 +1079,7 @@ packages:
       - config-chain
       - debuglog
       - detect-indent
+      - detect-newline
       - dezalgo
       - editor
       - find-npm-prefix
@@ -1096,6 +1097,7 @@ packages:
       - ini
       - init-package-json
       - is-cidr
+      - json-parse-better-errors
       - JSONStream
       - lazy-property
       - libcipm
@@ -1171,7 +1173,7 @@ packages:
       - worker-farm
     dev: false
     resolution:
-      integrity: sha512-r1grvv6mcEt+nlMzMWPc5n/z5q8NNuBWj0TGFp1PBSFCl6ubnAoUGBsucYsnZYT7MOJn0ha1ptEjmdBoAdJ+SA==
+      integrity: sha512-DowXzQwtSWDtbAjuWecuEiismR0VdNEYaL3VxNTYTdW6AGkYxfGk9LUZ/rt6etEyiH4IEk95HkJeGfXE5Rz9xQ==
   /number-is-nan/1.0.1:
     engines:
       node: '>=0.10.0'
@@ -1370,12 +1372,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-0aIUg/0iu0HlihL6NCGCMUCJfEU=
-  /pnpm/1.36.1:
+  /pnpm/1.38.0:
     dev: false
     engines:
       node: '>=4'
     resolution:
-      integrity: sha1-Q1NydsOcwtnnSdH9ejwVmy2zmHc=
+      integrity: sha1-d0I8qVgIeUNacHVTvffSs51pih0=
   /prelude-ls/1.1.2:
     dev: true
     engines:
@@ -1739,9 +1741,9 @@ specifiers:
   get-folder-size: ^1.0.0
   load-yaml-file: ^0.1.0
   mkdirp: ^0.5.1
-  npm: ^5.7.1
+  npm: ^5.8.0
   path-key: ^2.0.1
-  pnpm: ^1.36.1
+  pnpm: ^1.38.0
   pretty-bytes: ^4.0.2
   pretty-ms: ^2.1.0
   rimraf: ^2.5.4
