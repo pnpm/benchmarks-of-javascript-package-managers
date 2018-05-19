@@ -97,32 +97,30 @@ run()
   .catch(err => console.error(err))
 
 async function run () {
-  const pms = [ 'npm', 'yarn', 'pnpm' ]
+  const pms = [ 'pnpm1', 'pnpm' ]
   const sections = []
   const svgs = []
   for (const fixture of fixtures) {
-    const npmRes = average(await benchmark('npm', fixture.name, {limitRuns: LIMIT_RUNS}))
-    const yarnRes = average(await benchmark('yarn', fixture.name, {limitRuns: LIMIT_RUNS}))
+    const pnpm1Res = average(await benchmark('pnpm1', fixture.name, {limitRuns: LIMIT_RUNS}))
     const pnpmRes = average(await benchmark('pnpm', fixture.name, {limitRuns: LIMIT_RUNS}))
     const resArray = toArray(pms, {
-      'npm': npmRes,
-      'yarn': yarnRes,
+      'pnpm1': pnpm1Res,
       'pnpm': pnpmRes
     })
 
     sections.push(stripIndents`
       ${fixture.mdDesc}
 
-      | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
-      | ---     | ---   | ---      | ---         | --- | --- | --- |
-      | install |       |          |             | ${prettyMs(npmRes.firstInstall)} | ${prettyMs(yarnRes.firstInstall)} | ${prettyMs(pnpmRes.firstInstall)} |
-      | install | ✔    | ✔        | ✔           | ${prettyMs(npmRes.repeatInstall)} | ${prettyMs(yarnRes.repeatInstall)} | ${prettyMs(pnpmRes.repeatInstall)} |
-      | install | ✔    | ✔        |             | ${prettyMs(npmRes.withWarmCacheAndLockfile)} | ${prettyMs(yarnRes.withWarmCacheAndLockfile)} | ${prettyMs(pnpmRes.withWarmCacheAndLockfile)} |
-      | install | ✔    |          |             | ${prettyMs(npmRes.withWarmCache)} | ${prettyMs(yarnRes.withWarmCache)} | ${prettyMs(pnpmRes.withWarmCache)} |
-      | install |      | ✔        |             | ${prettyMs(npmRes.withLockfile)} | ${prettyMs(yarnRes.withLockfile)} | ${prettyMs(pnpmRes.withLockfile)} |
-      | install | ✔    |          | ✔           | ${prettyMs(npmRes.withWarmCacheAndModules)} | ${prettyMs(yarnRes.withWarmCacheAndModules)} | ${prettyMs(pnpmRes.withWarmCacheAndModules)} |
-      | install |      | ✔        | ✔           | ${prettyMs(npmRes.withWarmModulesAndLockfile)} | ${prettyMs(yarnRes.withWarmModulesAndLockfile)} | ${prettyMs(pnpmRes.withWarmModulesAndLockfile)} |
-      | install |      |          | ✔           | ${prettyMs(npmRes.withWarmModules)} | ${prettyMs(yarnRes.withWarmModules)} | ${prettyMs(pnpmRes.withWarmModules)} |
+      | action  | cache | lockfile | node_modules| pnpm@1 | pnpm@2 |
+      | ---     | ---   | ---      | ---         | --- | --- |
+      | install |       |          |             | ${prettyMs(pnpm1Res.firstInstall)} | ${prettyMs(pnpmRes.firstInstall)} |
+      | install | ✔    | ✔        | ✔           | ${prettyMs(pnpm1Res.repeatInstall)} | ${prettyMs(pnpmRes.repeatInstall)} |
+      | install | ✔    | ✔        |             | ${prettyMs(pnpm1Res.withWarmCacheAndLockfile)} | ${prettyMs(pnpmRes.withWarmCacheAndLockfile)} |
+      | install | ✔    |          |             | ${prettyMs(pnpm1Res.withWarmCache)} | ${prettyMs(pnpmRes.withWarmCache)} |
+      | install |      | ✔        |             | ${prettyMs(pnpm1Res.withLockfile)} | ${prettyMs(pnpmRes.withLockfile)} |
+      | install | ✔    |          | ✔           | ${prettyMs(pnpm1Res.withWarmCacheAndModules)} | ${prettyMs(pnpmRes.withWarmCacheAndModules)} |
+      | install |      | ✔        | ✔           | ${prettyMs(pnpm1Res.withWarmModulesAndLockfile)} | ${prettyMs(pnpmRes.withWarmModulesAndLockfile)} |
+      | install |      |          | ✔           | ${prettyMs(pnpm1Res.withWarmModules)} | ${prettyMs(pnpmRes.withWarmModules)} |
 
       ![Graph of the ${fixture.name} results](./results/imgs/${fixture.name}.svg)
     `)
