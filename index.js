@@ -111,7 +111,7 @@ async function run () {
     sections.push(stripIndents`
       ${fixture.mdDesc}
 
-      | action  | cache | lockfile | node_modules| pnpm@1 | pnpm@2 |
+      | action  | cache | lockfile | node_modules| pnpm@1.0 | pnpm@2.0 |
       | ---     | ---   | ---      | ---         | --- | --- |
       | install |       |          |             | ${prettyMs(pnpm1Res.firstInstall)} | ${prettyMs(pnpmRes.firstInstall)} |
       | install | ✔    | ✔        | ✔           | ${prettyMs(pnpm1Res.repeatInstall)} | ${prettyMs(pnpmRes.repeatInstall)} |

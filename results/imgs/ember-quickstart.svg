@@ -1,8 +1,8 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 185">
-  <circle cx="44" cy="6" r="4" fill="#cd3731"></circle>
+  <circle cx="44" cy="6" r="4" fill="#ffdf96"></circle>
   <text x="44" y="11" font-size="4" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">pnpm1</text>
   <text x="44" y="16" font-size="3" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">v1.0.1</text>
-  <circle cx="56" cy="6" r="4" fill="#248ebd"></circle>
+  <circle cx="56" cy="6" r="4" fill="#fbae00"></circle>
   <text x="56" y="11" font-size="4" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">pnpm</text>
   <text x="56" y="16" font-size="3" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">v2.0.0</text>
   <text x="40" y="28" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle">0</text>
@@ -23,22 +23,22 @@
   <text x="290" y="28" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle">35</text>
   <text x="290" y="172" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">35</text>
   <text x="290" y="20" font-size="4" font-family="system-ui" font-style="italic" text-anchor="end" fill="#888">Installation time in seconds (lower is better)</text>
-  <rect x="40" y="35" width="244" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="41.5" width="222" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="52" width="9" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="58.5" width="7" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="69" width="86" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="75.5" width="65" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="86" width="99" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="92.5" width="90" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="103" width="209" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="109.5" width="207" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="120" width="74" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="126.5" width="61" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="137" width="11" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="143.5" width="7" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="154" width="215" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="160.5" width="199" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="35" width="248" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
+  <rect x="40" y="41.5" width="233" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="52" width="9" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
+  <rect x="40" y="58.5" width="7" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="69" width="85" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
+  <rect x="40" y="75.5" width="65" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="86" width="99" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
+  <rect x="40" y="92.5" width="90" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="103" width="214" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
+  <rect x="40" y="109.5" width="214" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="120" width="73" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
+  <rect x="40" y="126.5" width="61" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="137" width="10" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
+  <rect x="40" y="143.5" width="7" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="154" width="214" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
+  <rect x="40" y="160.5" width="202" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <line x1="40" y1="31" x2="40" y2="171" stroke-width="1" stroke="#cacaca"></line>
   <text x="38" y="44.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">clean install</text>
   <text x="38" y="57.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">with cache</text>
