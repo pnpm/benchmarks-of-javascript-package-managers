@@ -4,7 +4,7 @@
   <text x="44" y="16" font-size="3" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">v1.0.1</text>
   <circle cx="56" cy="6" r="4" fill="#fbae00"></circle>
   <text x="56" y="11" font-size="4" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">pnpm</text>
-  <text x="56" y="16" font-size="3" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">v2.0.0</text>
+  <text x="56" y="16" font-size="3" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">v2.1.0</text>
   <text x="40" y="28" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle">0</text>
   <text x="40" y="172" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">0</text>
   <line x1="90" y1="31" x2="90" y2="171" stroke-width="0.5" stroke="#cacaca"></line>
@@ -23,22 +23,22 @@
   <text x="290" y="28" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle">25</text>
   <text x="290" y="172" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">25</text>
   <text x="290" y="20" font-size="4" font-family="system-ui" font-style="italic" text-anchor="end" fill="#888">Installation time in seconds (lower is better)</text>
-  <rect x="40" y="35" width="215" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
+  <rect x="40" y="35" width="214" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
   <rect x="40" y="41.5" width="215" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="52" width="13" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
-  <rect x="40" y="58.5" width="12" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="69" width="90" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
-  <rect x="40" y="75.5" width="81" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="58.5" width="13" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="69" width="91" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
+  <rect x="40" y="75.5" width="76" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="86" width="112" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
-  <rect x="40" y="92.5" width="126" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="103" width="188" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
-  <rect x="40" y="109.5" width="187" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="120" width="79" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
-  <rect x="40" y="126.5" width="85" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="92.5" width="115" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="103" width="186" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
+  <rect x="40" y="109.5" width="183" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="120" width="83" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
+  <rect x="40" y="126.5" width="81" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="137" width="13" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
   <rect x="40" y="143.5" width="12" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="154" width="172" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
-  <rect x="40" y="160.5" width="185" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="154" width="178" height="6" fill="#ffdf96" rx="1" ry="1"></rect>
+  <rect x="40" y="160.5" width="184" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <line x1="40" y1="31" x2="40" y2="171" stroke-width="1" stroke="#cacaca"></line>
   <text x="38" y="44.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">clean install</text>
   <text x="38" y="57.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">with cache</text>
