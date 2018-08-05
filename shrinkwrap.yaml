@@ -5,15 +5,15 @@ dependencies:
   get-folder-size: 1.0.1
   load-yaml-file: 0.1.0
   mkdirp: 0.5.1
-  npm: 6.1.0
+  npm: 6.3.0
   path-key: 2.0.1
-  pnpm: 2.8.0
+  pnpm: 2.13.0
   pretty-bytes: 4.0.2
   pretty-ms: 2.1.0
   rimraf: 2.6.2
   thenify: 3.3.0
   write-yaml-file: 1.0.0
-  yarn: 1.7.0
+  yarn: 1.9.4
 devDependencies:
   standard: 10.0.3
 packages:
@@ -1067,10 +1067,9 @@ packages:
     dev: true
     resolution:
       integrity: sha1-yobR/ogoFpsBICCOPchCS524NCw=
-  /npm/6.1.0:
+  /npm/6.3.0:
     bundledDependencies:
       - abbrev
-      - ansi-regex
       - ansicolors
       - ansistyles
       - aproba
@@ -1081,7 +1080,6 @@ packages:
       - bluebird
       - bin-links
       - chownr
-      - cli-table2
       - cmd-shim
       - columnify
       - config-chain
@@ -1168,7 +1166,6 @@ packages:
       - sorted-object
       - sorted-union-stream
       - ssri
-      - strip-ansi
       - tar
       - text-table
       - uid-number
@@ -1180,18 +1177,19 @@ packages:
       - validate-npm-package-license
       - validate-npm-package-name
       - which
-      - wrappy
       - write-file-atomic
       - safe-buffer
       - worker-farm
       - tiny-relative-date
       - cli-columns
+      - cli-table3
       - node-gyp
       - lock-verify
+      - stringify-package
     dev: false
     hasBin: true
     resolution:
-      integrity: sha512-e38cCtJ0lEjLXXpc4twEfj8Xw5hDLolc2Py87ueWnUhJfZ8GA/5RVIeD+XbSr1+aVRGsRsdtLdzUNO63PvQJ1w==
+      integrity: sha512-oDtLFo3wXue/xe3pU/oks9VHS5501OAWlYrZrApZkFv7l2LXk+9CfPMbjbfZWK7Jqlc1jbNcJMkB6KZC7K/vEA==
   /number-is-nan/1.0.1:
     engines:
       node: '>=0.10.0'
@@ -1390,13 +1388,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-0aIUg/0iu0HlihL6NCGCMUCJfEU=
-  /pnpm/2.8.0:
+  /pnpm/2.13.0:
     dev: false
     engines:
       node: '>=6'
     hasBin: true
     resolution:
-      integrity: sha1-g37rOUD+PnVlw0tRqxjGKZpxriU=
+      integrity: sha512-vyjlsAqCWEbDtQ5XymRo0qD4a6lwO+AZOJjRWtWAcgO3mCQIhh4fgCdTJdxqpAvQaniJyLcRZqBy/A5f4OXbKQ==
   /prelude-ls/1.1.2:
     dev: true
     engines:
@@ -1749,13 +1747,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=
-  /yarn/1.7.0:
+  /yarn/1.9.4:
     dev: false
     engines:
       node: '>=4.0.0'
     hasBin: true
     resolution:
-      integrity: sha1-AHa5/eYBDgGVBSamCbxTvBde+SU=
+      integrity: sha1-O4LYRGtlJ3VyOQC0cNlmhhl2kks=
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 8
 shrinkwrapVersion: 3
@@ -1766,13 +1764,13 @@ specifiers:
   get-folder-size: ^1.0.0
   load-yaml-file: ^0.1.0
   mkdirp: ^0.5.1
-  npm: ^6.1.0
+  npm: ^6.3.0
   path-key: ^2.0.1
-  pnpm: ^2.8.0
+  pnpm: ^2.13.0
   pretty-bytes: ^4.0.2
   pretty-ms: ^2.1.0
   rimraf: ^2.5.4
   standard: ^10.0.2
   thenify: ^3.2.1
   write-yaml-file: ^1.0.0
-  yarn: ^1.7.0
+  yarn: ^1.9.4
