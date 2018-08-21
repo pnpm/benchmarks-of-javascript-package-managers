@@ -1,31 +1,40 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 237">
+  <style>
+    .font { font-family: sans-serif; }
+    .s3 { font-size: 3px; }
+    .s4 { font-size: 4px; }
+    .s5 { font-size: 5px; }
+    .line { stroke: #cacaca; }
+    .width { stroke-width: 0.5; }
+    .text { fill: #888; }
+  </style>
   <circle cx="44" cy="6" r="4" fill="#cd3731"></circle>
-  <text x="44" y="11" font-size="4" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">npm</text>
-  <text x="44" y="16" font-size="3" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">v6.3.0</text>
+  <text x="44" y="11" class="font s4" dominant-baseline="hanging" text-anchor="middle">npm</text>
+  <text x="44" y="16" class="font s3" dominant-baseline="hanging" text-anchor="middle">v6.3.0</text>
   <circle cx="56" cy="6" r="4" fill="#248ebd"></circle>
-  <text x="56" y="11" font-size="4" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">yarn</text>
-  <text x="56" y="16" font-size="3" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">v1.9.4</text>
+  <text x="56" y="11" class="font s4" dominant-baseline="hanging" text-anchor="middle">yarn</text>
+  <text x="56" y="16" class="font s3" dominant-baseline="hanging" text-anchor="middle">v1.9.4</text>
   <circle cx="68" cy="6" r="4" fill="#fbae00"></circle>
-  <text x="68" y="11" font-size="4" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">pnpm</text>
-  <text x="68" y="16" font-size="3" font-family="system-ui" alignment-baseline="hanging" text-anchor="middle">v2.13.0</text>
-  <text x="40" y="28" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle">0</text>
-  <text x="40" y="224" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">0</text>
-  <line x1="90" y1="31" x2="90" y2="223" stroke-width="0.5" stroke="#cacaca"></line>
-  <text x="90" y="28" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle">7</text>
-  <text x="90" y="224" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">7</text>
-  <line x1="140" y1="31" x2="140" y2="223" stroke-width="0.5" stroke="#cacaca"></line>
-  <text x="140" y="28" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle">14</text>
-  <text x="140" y="224" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">14</text>
-  <line x1="190" y1="31" x2="190" y2="223" stroke-width="0.5" stroke="#cacaca"></line>
-  <text x="190" y="28" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle">21</text>
-  <text x="190" y="224" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">21</text>
-  <line x1="240" y1="31" x2="240" y2="223" stroke-width="0.5" stroke="#cacaca"></line>
-  <text x="240" y="28" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle">28</text>
-  <text x="240" y="224" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">28</text>
-  <line x1="290" y1="31" x2="290" y2="223" stroke-width="0.5" stroke="#cacaca"></line>
-  <text x="290" y="28" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle">35</text>
-  <text x="290" y="224" fill="#888" font-size="5" font-family="system-ui" text-anchor="middle" alignment-baseline="hanging">35</text>
-  <text x="290" y="20" font-size="4" font-family="system-ui" font-style="italic" text-anchor="end" fill="#888">Installation time in seconds (lower is better)</text>
+  <text x="68" y="11" class="font s4" dominant-baseline="hanging" text-anchor="middle">pnpm</text>
+  <text x="68" y="16" class="font s3" dominant-baseline="hanging" text-anchor="middle">v2.13.0</text>
+  <text x="40" y="28" class="font s5 text" text-anchor="middle">0</text>
+  <text x="40" y="224" class="font s5 text" text-anchor="middle" dominant-baseline="hanging">0</text>
+  <line x1="90" y1="31" x2="90" y2="223" class="line width"></line>
+  <text x="90" y="28" class="font s5 text" text-anchor="middle">7</text>
+  <text x="90" y="224" class="font s5 text" text-anchor="middle" dominant-baseline="hanging">7</text>
+  <line x1="140" y1="31" x2="140" y2="223" class="line width"></line>
+  <text x="140" y="28" class="font s5 text" text-anchor="middle">14</text>
+  <text x="140" y="224" class="font s5 text" text-anchor="middle" dominant-baseline="hanging">14</text>
+  <line x1="190" y1="31" x2="190" y2="223" class="line width"></line>
+  <text x="190" y="28" class="font s5 text" text-anchor="middle">21</text>
+  <text x="190" y="224" class="font s5 text" text-anchor="middle" dominant-baseline="hanging">21</text>
+  <line x1="240" y1="31" x2="240" y2="223" class="line width"></line>
+  <text x="240" y="28" class="font s5 text" text-anchor="middle">28</text>
+  <text x="240" y="224" class="font s5 text" text-anchor="middle" dominant-baseline="hanging">28</text>
+  <line x1="290" y1="31" x2="290" y2="223" class="line width"></line>
+  <text x="290" y="28" class="font s5 text" text-anchor="middle">35</text>
+  <text x="290" y="224" class="font s5 text" text-anchor="middle" dominant-baseline="hanging">35</text>
+  <text x="290" y="20" class="font s4 text" font-style="italic" text-anchor="end">Installation time in seconds (lower is better)</text>
   <rect x="40" y="35" width="228" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="41.5" width="247" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="48" width="142" height="6" fill="#fbae00" rx="1" ry="1"></rect>
@@ -50,19 +59,19 @@
   <rect x="40" y="199.5" width="57" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="206" width="241" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="212.5" width="121" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <line x1="40" y1="31" x2="40" y2="223" stroke-width="1" stroke="#cacaca"></line>
-  <text x="38" y="44.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">clean install</text>
-  <text x="38" y="64" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">with cache</text>
-  <text x="38" y="68" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">with lockfile</text>
-  <text x="38" y="72" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">with node_modules</text>
-  <text x="38" y="89.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">with cache</text>
-  <text x="38" y="93.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">with lockfile</text>
-  <text x="38" y="115" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">with cache</text>
-  <text x="38" y="138.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">with lockfile</text>
-  <text x="38" y="160" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">with cache</text>
-  <text x="38" y="164" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">with node_modules</text>
-  <text x="38" y="183.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">with node_modules</text>
-  <text x="38" y="187.5" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">with lockfile</text>
-  <text x="38" y="209" font-size="4" font-family="system-ui" alignment-baseline="middle" text-anchor="end">with node_modules</text>
-  <text x="290" y="235" font-size="4" font-family="system-ui" text-anchor="end" fill="#888">Tests were run using Node.js v10.6.0</text>
+  <line x1="40" y1="31" x2="40" y2="223" class="line"></line>
+  <text x="38" y="44.5" class="font s4" dominant-baseline="middle" text-anchor="end">clean install</text>
+  <text x="38" y="64" class="font s4" dominant-baseline="middle" text-anchor="end">with cache</text>
+  <text x="38" y="68" class="font s4" dominant-baseline="middle" text-anchor="end">with lockfile</text>
+  <text x="38" y="72" class="font s4" dominant-baseline="middle" text-anchor="end">with node_modules</text>
+  <text x="38" y="89.5" class="font s4" dominant-baseline="middle" text-anchor="end">with cache</text>
+  <text x="38" y="93.5" class="font s4" dominant-baseline="middle" text-anchor="end">with lockfile</text>
+  <text x="38" y="115" class="font s4" dominant-baseline="middle" text-anchor="end">with cache</text>
+  <text x="38" y="138.5" class="font s4" dominant-baseline="middle" text-anchor="end">with lockfile</text>
+  <text x="38" y="160" class="font s4" dominant-baseline="middle" text-anchor="end">with cache</text>
+  <text x="38" y="164" class="font s4" dominant-baseline="middle" text-anchor="end">with node_modules</text>
+  <text x="38" y="183.5" class="font s4" dominant-baseline="middle" text-anchor="end">with node_modules</text>
+  <text x="38" y="187.5" class="font s4" dominant-baseline="middle" text-anchor="end">with lockfile</text>
+  <text x="38" y="209" class="font s4" dominant-baseline="middle" text-anchor="end">with node_modules</text>
+  <text x="290" y="235" class="font s4 text" text-anchor="end">Tests were run using Node.js v10.6.0</text>
 </svg>
