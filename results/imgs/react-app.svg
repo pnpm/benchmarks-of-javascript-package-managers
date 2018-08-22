@@ -9,31 +9,31 @@
     .text { fill: #888; }
   </style>
   <circle cx="44" cy="6" r="4" fill="#cd3731"></circle>
-  <text x="44" y="11" class="font s4" dominant-baseline="hanging" text-anchor="middle">npm</text>
-  <text x="44" y="16" class="font s3" dominant-baseline="hanging" text-anchor="middle">v6.3.0</text>
+  <text x="44" y="14" class="font s4" text-anchor="middle">npm</text>
+  <text x="44" y="18" class="font s3" text-anchor="middle">v6.3.0</text>
   <circle cx="56" cy="6" r="4" fill="#248ebd"></circle>
-  <text x="56" y="11" class="font s4" dominant-baseline="hanging" text-anchor="middle">yarn</text>
-  <text x="56" y="16" class="font s3" dominant-baseline="hanging" text-anchor="middle">v1.9.4</text>
+  <text x="56" y="14" class="font s4" text-anchor="middle">yarn</text>
+  <text x="56" y="18" class="font s3" text-anchor="middle">v1.9.4</text>
   <circle cx="68" cy="6" r="4" fill="#fbae00"></circle>
-  <text x="68" y="11" class="font s4" dominant-baseline="hanging" text-anchor="middle">pnpm</text>
-  <text x="68" y="16" class="font s3" dominant-baseline="hanging" text-anchor="middle">v2.13.0</text>
+  <text x="68" y="14" class="font s4" text-anchor="middle">pnpm</text>
+  <text x="68" y="18" class="font s3" text-anchor="middle">v2.13.0</text>
   <text x="40" y="28" class="font s5 text" text-anchor="middle">0</text>
-  <text x="40" y="224" class="font s5 text" text-anchor="middle" dominant-baseline="hanging">0</text>
+  <text x="40" y="228" class="font s5 text" text-anchor="middle">0</text>
   <line x1="90" y1="31" x2="90" y2="223" class="line width"></line>
   <text x="90" y="28" class="font s5 text" text-anchor="middle">5</text>
-  <text x="90" y="224" class="font s5 text" text-anchor="middle" dominant-baseline="hanging">5</text>
+  <text x="90" y="228" class="font s5 text" text-anchor="middle">5</text>
   <line x1="140" y1="31" x2="140" y2="223" class="line width"></line>
   <text x="140" y="28" class="font s5 text" text-anchor="middle">10</text>
-  <text x="140" y="224" class="font s5 text" text-anchor="middle" dominant-baseline="hanging">10</text>
+  <text x="140" y="228" class="font s5 text" text-anchor="middle">10</text>
   <line x1="190" y1="31" x2="190" y2="223" class="line width"></line>
   <text x="190" y="28" class="font s5 text" text-anchor="middle">15</text>
-  <text x="190" y="224" class="font s5 text" text-anchor="middle" dominant-baseline="hanging">15</text>
+  <text x="190" y="228" class="font s5 text" text-anchor="middle">15</text>
   <line x1="240" y1="31" x2="240" y2="223" class="line width"></line>
   <text x="240" y="28" class="font s5 text" text-anchor="middle">20</text>
-  <text x="240" y="224" class="font s5 text" text-anchor="middle" dominant-baseline="hanging">20</text>
+  <text x="240" y="228" class="font s5 text" text-anchor="middle">20</text>
   <line x1="290" y1="31" x2="290" y2="223" class="line width"></line>
   <text x="290" y="28" class="font s5 text" text-anchor="middle">25</text>
-  <text x="290" y="224" class="font s5 text" text-anchor="middle" dominant-baseline="hanging">25</text>
+  <text x="290" y="228" class="font s5 text" text-anchor="middle">25</text>
   <text x="290" y="20" class="font s4 text" font-style="italic" text-anchor="end">Installation time in seconds (lower is better)</text>
   <rect x="40" y="35" width="223" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="41.5" width="221" height="6" fill="#248ebd" rx="1" ry="1"></rect>
