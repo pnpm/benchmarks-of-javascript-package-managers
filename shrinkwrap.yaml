@@ -5,15 +5,15 @@ dependencies:
   get-folder-size: 1.0.1
   load-yaml-file: 0.1.0
   mkdirp: 0.5.1
-  npm: 6.3.0
+  npm: 6.4.1
   path-key: 2.0.1
-  pnpm: 2.13.0
+  pnpm: 2.15.0
   pretty-bytes: 4.0.2
   pretty-ms: 2.1.0
   rimraf: 2.6.2
   thenify: 3.3.0
   write-yaml-file: 1.0.0
-  yarn: 1.9.4
+  yarn: 1.10.0
 devDependencies:
   standard: 10.0.3
 packages:
@@ -1067,7 +1067,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-yobR/ogoFpsBICCOPchCS524NCw=
-  /npm/6.3.0:
+  /npm/6.4.1:
     bundledDependencies:
       - abbrev
       - ansicolors
@@ -1080,6 +1080,7 @@ packages:
       - bluebird
       - bin-links
       - chownr
+      - ci-info
       - cmd-shim
       - columnify
       - config-chain
@@ -1189,7 +1190,7 @@ packages:
     dev: false
     hasBin: true
     resolution:
-      integrity: sha512-oDtLFo3wXue/xe3pU/oks9VHS5501OAWlYrZrApZkFv7l2LXk+9CfPMbjbfZWK7Jqlc1jbNcJMkB6KZC7K/vEA==
+      integrity: sha512-mXJL1NTVU136PtuopXCUQaNWuHlXCTp4McwlSW8S9/Aj8OEPAlSBgo8og7kJ01MjCDrkmqFQTvN5tTEhBMhXQg==
   /number-is-nan/1.0.1:
     engines:
       node: '>=0.10.0'
@@ -1388,13 +1389,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-0aIUg/0iu0HlihL6NCGCMUCJfEU=
-  /pnpm/2.13.0:
+  /pnpm/2.15.0:
     dev: false
     engines:
       node: '>=6'
     hasBin: true
     resolution:
-      integrity: sha512-vyjlsAqCWEbDtQ5XymRo0qD4a6lwO+AZOJjRWtWAcgO3mCQIhh4fgCdTJdxqpAvQaniJyLcRZqBy/A5f4OXbKQ==
+      integrity: sha512-bMS1ShnuwRtg1SRrauo9gYFXn4CxO+tyYNRe40DsY4cDpycbLs3Lr54ulQrFZtE4Yn6m3keu3sft7f36eg0gbw==
   /prelude-ls/1.1.2:
     dev: true
     engines:
@@ -1747,13 +1748,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=
-  /yarn/1.9.4:
+  /yarn/1.10.0:
     dev: false
     engines:
       node: '>=4.0.0'
     hasBin: true
     resolution:
-      integrity: sha1-O4LYRGtlJ3VyOQC0cNlmhhl2kks=
+      integrity: sha512-cA0d1O8GzYZfeuBC7ynZ6UkUf4DoCatXcl0L9N8FuKgGZo159gFqpnn/lyloguPhx20UD6vp2UjBnQkPNNRS7g==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 8
 shrinkwrapVersion: 3
@@ -1764,13 +1765,13 @@ specifiers:
   get-folder-size: ^1.0.0
   load-yaml-file: ^0.1.0
   mkdirp: ^0.5.1
-  npm: ^6.3.0
+  npm: ^6.4.1
   path-key: ^2.0.1
-  pnpm: ^2.13.0
+  pnpm: ^2.15.0
   pretty-bytes: ^4.0.2
   pretty-ms: ^2.1.0
   rimraf: ^2.5.4
   standard: ^10.0.2
   thenify: ^3.2.1
   write-yaml-file: ^1.0.0
-  yarn: ^1.9.4
+  yarn: ^1.10.0
