@@ -13,15 +13,15 @@ const LIMIT_RUNS = 3
 const fixtures = [
   {
     name: 'react-app',
-    mdDesc: '## React app\n\nThe app\'s `package.json` [here](./fixtures/react-app/package.json)'
+    mdDesc: '## React App\n\nThe app\'s `package.json` [here](./fixtures/react-app/package.json)'
   },
   {
     name: 'ember-quickstart',
-    mdDesc: '## Ember app\n\nThe app\'s `package.json` [here](./fixtures/ember-quickstart/package.json)'
+    mdDesc: '## Ember App\n\nThe app\'s `package.json` [here](./fixtures/ember-quickstart/package.json)'
   },
   {
     name: 'angular-quickstart',
-    mdDesc: '## Angular app\n\nThe app\'s `package.json` [here](./fixtures/angular-quickstart/package.json)'
+    mdDesc: '## Angular App\n\nThe app\'s `package.json` [here](./fixtures/angular-quickstart/package.json)'
   },
   {
     name: 'medium-size-app',
@@ -140,7 +140,7 @@ async function run () {
     [
       Promise.all(svgs.map((file) => writeFile(file.path, file.file, 'utf-8'))),
       writeFile('README.md', stripIndents`
-        # Node package manager benchmark
+        # Benchmarks of JavaScript Package Managers
 
         This benchmark compares the performance of [npm](https://github.com/npm/cli), [pnpm](https://github.com/pnpm/pnpm) and [yarn](https://github.com/yarnpkg/yarn).
 

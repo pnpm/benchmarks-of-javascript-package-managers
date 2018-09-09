@@ -1,8 +1,8 @@
-# Node package manager benchmark
+# Benchmarks of JavaScript Package Managers
 
 This benchmark compares the performance of [npm](https://github.com/npm/cli), [pnpm](https://github.com/pnpm/pnpm) and [yarn](https://github.com/yarnpkg/yarn).
 
-## React app
+## React App
 
 The app's `package.json` [here](./fixtures/react-app/package.json)
 
@@ -19,7 +19,7 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 
 ![Graph of the react-app results](./results/imgs/react-app.svg)
 
-## Ember app
+## Ember App
 
 The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 
@@ -36,7 +36,7 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 
 ![Graph of the ember-quickstart results](./results/imgs/ember-quickstart.svg)
 
-## Angular app
+## Angular App
 
 The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 
