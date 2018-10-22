@@ -7,13 +7,13 @@ dependencies:
   mkdirp: 0.5.1
   npm: 6.4.1
   path-key: 2.0.1
-  pnpm: 2.15.0
+  pnpm: 2.17.0
   pretty-bytes: 4.0.2
   pretty-ms: 2.1.0
   rimraf: 2.6.2
   thenify: 3.3.0
   write-yaml-file: 1.0.0
-  yarn: 1.10.0
+  yarn: 1.10.1
 devDependencies:
   standard: 10.0.3
 packages:
@@ -1389,13 +1389,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-0aIUg/0iu0HlihL6NCGCMUCJfEU=
-  /pnpm/2.15.0:
+  /pnpm/2.17.0:
     dev: false
     engines:
       node: '>=6'
     hasBin: true
     resolution:
-      integrity: sha512-bMS1ShnuwRtg1SRrauo9gYFXn4CxO+tyYNRe40DsY4cDpycbLs3Lr54ulQrFZtE4Yn6m3keu3sft7f36eg0gbw==
+      integrity: sha512-bXvNsHmKo+jzL/4aYOto09c4qPrvUNxLWTeQbf4qEe6dk4eOOmVBeBm0K76BqipnlaJxtYyJZ/Ih93Nz7b1/Gw==
   /prelude-ls/1.1.2:
     dev: true
     engines:
@@ -1748,13 +1748,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=
-  /yarn/1.10.0:
+  /yarn/1.10.1:
     dev: false
     engines:
       node: '>=4.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-cA0d1O8GzYZfeuBC7ynZ6UkUf4DoCatXcl0L9N8FuKgGZo159gFqpnn/lyloguPhx20UD6vp2UjBnQkPNNRS7g==
+      integrity: sha512-EH0H1fyfFxkE4UpG4b+VCaVY4I488I2EyQNmGjGGKmvsSIb0G3b+1IcfGYPI2gqa1du43g4ZA3jH8fXlq6oVxg==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 8
 shrinkwrapVersion: 3
@@ -1767,11 +1767,11 @@ specifiers:
   mkdirp: ^0.5.1
   npm: ^6.4.1
   path-key: ^2.0.1
-  pnpm: ^2.15.0
+  pnpm: ^2.17.0
   pretty-bytes: ^4.0.2
   pretty-ms: ^2.1.0
   rimraf: ^2.5.4
   standard: ^10.0.2
   thenify: ^3.2.1
   write-yaml-file: ^1.0.0
-  yarn: ^1.10.0
+  yarn: ^1.10.1
