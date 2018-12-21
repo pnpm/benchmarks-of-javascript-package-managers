@@ -5,15 +5,15 @@ dependencies:
   get-folder-size: 1.0.1
   load-yaml-file: 0.1.0
   mkdirp: 0.5.1
-  npm: 6.4.1
+  npm: 6.5.0
   path-key: 2.0.1
-  pnpm: 2.17.0
+  pnpm: 2.22.0
   pretty-bytes: 4.0.2
   pretty-ms: 2.1.0
   rimraf: 2.6.2
   thenify: 3.3.0
   write-yaml-file: 1.0.0
-  yarn: 1.10.1
+  yarn: 1.12.3
 devDependencies:
   standard: 10.0.3
 packages:
@@ -1067,7 +1067,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-yobR/ogoFpsBICCOPchCS524NCw=
-  /npm/6.4.1:
+  /npm/6.5.0:
     bundledDependencies:
       - abbrev
       - ansicolors
@@ -1190,7 +1190,7 @@ packages:
     dev: false
     hasBin: true
     resolution:
-      integrity: sha512-mXJL1NTVU136PtuopXCUQaNWuHlXCTp4McwlSW8S9/Aj8OEPAlSBgo8og7kJ01MjCDrkmqFQTvN5tTEhBMhXQg==
+      integrity: sha512-SPq8zG2Kto+Xrq55E97O14Jla13PmQT5kSnvwBj88BmJZ5Nvw++OmlWfhjkB67pcgP5UEXljEtnGFKZtOgt6MQ==
   /number-is-nan/1.0.1:
     engines:
       node: '>=0.10.0'
@@ -1389,13 +1389,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-0aIUg/0iu0HlihL6NCGCMUCJfEU=
-  /pnpm/2.17.0:
+  /pnpm/2.22.0:
     dev: false
     engines:
       node: '>=6'
     hasBin: true
     resolution:
-      integrity: sha512-bXvNsHmKo+jzL/4aYOto09c4qPrvUNxLWTeQbf4qEe6dk4eOOmVBeBm0K76BqipnlaJxtYyJZ/Ih93Nz7b1/Gw==
+      integrity: sha512-/ijrGWSHI4xchAIOLR88soClUojS2x8Vi1h4usi4Ce1YqXrEv+mahDF5QboddGDCW04HUdkf1BeoITD7cB4hFQ==
   /prelude-ls/1.1.2:
     dev: true
     engines:
@@ -1748,13 +1748,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=
-  /yarn/1.10.1:
+  /yarn/1.12.3:
     dev: false
     engines:
       node: '>=4.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-EH0H1fyfFxkE4UpG4b+VCaVY4I488I2EyQNmGjGGKmvsSIb0G3b+1IcfGYPI2gqa1du43g4ZA3jH8fXlq6oVxg==
+      integrity: sha512-8f5rWNDvkhAmCxmn8C0LsNWMxTYVk4VGKiq0sIB6HGZjaZTHsGIH87SUmVDUEd2Wk54bqKoUlbVWgQFCQhRkVw==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
@@ -1765,13 +1765,13 @@ specifiers:
   get-folder-size: ^1.0.0
   load-yaml-file: ^0.1.0
   mkdirp: ^0.5.1
-  npm: ^6.4.1
+  npm: ^6.5.0
   path-key: ^2.0.1
-  pnpm: ^2.17.0
+  pnpm: ^2.22.0
   pretty-bytes: ^4.0.2
   pretty-ms: ^2.1.0
   rimraf: ^2.5.4
   standard: ^10.0.2
   thenify: ^3.2.1
   write-yaml-file: ^1.0.0
-  yarn: ^1.10.1
+  yarn: ^1.12.3
