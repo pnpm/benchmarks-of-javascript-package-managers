@@ -35,29 +35,29 @@
   <text x="290" y="28" class="font s5 text" text-anchor="middle">25</text>
   <text x="290" y="228" class="font s5 text" text-anchor="middle">25</text>
   <text x="290" y="20" class="font s4 text" font-style="italic" text-anchor="end">Installation time in seconds (lower is better)</text>
-  <rect x="40" y="35" width="227" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="41.5" width="219" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="48" width="177" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="35" width="226" height="6" fill="#cd3731" rx="1" ry="1"></rect>
+  <rect x="40" y="41.5" width="212" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="48" width="176" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="58.5" width="64" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="65" width="7" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="71.5" width="11" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="82" width="126" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="88.5" width="48" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="95" width="56" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="105.5" width="153" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="112" width="120" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="82" width="124" height="6" fill="#cd3731" rx="1" ry="1"></rect>
+  <rect x="40" y="88.5" width="47" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="95" width="55" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="105.5" width="152" height="6" fill="#cd3731" rx="1" ry="1"></rect>
+  <rect x="40" y="112" width="116" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="118.5" width="87" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="129" width="164" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="135.5" width="130" height="6" fill="#248ebd" rx="1" ry="1"></rect>
-  <rect x="40" y="142" width="162" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="152.5" width="67" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="159" width="101" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="129" width="161" height="6" fill="#cd3731" rx="1" ry="1"></rect>
+  <rect x="40" y="135.5" width="129" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="142" width="157" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="152.5" width="65" height="6" fill="#cd3731" rx="1" ry="1"></rect>
+  <rect x="40" y="159" width="102" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="165.5" width="28" height="6" fill="#fbae00" rx="1" ry="1"></rect>
-  <rect x="40" y="176" width="70" height="6" fill="#cd3731" rx="1" ry="1"></rect>
+  <rect x="40" y="176" width="68" height="6" fill="#cd3731" rx="1" ry="1"></rect>
   <rect x="40" y="182.5" width="7" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="189" width="11" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="199.5" width="62" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="206" width="194" height="6" fill="#248ebd" rx="1" ry="1"></rect>
+  <rect x="40" y="206" width="204" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="212.5" width="66" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <line x1="40" y1="31" x2="40" y2="223" class="line"></line>
   <text x="38" y="44.5" class="font s4" dominant-baseline="middle" text-anchor="end">clean install</text>
