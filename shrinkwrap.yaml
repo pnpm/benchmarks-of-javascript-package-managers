@@ -5,15 +5,15 @@ dependencies:
   get-folder-size: 1.0.1
   load-yaml-file: 0.1.0
   mkdirp: 0.5.1
-  npm: 6.5.0
+  npm: 6.9.0
   path-key: 2.0.1
-  pnpm: 2.24.0
+  pnpm: 2.25.7
   pretty-bytes: 4.0.2
   pretty-ms: 2.1.0
   rimraf: 2.6.3
   thenify: 3.3.0
   write-yaml-file: 1.0.1
-  yarn: 1.12.3
+  yarn: 1.13.0
 devDependencies:
   standard: 10.0.3
 packages:
@@ -991,20 +991,22 @@ packages:
     dev: true
     resolution:
       integrity: sha1-yobR/ogoFpsBICCOPchCS524NCw=
-  /npm/6.5.0:
+  /npm/6.9.0:
     bundledDependencies:
       - abbrev
       - ansicolors
       - ansistyles
       - aproba
       - archy
+      - bin-links
+      - bluebird
       - byte-size
       - cacache
       - call-limit
-      - bluebird
-      - bin-links
       - chownr
       - ci-info
+      - cli-columns
+      - cli-table3
       - cmd-shim
       - columnify
       - config-chain
@@ -1033,8 +1035,14 @@ packages:
       - JSONStream
       - lazy-property
       - libcipm
+      - libnpm
+      - libnpmaccess
       - libnpmhook
+      - libnpmorg
+      - libnpmsearch
+      - libnpmteam
       - libnpx
+      - lock-verify
       - lockfile
       - lodash._baseindexof
       - lodash._baseuniq
@@ -1049,20 +1057,20 @@ packages:
       - lodash.without
       - lru-cache
       - meant
-      - mkdirp
       - mississippi
+      - mkdirp
       - move-concurrently
+      - node-gyp
       - nopt
       - normalize-package-data
       - npm-audit-report
       - npm-cache-filename
-      - npm-lifecycle
       - npm-install-checks
+      - npm-lifecycle
       - npm-package-arg
       - npm-packlist
       - npm-pick-manifest
       - npm-profile
-      - npm-registry-client
       - npm-registry-fetch
       - npm-user-validate
       - npmlog
@@ -1072,27 +1080,30 @@ packages:
       - pacote
       - path-is-inside
       - promise-inflight
-      - query-string
       - qrcode-terminal
+      - query-string
       - qw
-      - read
       - read-cmd-shim
       - read-installed
       - read-package-json
       - read-package-tree
+      - read
       - readable-stream
       - readdir-scoped-modules
       - request
       - retry
       - rimraf
+      - safe-buffer
       - semver
       - sha
       - slide
       - sorted-object
       - sorted-union-stream
       - ssri
+      - stringify-package
       - tar
       - text-table
+      - tiny-relative-date
       - uid-number
       - umask
       - unique-filename
@@ -1102,19 +1113,12 @@ packages:
       - validate-npm-package-license
       - validate-npm-package-name
       - which
-      - write-file-atomic
-      - safe-buffer
       - worker-farm
-      - tiny-relative-date
-      - cli-columns
-      - cli-table3
-      - node-gyp
-      - lock-verify
-      - stringify-package
+      - write-file-atomic
     dev: false
     hasBin: true
     resolution:
-      integrity: sha512-SPq8zG2Kto+Xrq55E97O14Jla13PmQT5kSnvwBj88BmJZ5Nvw++OmlWfhjkB67pcgP5UEXljEtnGFKZtOgt6MQ==
+      integrity: sha512-91V+zB5hDxO+Jyp2sUKS7juHlIM95dGQxTeQtmZI1nAI/7kjWXFipPrtwwKjhyKmV4GsS2LzJhrxRjGWsU9z/w==
   /number-is-nan/1.0.1:
     engines:
       node: '>=0.10.0'
@@ -1313,13 +1317,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-0aIUg/0iu0HlihL6NCGCMUCJfEU=
-  /pnpm/2.24.0:
+  /pnpm/2.25.7:
     dev: false
     engines:
       node: '>=6'
     hasBin: true
     resolution:
-      integrity: sha512-Av3VWp7Xbk2OvX8JVZxDGmC0z9/lUtEJwd8VTKptHGdkLoxCySHul9X0XSb8ADU/viYDaTMkZdW5xbsfCOIIaQ==
+      integrity: sha512-GSV9mvoZbSApIaPNyJRWxV2Bp7XYbZx9w8UJDh4V/TAvQVA+Uwl3W4CvjVWyVHyTTap2FPComCKIUBn1rzJqMw==
   /prelude-ls/1.1.2:
     dev: true
     engines:
@@ -1670,13 +1674,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=
-  /yarn/1.12.3:
+  /yarn/1.13.0:
     dev: false
     engines:
       node: '>=4.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-8f5rWNDvkhAmCxmn8C0LsNWMxTYVk4VGKiq0sIB6HGZjaZTHsGIH87SUmVDUEd2Wk54bqKoUlbVWgQFCQhRkVw==
+      integrity: sha512-Unfw2eefv8imt4ZMPhvFVP44WCz38huDxkHs+Yqrx4wBTK75Tr0mh3V4rh+2Nw5iQq0rcM/VafotCZo9qTb5DA==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
@@ -1687,13 +1691,13 @@ specifiers:
   get-folder-size: ^1.0.0
   load-yaml-file: ^0.1.0
   mkdirp: ^0.5.1
-  npm: ^6.5.0
+  npm: ^6.9.0
   path-key: ^2.0.1
-  pnpm: ^2.24.0
+  pnpm: ^2.25.7
   pretty-bytes: ^4.0.2
   pretty-ms: ^2.1.0
   rimraf: ^2.5.4
   standard: ^10.0.2
   thenify: ^3.2.1
   write-yaml-file: ^1.0.0
-  yarn: ^1.12.3
+  yarn: ^1.13.0
