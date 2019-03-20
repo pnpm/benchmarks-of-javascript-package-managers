@@ -76,7 +76,8 @@ const testDescriptions = [
     'with node_modules'
   ],
   [ // updatedDependencies
-    'updated dependencies'
+    'updated',
+    'dependencies'
   ]
 ]
 
