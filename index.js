@@ -141,13 +141,32 @@ async function run () {
   // make sure folder exists
   mkdirp.sync(join(__dirname, 'results', 'imgs'))
 
+  const introduction = stripIndents`
+  # Benchmarks of JavaScript Package Managers
+
+  This benchmark compares the performance of [npm](https://github.com/npm/cli), [pnpm](https://github.com/pnpm/pnpm) and [yarn](https://github.com/yarnpkg/yarn).
+  `
+
+  const explanation = stripIndents`
+  Here's a quick explanation of all tests:
+  -\`clean install\`: How long it takes to run a totally fresh install: no lockfile created, no packages in the cache, no \`node_modules\` folder.
+  -\`with cache\`, \`with lockfile\`, \`with node_modules\`: After the first install is done, the install command is run again.
+  -\`with cache\`, \`with lockfile\`: \`node_modules\` are deleted and the install command is run again.
+  -\`with cache\`: \`node_modules\` and the lockfile are deleted and the install command is run again.
+  -\`with lockfile\`: \`node_modules\` and the package cache are deleted and the install command is run again.
+  -\`with cache\`, \`with node_modules\`: The lockfile is deleted and the install command is run again.
+  -\`with node_modules\`, \`with lockfile\`: The package cache is deleted and the install command is run again.
+  -\`with node_modules\`: The package cache and the lockfile is deleted and the install command is run again.
+  -\`updated dependencies\`: Without deleting the previous installation the versions of all dependencies in the \`package.json\` are set to \`'*'\` and the install command is run again.
+`
+
   await Promise.all(
     [
       Promise.all(svgs.map((file) => writeFile(file.path, file.file, 'utf-8'))),
       writeFile('README.md', stripIndents`
-        # Benchmarks of JavaScript Package Managers
+        ${introduction}
 
-        This benchmark compares the performance of [npm](https://github.com/npm/cli), [pnpm](https://github.com/pnpm/pnpm) and [yarn](https://github.com/yarnpkg/yarn).
+        ${explanation}
 
         ${sections.join('\n\n')}`, 'utf8')
     ]
