@@ -118,17 +118,17 @@ async function run () {
     sections.push(stripIndents`
       ${fixture.mdDesc}
 
-      | action               | cache | lockfile | node_modules| npm | Yarn | pnpm |
-      | ---                  | ---   | ---      | ---         | --- | --- | --- |
-      | install              |       |          |             | ${prettyMs(npmRes.firstInstall)} | ${prettyMs(yarnRes.firstInstall)} | ${prettyMs(pnpmRes.firstInstall)} |
-      | install              | ✔    | ✔        | ✔           | ${prettyMs(npmRes.repeatInstall)} | ${prettyMs(yarnRes.repeatInstall)} | ${prettyMs(pnpmRes.repeatInstall)} |
-      | install              | ✔    | ✔        |             | ${prettyMs(npmRes.withWarmCacheAndLockfile)} | ${prettyMs(yarnRes.withWarmCacheAndLockfile)} | ${prettyMs(pnpmRes.withWarmCacheAndLockfile)} |
-      | install              | ✔    |          |             | ${prettyMs(npmRes.withWarmCache)} | ${prettyMs(yarnRes.withWarmCache)} | ${prettyMs(pnpmRes.withWarmCache)} |
-      | install              |      | ✔        |             | ${prettyMs(npmRes.withLockfile)} | ${prettyMs(yarnRes.withLockfile)} | ${prettyMs(pnpmRes.withLockfile)} |
-      | install              | ✔    |          | ✔           | ${prettyMs(npmRes.withWarmCacheAndModules)} | ${prettyMs(yarnRes.withWarmCacheAndModules)} | ${prettyMs(pnpmRes.withWarmCacheAndModules)} |
-      | install              |      | ✔        | ✔           | ${prettyMs(npmRes.withWarmModulesAndLockfile)} | ${prettyMs(yarnRes.withWarmModulesAndLockfile)} | ${prettyMs(pnpmRes.withWarmModulesAndLockfile)} |
-      | install              |      |          | ✔           | ${prettyMs(npmRes.withWarmModules)} | ${prettyMs(yarnRes.withWarmModules)} | ${prettyMs(pnpmRes.withWarmModules)} |
-      | updated dependencies | n/a  | n/a      | n/a         | ${prettyMs(npmRes.updatedDependencies)} | ${prettyMs(yarnRes.updatedDependencies)} | ${prettyMs(pnpmRes.updatedDependencies)} |
+      | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
+      | ---     | ---   | ---      | ---         | --- | --- | --- |
+      | install |       |          |             | ${prettyMs(npmRes.firstInstall)} | ${prettyMs(yarnRes.firstInstall)} | ${prettyMs(pnpmRes.firstInstall)} |
+      | install | ✔     | ✔        | ✔           | ${prettyMs(npmRes.repeatInstall)} | ${prettyMs(yarnRes.repeatInstall)} | ${prettyMs(pnpmRes.repeatInstall)} |
+      | install | ✔     | ✔        |             | ${prettyMs(npmRes.withWarmCacheAndLockfile)} | ${prettyMs(yarnRes.withWarmCacheAndLockfile)} | ${prettyMs(pnpmRes.withWarmCacheAndLockfile)} |
+      | install | ✔     |          |             | ${prettyMs(npmRes.withWarmCache)} | ${prettyMs(yarnRes.withWarmCache)} | ${prettyMs(pnpmRes.withWarmCache)} |
+      | install |       | ✔        |             | ${prettyMs(npmRes.withLockfile)} | ${prettyMs(yarnRes.withLockfile)} | ${prettyMs(pnpmRes.withLockfile)} |
+      | install | ✔     |          | ✔           | ${prettyMs(npmRes.withWarmCacheAndModules)} | ${prettyMs(yarnRes.withWarmCacheAndModules)} | ${prettyMs(pnpmRes.withWarmCacheAndModules)} |
+      | install |       | ✔        | ✔           | ${prettyMs(npmRes.withWarmModulesAndLockfile)} | ${prettyMs(yarnRes.withWarmModulesAndLockfile)} | ${prettyMs(pnpmRes.withWarmModulesAndLockfile)} |
+      | install |       |          | ✔           | ${prettyMs(npmRes.withWarmModules)} | ${prettyMs(yarnRes.withWarmModules)} | ${prettyMs(pnpmRes.withWarmModules)} |
+      | update  | n/a   | n/a      | n/a         | ${prettyMs(npmRes.updatedDependencies)} | ${prettyMs(yarnRes.updatedDependencies)} | ${prettyMs(pnpmRes.updatedDependencies)} |
 
       ![Graph of the ${fixture.name} results](./results/imgs/${fixture.name}.svg)
     `)
@@ -151,11 +151,11 @@ async function run () {
   const explanation = stripIndents`
   Here's a quick explanation of all tests:
 
-  - \`clean install\`: How long it takes to run a totally fresh install: no lockfile created, no packages in the cache, no \`node_modules\` folder.
+  - \`clean install\`: How long it takes to run a totally fresh install: no lockfile present, no packages in the cache, no \`node_modules\` folder.
   - \`with cache\`, \`with lockfile\`, \`with node_modules\`: After the first install is done, the install command is run again.
-  - \`with cache\`, \`with lockfile\`: \`node_modules\` are deleted and the install command is run again.
-  - \`with cache\`: \`node_modules\` and the lockfile are deleted and the install command is run again.
-  - \`with lockfile\`: \`node_modules\` and the package cache are deleted and the install command is run again.
+  - \`with cache\`, \`with lockfile\`: When a repo is fetched by a developer and installation is first run.
+  - \`with cache\`: Same as the one above, but the package manager doesn't have a lockfile to work from.
+  - \`with lockfile\`: When an installation runs on a CI server.
   - \`with cache\`, \`with node_modules\`: The lockfile is deleted and the install command is run again.
   - \`with node_modules\`, \`with lockfile\`: The package cache is deleted and the install command is run again.
   - \`with node_modules\`: The package cache and the lockfile is deleted and the install command is run again.
