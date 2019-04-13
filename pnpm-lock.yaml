@@ -7,13 +7,13 @@ dependencies:
   mkdirp: 0.5.1
   npm: 6.9.0
   path-key: 2.0.1
-  pnpm: 3.0.0
+  pnpm: 3.1.1
   pretty-bytes: 4.0.2
   pretty-ms: 2.1.0
   rimraf: 2.6.3
   thenify: 3.3.0
   write-yaml-file: 1.0.1
-  yarn: 1.13.0
+  yarn: 1.15.2
 devDependencies:
   standard: 10.0.3
 lockfileVersion: 5
@@ -1311,13 +1311,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-0aIUg/0iu0HlihL6NCGCMUCJfEU=
-  /pnpm/3.0.0:
+  /pnpm/3.1.1:
     dev: false
     engines:
-      node: '>=8'
+      node: '>=8.15'
     hasBin: true
     resolution:
-      integrity: sha512-MZHQ4ZejIod8EYtc/LZ3F4HUfSc6ilhMcZ1Shk631XoGrpXTJm44Jn9W1/BVrZVlt5jmkYKXpcWkjaxjgqhy1g==
+      integrity: sha512-MqSWfZXft1cQ6rFgpGpl8JIY3O8w8TnTplvjuCPMl4zRxAUAz0Gzr7ARYH6czoiTxBIbbhu41GfbsBfgMSGTwA==
   /prelude-ls/1.1.2:
     dev: true
     engines:
@@ -1668,13 +1668,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=
-  /yarn/1.13.0:
+  /yarn/1.15.2:
     dev: false
     engines:
       node: '>=4.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-Unfw2eefv8imt4ZMPhvFVP44WCz38huDxkHs+Yqrx4wBTK75Tr0mh3V4rh+2Nw5iQq0rcM/VafotCZo9qTb5DA==
+      integrity: sha512-DhqaGe2FcYKduO42d2hByXk7y8k2k42H3uzYdWBMTvcNcgWKx7xCkJWsVAQikXvaEQN2GyJNrz8CboqUmaBRrw==
 specifiers:
   common-tags: ^1.3.1
   cross-spawn: ^5.0.1
@@ -1684,11 +1684,11 @@ specifiers:
   mkdirp: ^0.5.1
   npm: ^6.9.0
   path-key: ^2.0.1
-  pnpm: ^3.0.0
+  pnpm: ^3.1.1
   pretty-bytes: ^4.0.2
   pretty-ms: ^2.1.0
   rimraf: ^2.5.4
   standard: ^10.0.2
   thenify: ^3.2.1
   write-yaml-file: ^1.0.0
-  yarn: ^1.13.0
+  yarn: ^1.15.2

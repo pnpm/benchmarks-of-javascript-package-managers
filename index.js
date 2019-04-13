@@ -76,8 +76,7 @@ const testDescriptions = [
     'with node_modules'
   ],
   [ // updatedDependencies
-    'updated',
-    'dependencies'
+    'update'
   ]
 ]
 
@@ -159,7 +158,7 @@ async function run () {
   - \`with cache\`, \`with node_modules\`: The lockfile is deleted and the install command is run again.
   - \`with node_modules\`, \`with lockfile\`: The package cache is deleted and the install command is run again.
   - \`with node_modules\`: The package cache and the lockfile is deleted and the install command is run again.
-  - \`updated dependencies\`: Updating your dependencies by changing the version in the \`package.json\` and running the install command again.
+  - \`update\`: Updating your dependencies by changing the version in the \`package.json\` and running the install command again.
 `
 
   await Promise.all(
