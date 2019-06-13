@@ -101,7 +101,7 @@ run()
   .catch(err => console.error(err))
 
 async function run () {
-  const pms = [ 'npm', 'yarn', 'yarn-pnp', 'pnpm' ]
+  const pms = [ 'npm', 'yarn', 'yarn_pnp', 'pnpm' ]
   const sections = []
   const svgs = []
   for (const fixture of fixtures) {
