@@ -105,10 +105,10 @@ async function run () {
   const sections = []
   const svgs = []
   for (const fixture of fixtures) {
-    const npmRes = average(await benchmark('npm', fixture.name, {limitRuns: LIMIT_RUNS}))
-    const yarnRes = average(await benchmark('yarn', fixture.name, {limitRuns: LIMIT_RUNS}))
-    const yarnPnPRes = average(await benchmark('yarn_pnp', fixture.name, {limitRuns: LIMIT_RUNS}))
-    const pnpmRes = average(await benchmark('pnpm', fixture.name, {limitRuns: LIMIT_RUNS}))
+    const npmRes = average(await benchmark('npm', fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: true}))
+    const yarnRes = average(await benchmark('yarn', fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: true}))
+    const yarnPnPRes = average(await benchmark('yarn_pnp', fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: false}))
+    const pnpmRes = average(await benchmark('pnpm', fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: true}))
     const resArray = toArray(pms, {
       'npm': npmRes,
       'yarn': yarnRes,
