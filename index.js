@@ -5,6 +5,7 @@ const { join } = require('path')
 const mkdirp = require('mkdirp')
 const stripIndents = require('common-tags').stripIndents
 const prettyMs = require('pretty-ms')
+const cmdsMap = require('./lib/commandsMap')
 const benchmark = require('./lib/recordBenchmark')
 const generateSvg = require('./lib/generateSvg')
 
@@ -105,10 +106,10 @@ async function run () {
   const sections = []
   const svgs = []
   for (const fixture of fixtures) {
-    const npmRes = average(await benchmark('npm', fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: true}))
-    const yarnRes = average(await benchmark('yarn', fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: true}))
-    const yarnPnPRes = average(await benchmark('yarn_pnp', fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: false}))
-    const pnpmRes = average(await benchmark('pnpm', fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: true}))
+    const npmRes = average(await benchmark(cmdsMap.npm, fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: true}))
+    const yarnRes = average(await benchmark(cmdsMap.yarn, fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: true}))
+    const yarnPnPRes = average(await benchmark(cmdsMap.yarn_pnp, fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: false}))
+    const pnpmRes = average(await benchmark(cmdsMap.pnpm, fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: true}))
     const resArray = toArray(pms, {
       'npm': npmRes,
       'yarn': yarnRes,
@@ -136,7 +137,7 @@ async function run () {
 
     svgs.push({
       path: join(__dirname, 'results', 'imgs', `${fixture.name}.svg`),
-      file: generateSvg(resArray, pms, testDescriptions)
+      file: generateSvg(resArray, [cmdsMap.npm, cmdsMap.yarn, cmdsMap.yarn_pnp, cmdsMap.pnpm], testDescriptions)
     })
   }
 
