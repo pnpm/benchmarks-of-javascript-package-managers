@@ -15,7 +15,7 @@
   <text x="60" y="14" class="font s4" text-anchor="middle">Yarn</text>
   <text x="60" y="18" class="font s3" text-anchor="middle">v1.16.0</text>
   <circle cx="76" cy="6" r="4" fill="#248ebd"></circle>
-  <text x="76" y="14" class="font s4" text-anchor="middle">Yarn P'n'P</text>
+  <text x="76" y="14" class="font s4" text-anchor="middle">Yarn PnP</text>
   <text x="76" y="18" class="font s3" text-anchor="middle">v1.16.0</text>
   <circle cx="92" cy="6" r="4" fill="#fbae00"></circle>
   <text x="92" y="14" class="font s4" text-anchor="middle">pnpm</text>
