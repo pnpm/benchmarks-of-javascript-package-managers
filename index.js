@@ -5,6 +5,7 @@ const { join } = require('path')
 const mkdirp = require('mkdirp')
 const stripIndents = require('common-tags').stripIndents
 const prettyMs = require('pretty-ms')
+const cmdsMap = require('./lib/commandsMap')
 const benchmark = require('./lib/recordBenchmark')
 const generateSvg = require('./lib/generateSvg')
 
@@ -101,40 +102,42 @@ run()
   .catch(err => console.error(err))
 
 async function run () {
-  const pms = [ 'npm', 'yarn', 'pnpm' ]
+  const pms = [ 'npm', 'pnpm', 'yarn', 'yarn_pnp' ]
   const sections = []
   const svgs = []
   for (const fixture of fixtures) {
-    const npmRes = average(await benchmark('npm', fixture.name, {limitRuns: LIMIT_RUNS}))
-    const yarnRes = average(await benchmark('yarn', fixture.name, {limitRuns: LIMIT_RUNS}))
-    const pnpmRes = average(await benchmark('pnpm', fixture.name, {limitRuns: LIMIT_RUNS}))
+    const npmRes = average(await benchmark(cmdsMap.npm, fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: true}))
+    const yarnRes = average(await benchmark(cmdsMap.yarn, fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: true}))
+    const yarnPnPRes = average(await benchmark(cmdsMap.yarn_pnp, fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: false}))
+    const pnpmRes = average(await benchmark(cmdsMap.pnpm, fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: true}))
     const resArray = toArray(pms, {
       'npm': npmRes,
+      'pnpm': pnpmRes,
       'yarn': yarnRes,
-      'pnpm': pnpmRes
+      'yarn_pnp': yarnPnPRes,
     })
 
     sections.push(stripIndents`
       ${fixture.mdDesc}
 
-      | action  | cache | lockfile | node_modules| npm | Yarn | pnpm |
-      | ---     | ---   | ---      | ---         | --- | --- | --- |
-      | install |       |          |             | ${prettyMs(npmRes.firstInstall)} | ${prettyMs(yarnRes.firstInstall)} | ${prettyMs(pnpmRes.firstInstall)} |
-      | install | ✔     | ✔        | ✔           | ${prettyMs(npmRes.repeatInstall)} | ${prettyMs(yarnRes.repeatInstall)} | ${prettyMs(pnpmRes.repeatInstall)} |
-      | install | ✔     | ✔        |             | ${prettyMs(npmRes.withWarmCacheAndLockfile)} | ${prettyMs(yarnRes.withWarmCacheAndLockfile)} | ${prettyMs(pnpmRes.withWarmCacheAndLockfile)} |
-      | install | ✔     |          |             | ${prettyMs(npmRes.withWarmCache)} | ${prettyMs(yarnRes.withWarmCache)} | ${prettyMs(pnpmRes.withWarmCache)} |
-      | install |       | ✔        |             | ${prettyMs(npmRes.withLockfile)} | ${prettyMs(yarnRes.withLockfile)} | ${prettyMs(pnpmRes.withLockfile)} |
-      | install | ✔     |          | ✔           | ${prettyMs(npmRes.withWarmCacheAndModules)} | ${prettyMs(yarnRes.withWarmCacheAndModules)} | ${prettyMs(pnpmRes.withWarmCacheAndModules)} |
-      | install |       | ✔        | ✔           | ${prettyMs(npmRes.withWarmModulesAndLockfile)} | ${prettyMs(yarnRes.withWarmModulesAndLockfile)} | ${prettyMs(pnpmRes.withWarmModulesAndLockfile)} |
-      | install |       |          | ✔           | ${prettyMs(npmRes.withWarmModules)} | ${prettyMs(yarnRes.withWarmModules)} | ${prettyMs(pnpmRes.withWarmModules)} |
-      | update  | n/a   | n/a      | n/a         | ${prettyMs(npmRes.updatedDependencies)} | ${prettyMs(yarnRes.updatedDependencies)} | ${prettyMs(pnpmRes.updatedDependencies)} |
+      | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP |
+      | ---     | ---   | ---      | ---         | --- | --- | --- | --- |
+      | install |       |          |             | ${prettyMs(npmRes.firstInstall)} | ${prettyMs(pnpmRes.firstInstall)} | ${prettyMs(yarnRes.firstInstall)} | ${prettyMs(yarnPnPRes.firstInstall)} |
+      | install | ✔     | ✔        | ✔           | ${prettyMs(npmRes.repeatInstall)} | ${prettyMs(pnpmRes.repeatInstall)} | ${prettyMs(yarnRes.repeatInstall)} | n/a |
+      | install | ✔     | ✔        |             | ${prettyMs(npmRes.withWarmCacheAndLockfile)} | ${prettyMs(pnpmRes.withWarmCacheAndLockfile)} | ${prettyMs(yarnRes.withWarmCacheAndLockfile)} | ${prettyMs(yarnPnPRes.withWarmCacheAndLockfile)} |
+      | install | ✔     |          |             | ${prettyMs(npmRes.withWarmCache)} | ${prettyMs(pnpmRes.withWarmCache)} | ${prettyMs(yarnRes.withWarmCache)} | ${prettyMs(yarnPnPRes.withWarmCache)} |
+      | install |       | ✔        |             | ${prettyMs(npmRes.withLockfile)} | ${prettyMs(pnpmRes.withLockfile)} | ${prettyMs(yarnRes.withLockfile)} | ${prettyMs(yarnPnPRes.withLockfile)} |
+      | install | ✔     |          | ✔           | ${prettyMs(npmRes.withWarmCacheAndModules)} | ${prettyMs(pnpmRes.withWarmCacheAndModules)} | ${prettyMs(yarnRes.withWarmCacheAndModules)} | n/a |
+      | install |       | ✔        | ✔           | ${prettyMs(npmRes.withWarmModulesAndLockfile)} | ${prettyMs(pnpmRes.withWarmModulesAndLockfile)} | ${prettyMs(yarnRes.withWarmModulesAndLockfile)} | n/a |
+      | install |       |          | ✔           | ${prettyMs(npmRes.withWarmModules)} | ${prettyMs(pnpmRes.withWarmModules)} | ${prettyMs(yarnRes.withWarmModules)} | n/a |
+      | update  | n/a   | n/a      | n/a         | ${prettyMs(npmRes.updatedDependencies)} | ${prettyMs(pnpmRes.updatedDependencies)} | ${prettyMs(yarnRes.updatedDependencies)} | ${prettyMs(yarnPnPRes.updatedDependencies)} |
 
       ![Graph of the ${fixture.name} results](./results/imgs/${fixture.name}.svg)
     `)
 
     svgs.push({
       path: join(__dirname, 'results', 'imgs', `${fixture.name}.svg`),
-      file: generateSvg(resArray, pms, testDescriptions)
+      file: generateSvg(resArray, [cmdsMap.npm, cmdsMap.pnpm, cmdsMap.yarn, cmdsMap.yarn_pnp], testDescriptions)
     })
   }
 
@@ -144,7 +147,7 @@ async function run () {
   const introduction = stripIndents`
   # Benchmarks of JavaScript Package Managers
 
-  This benchmark compares the performance of [npm](https://github.com/npm/cli), [pnpm](https://github.com/pnpm/pnpm) and [yarn](https://github.com/yarnpkg/yarn).
+  This benchmark compares the performance of [npm](https://github.com/npm/cli), [pnpm](https://github.com/pnpm/pnpm) and [yarn](https://github.com/yarnpkg/yarn) (both regular and PnP variant).
   `
 
   const explanation = stripIndents`
