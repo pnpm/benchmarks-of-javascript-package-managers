@@ -19,7 +19,7 @@ Here's a quick explanation of how these tests could apply to the real world:
 The app's `package.json` [here](./fixtures/react-app/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | Yarn PnP | pnpm |
-| ---     | ---   | ---      | ---         | --- | --- | --- |
+| ---     | ---   | ---      | ---         | --- | --- | --- | --- |
 | install |       |          |             | 22.6s | 17.5s | 17.4s | 20.5s |
 | install | ✔     | ✔        | ✔           | 7.1s | 844ms | n/a | 1.4s |
 | install | ✔     | ✔        |             | 13.5s | 4.6s | 1.9s | 5.5s |
@@ -37,7 +37,7 @@ The app's `package.json` [here](./fixtures/react-app/package.json)
 The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | Yarn PnP | pnpm |
-| ---     | ---   | ---      | ---         | --- | --- | --- |
+| ---     | ---   | ---      | ---         | --- | --- | --- | --- |
 | install |       |          |             | 24.1s | 16.6s | 34.3s | 17.2s |
 | install | ✔     | ✔        | ✔           | 6.1s | 773ms | n/a | 1.3s |
 | install | ✔     | ✔        |             | 10.8s | 3.8s | 1.7s | 4.9s |
@@ -55,7 +55,7 @@ The app's `package.json` [here](./fixtures/ember-quickstart/package.json)
 The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | Yarn PnP | pnpm |
-| ---     | ---   | ---      | ---         | --- | --- | --- |
+| ---     | ---   | ---      | ---         | --- | --- | --- | --- |
 | install |       |          |             | 26.3s | 24s | 26.1s | 26.2s |
 | install | ✔     | ✔        | ✔           | 7.2s | 806ms | n/a | 1.4s |
 | install | ✔     | ✔        |             | 15s | 5.9s | 2.2s | 6.9s |
@@ -73,7 +73,7 @@ The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 The app's `package.json` [here](./fixtures/medium-size-app/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | Yarn PnP | pnpm |
-| ---     | ---   | ---      | ---         | --- | --- | --- |
+| ---     | ---   | ---      | ---         | --- | --- | --- | --- |
 | install |       |          |             | 22.4s | 20.7s | 29.8s | 20.8s |
 | install | ✔     | ✔        | ✔           | 6.4s | 751ms | n/a | 1.1s |
 | install | ✔     | ✔        |             | 12.3s | 4.8s | 1.9s | 5.6s |
@@ -91,7 +91,7 @@ The app's `package.json` [here](./fixtures/medium-size-app/package.json)
 The app's `package.json` [here](./fixtures/alotta-files/package.json)
 
 | action  | cache | lockfile | node_modules| npm | Yarn | Yarn PnP | pnpm |
-| ---     | ---   | ---      | ---         | --- | --- | --- |
+| ---     | ---   | ---      | ---         | --- | --- | --- | --- |
 | install |       |          |             | 33.1s | 28.5s | 46.3s | 23.2s |
 | install | ✔     | ✔        | ✔           | 6.9s | 808ms | n/a | 1.4s |
 | install | ✔     | ✔        |             | 16.1s | 7.8s | 1.9s | 5.7s |
