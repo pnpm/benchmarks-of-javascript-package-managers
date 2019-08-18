@@ -5,15 +5,15 @@ dependencies:
   get-folder-size: 1.0.1
   load-yaml-file: 0.1.0
   mkdirp: 0.5.1
-  npm: 6.9.0
+  npm: 6.10.3
   path-key: 2.0.1
-  pnpm: 3.5.0
+  pnpm: 3.7.3
   pretty-bytes: 4.0.2
   pretty-ms: 2.1.0
   rimraf: 2.6.3
   thenify: 3.3.0
   write-yaml-file: 1.0.1
-  yarn: 1.16.0
+  yarn: 1.17.3
 devDependencies:
   standard: 10.0.3
 lockfileVersion: 5.1
@@ -985,7 +985,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-yobR/ogoFpsBICCOPchCS524NCw=
-  /npm/6.9.0:
+  /npm/6.10.3:
     bundledDependencies:
       - abbrev
       - ansicolors
@@ -1020,6 +1020,7 @@ packages:
       - hosted-git-info
       - iferr
       - imurmurhash
+      - infer-owner
       - inflight
       - inherits
       - ini
@@ -1112,7 +1113,7 @@ packages:
     dev: false
     hasBin: true
     resolution:
-      integrity: sha512-91V+zB5hDxO+Jyp2sUKS7juHlIM95dGQxTeQtmZI1nAI/7kjWXFipPrtwwKjhyKmV4GsS2LzJhrxRjGWsU9z/w==
+      integrity: sha512-AH2uhSRaIMll7xz1JuLA6XbZu5k6DMSc77U6uWfuyBch4EzwpEc5dd54/OsX4Njioi7fSL7YmuPQbqKE2qiklw==
   /number-is-nan/1.0.1:
     engines:
       node: '>=0.10.0'
@@ -1311,13 +1312,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-0aIUg/0iu0HlihL6NCGCMUCJfEU=
-  /pnpm/3.5.0:
+  /pnpm/3.7.3:
     dev: false
     engines:
       node: '>=8.15'
     hasBin: true
     resolution:
-      integrity: sha512-0NmDaB6mwqtWbC1+Kax0bMY+nVhVQql8Jm418JdnVmlyHMxg9A8ChJJnqUaBf+49vDiTn0iaeTWXX+q0foDFfQ==
+      integrity: sha512-Bx+ymeJwxvYcKeNwTLFdH+kDIMrdzmTqpnui7YXcesdOFZkE39YKUV9YK4xjcD0hOqHQhcnbnSCutg9ilB/utA==
   /prelude-ls/1.1.2:
     dev: true
     engines:
@@ -1668,13 +1669,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=
-  /yarn/1.16.0:
+  /yarn/1.17.3:
     dev: false
     engines:
       node: '>=4.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-cfemyGlnWKA1zopUUgebTPf8C4WkPIZ+TJmklwcEAJ4u6oWPtJeAzrsamaGGh/+b1XWe8W51yzAImC4AWbWR1g==
+      integrity: sha512-CgA8o7nRZaQvmeF/WBx2FC7f9W/0X59T2IaLYqgMo6637wfp5mMEsM3YXoJtKUspnpmDJKl/gGFhnqS+sON7hA==
 specifiers:
   common-tags: ^1.3.1
   cross-spawn: ^5.0.1
@@ -1682,13 +1683,13 @@ specifiers:
   get-folder-size: ^1.0.0
   load-yaml-file: ^0.1.0
   mkdirp: ^0.5.1
-  npm: ^6.9.0
+  npm: ^6.10.3
   path-key: ^2.0.1
-  pnpm: ^3.5.0
+  pnpm: ^3.7.3
   pretty-bytes: ^4.0.2
   pretty-ms: ^2.1.0
   rimraf: ^2.5.4
   standard: ^10.0.2
   thenify: ^3.2.1
   write-yaml-file: ^1.0.0
-  yarn: ^1.16.0
+  yarn: ^1.17.3
