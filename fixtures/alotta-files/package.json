@@ -48,7 +48,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-util": "^3.0.7",
     "happypack": "^3.0.3",
-    "highcharts": "^5.0.10",
+    "highcharts": "^8.0.0",
     "highcharts-solid-gauge": "^0.1.2",
     "history": "^4.6.1",
     "howler": "^1.1.28",
