@@ -106,7 +106,7 @@
     "uglify-js": "^2.8.22",
     "uuid": "^3.0.1",
     "verge": "^1.9.1",
-    "webpack-bundle-analyzer": "^2.3.1",
+    "webpack-bundle-analyzer": "^3.6.0",
     "webpack-hot-middleware": "^2.18.0",
     "webpack-notifier": "^1.5.0",
     "webpack-split-by-path": "^2.0.0",
