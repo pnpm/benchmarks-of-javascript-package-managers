@@ -13,7 +13,7 @@ dependencies:
   rimraf: 2.7.1
   thenify: 3.3.0
   write-yaml-file: 1.0.1
-  yarn: 1.21.1
+  yarn: 1.22.0
 devDependencies:
   standard: 10.0.3
 lockfileVersion: 5.1
@@ -1715,13 +1715,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=
-  /yarn/1.21.1:
+  /yarn/1.22.0:
     dev: false
     engines:
       node: '>=4.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-dQgmJv676X/NQczpbiDtc2hsE/pppGDJAzwlRiADMTvFzYbdxPj2WO4PcNyriSt2c4jsCMpt8UFRKHUozt21GQ==
+      integrity: sha512-KMHP/Jq53jZKTY9iTUt3dIVl/be6UPs2INo96+BnZHLKxYNTfwMmlgHTaMWyGZoO74RI4AIFvnWhYrXq2USJkg==
 specifiers:
   common-tags: ^1.3.1
   cross-spawn: ^5.0.1
@@ -1738,4 +1738,4 @@ specifiers:
   standard: ^10.0.2
   thenify: ^3.2.1
   write-yaml-file: ^1.0.0
-  yarn: ^1.21.1
+  yarn: ^1.22.0
