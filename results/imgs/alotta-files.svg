@@ -13,7 +13,7 @@
   <text x="44" y="18" class="font s3" text-anchor="middle">v6.14.4</text>
   <circle cx="60" cy="6" r="4" fill="#fbae00"></circle>
   <text x="60" y="14" class="font s4" text-anchor="middle">pnpm</text>
-  <text x="60" y="18" class="font s3" text-anchor="middle">v5.0.0-alpha.0</text>
+  <text x="60" y="18" class="font s3" text-anchor="middle">v5.0.0-alpha.3</text>
   <circle cx="76" cy="6" r="4" fill="#248ebd"></circle>
   <text x="76" y="14" class="font s4" text-anchor="middle">Yarn</text>
   <text x="76" y="18" class="font s3" text-anchor="middle">v1.22.4</text>
@@ -39,7 +39,7 @@
   <text x="290" y="310" class="font s5 text" text-anchor="middle">50</text>
   <text x="290" y="20" class="font s4 text" font-style="italic" text-anchor="end">Installation time in seconds (lower is better)</text>
   <rect x="40" y="35" width="227" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="41.5" width="111" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="41.5" width="94" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="48" width="178" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="54.5" width="152" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="65" width="41" height="6" fill="#cd3731" rx="1" ry="1"></rect>
@@ -51,27 +51,27 @@
   <rect x="40" y="108" width="54" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="114.5" width="10" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="125" width="127" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="131.5" width="70" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="131.5" width="60" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="138" width="120" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="144.5" width="70" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="155" width="123" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="161.5" width="94" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="161.5" width="73" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="168" width="115" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="174.5" width="69" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="185" width="34" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="191.5" width="20" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="191.5" width="17" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="198" width="89" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="204.5" width="0" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="215" width="36" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="221.5" width="7" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="221.5" width="6" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="228" width="4" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="234.5" width="0" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="245" width="34" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="251.5" width="37" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="251.5" width="34" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="258" width="250" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="264.5" width="0" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="275" width="51" height="6" fill="#cd3731" rx="1" ry="1"></rect>
-  <rect x="40" y="281.5" width="91" height="6" fill="#fbae00" rx="1" ry="1"></rect>
+  <rect x="40" y="281.5" width="72" height="6" fill="#fbae00" rx="1" ry="1"></rect>
   <rect x="40" y="288" width="209" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <rect x="40" y="294.5" width="144" height="6" fill="#248ebd" rx="1" ry="1"></rect>
   <line x1="40" y1="31" x2="40" y2="305" class="line"></line>
