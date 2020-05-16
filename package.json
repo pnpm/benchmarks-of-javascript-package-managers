@@ -28,7 +28,7 @@
     "mkdirp": "^0.5.1",
     "npm": "^6.14.4",
     "path-key": "^2.0.1",
-    "pnpm": "^5.0.0-alpha.5",
+    "pnpm": "^5.0.0-alpha.6",
     "pretty-bytes": "^4.0.2",
     "pretty-ms": "^2.1.0",
     "rimraf": "^2.5.4",
