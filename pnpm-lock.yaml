@@ -7,7 +7,7 @@ dependencies:
   mkdirp: 0.5.1
   npm: 6.14.4
   path-key: 2.0.1
-  pnpm: 5.0.0-alpha.6
+  pnpm: 5.0.0-alpha.7
   pretty-bytes: 4.0.2
   pretty-ms: 2.1.0
   rimraf: 2.7.1
@@ -16,7 +16,7 @@ dependencies:
   yarn: 1.22.4
 devDependencies:
   standard: 10.0.3
-lockfileVersion: 5.1
+lockfileVersion: 5.2
 packages:
   /acorn-jsx/3.0.1:
     dependencies:
@@ -978,6 +978,7 @@ packages:
   /mkdirp/0.5.1:
     dependencies:
       minimist: 0.0.8
+    deprecated: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
     hasBin: true
     resolution:
       integrity: sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
@@ -1330,13 +1331,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-0aIUg/0iu0HlihL6NCGCMUCJfEU=
-  /pnpm/5.0.0-alpha.6:
+  /pnpm/5.0.0-alpha.7:
     dev: false
     engines:
       node: '>=10.13'
     hasBin: true
     resolution:
-      integrity: sha512-3ZDlqMgq3/hIE07BmDwjdCSYHEV6GoaChTpOm2UDc0mAAsbN9kA/PQZpQu9tiTvnre0mgQnCQ61VFJ39n04cpw==
+      integrity: sha512-ZtZf1E3eWp0k1mKUs9vJq7JlDt1nN4QbnABUTnOfdgZOu1MmIM8MjhmTE3R05HgcUz7Z252OdYTfHEJI9fVanw==
   /prelude-ls/1.1.2:
     dev: true
     engines:
@@ -1733,7 +1734,7 @@ specifiers:
   mkdirp: ^0.5.1
   npm: ^6.14.4
   path-key: ^2.0.1
-  pnpm: ^5.0.0-alpha.6
+  pnpm: ^5.0.0-alpha.7
   pretty-bytes: ^4.0.2
   pretty-ms: ^2.1.0
   rimraf: ^2.5.4
