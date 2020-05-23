@@ -7,7 +7,7 @@ dependencies:
   mkdirp: 0.5.1
   npm: 6.14.4
   path-key: 2.0.1
-  pnpm: 5.0.0-alpha.7
+  pnpm: 5.0.0-rc.1
   pretty-bytes: 4.0.2
   pretty-ms: 2.1.0
   rimraf: 2.7.1
@@ -16,7 +16,7 @@ dependencies:
   yarn: 1.22.4
 devDependencies:
   standard: 10.0.3
-lockfileVersion: 5.2
+lockfileVersion: 5.1
 packages:
   /acorn-jsx/3.0.1:
     dependencies:
@@ -1331,13 +1331,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-0aIUg/0iu0HlihL6NCGCMUCJfEU=
-  /pnpm/5.0.0-alpha.7:
+  /pnpm/5.0.0-rc.1:
     dev: false
     engines:
       node: '>=10.13'
     hasBin: true
     resolution:
-      integrity: sha512-ZtZf1E3eWp0k1mKUs9vJq7JlDt1nN4QbnABUTnOfdgZOu1MmIM8MjhmTE3R05HgcUz7Z252OdYTfHEJI9fVanw==
+      integrity: sha512-ywDXorAaXR/sxAdxtW/zpM9NH/imY4XZ9b9KHa8jms/OIFtWG3domF2g2J59qM7oAdqjbwK+8jJiu45XIEjX+g==
   /prelude-ls/1.1.2:
     dev: true
     engines:
@@ -1734,7 +1734,7 @@ specifiers:
   mkdirp: ^0.5.1
   npm: ^6.14.4
   path-key: ^2.0.1
-  pnpm: ^5.0.0-alpha.7
+  pnpm: ^5.0.0-rc.1
   pretty-bytes: ^4.0.2
   pretty-ms: ^2.1.0
   rimraf: ^2.5.4
