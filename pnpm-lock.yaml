@@ -5,9 +5,9 @@ dependencies:
   get-folder-size: 1.0.1
   load-yaml-file: 0.1.1
   mkdirp: 0.5.1
-  npm: 6.14.4
+  npm: 6.14.5
   path-key: 2.0.1
-  pnpm: 4.14.0
+  pnpm: 5.0.0-rc.2
   pretty-bytes: 4.0.2
   pretty-ms: 2.1.0
   rimraf: 2.7.1
@@ -978,6 +978,7 @@ packages:
   /mkdirp/0.5.1:
     dependencies:
       minimist: 0.0.8
+    deprecated: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
     hasBin: true
     resolution:
       integrity: sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
@@ -997,7 +998,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-yobR/ogoFpsBICCOPchCS524NCw=
-  /npm/6.14.4:
+  /npm/6.14.5:
     bundledDependencies:
       - abbrev
       - ansicolors
@@ -1127,7 +1128,7 @@ packages:
       node: 6 >=6.2.0 || 8 || >=9.3.0
     hasBin: true
     resolution:
-      integrity: sha512-B8UDDbWvdkW6RgXFn8/h2cHJP/u/FPa4HWeGzW23aNEBARN3QPrRaHqPIZW2NSN3fW649gtgUDNZpaRs0zTMPw==
+      integrity: sha512-CDwa3FJd0XJpKDbWCST484H+mCNjF26dPrU+xnREW+upR0UODjMEfXPl3bxWuAwZIX6c2ASg1plLO7jP8ehWeA==
   /number-is-nan/1.0.1:
     engines:
       node: '>=0.10.0'
@@ -1330,13 +1331,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-0aIUg/0iu0HlihL6NCGCMUCJfEU=
-  /pnpm/4.14.0:
+  /pnpm/5.0.0-rc.2:
     dev: false
     engines:
       node: '>=10.13'
     hasBin: true
     resolution:
-      integrity: sha512-O6B5OD+wiO4srzegQTs0LiOrdExLvoKgG7UFL5+Lu1DhgqhW9NFP/pPg8+zKSrOQTontH3GGSWAkinxM3tCqnw==
+      integrity: sha512-mClAw4ZouIf5elqRY3lO378w/V7ejUulrZWuIemB9Q0YsP6x2nI8CjvfVkT20Tl/KRflN1HoQb6tjAF+kHR/3w==
   /prelude-ls/1.1.2:
     dev: true
     engines:
@@ -1731,9 +1732,9 @@ specifiers:
   get-folder-size: ^1.0.0
   load-yaml-file: ^0.1.0
   mkdirp: ^0.5.1
-  npm: ^6.14.4
+  npm: ^6.14.5
   path-key: ^2.0.1
-  pnpm: ^4.14.0
+  pnpm: ^5.0.0-rc.2
   pretty-bytes: ^4.0.2
   pretty-ms: ^2.1.0
   rimraf: ^2.5.4

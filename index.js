@@ -106,10 +106,10 @@ async function run () {
   const sections = []
   const svgs = []
   for (const fixture of fixtures) {
-    const npmRes = average(await benchmark(cmdsMap.npm, fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: true}))
-    const yarnRes = average(await benchmark(cmdsMap.yarn, fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: true}))
-    const yarnPnPRes = average(await benchmark(cmdsMap.yarn_pnp, fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: false}))
-    const pnpmRes = average(await benchmark(cmdsMap.pnpm, fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: true}))
+    const npmRes = min(await benchmark(cmdsMap.npm, fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: true}))
+    const yarnRes = min(await benchmark(cmdsMap.yarn, fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: true}))
+    const yarnPnPRes = min(await benchmark(cmdsMap.yarn_pnp, fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: false}))
+    const pnpmRes = min(await benchmark(cmdsMap.pnpm, fixture.name, {limitRuns: LIMIT_RUNS, hasNodeModules: true}))
     const resArray = toArray(pms, {
       'npm': npmRes,
       'pnpm': pnpmRes,
@@ -181,6 +181,14 @@ function average (benchmarkResults) {
   const results = {}
   tests.forEach(test => {
     results[test] = benchmarkResults.map(res => res[test]).reduce(sum, 0) / benchmarkResults.length
+  })
+  return results
+}
+
+function min (benchmarkResults) {
+  const results = {}
+  tests.forEach(test => {
+    results[test] = Math.min.apply(Math, benchmarkResults.map(res => res[test]))
   })
   return results
 }
