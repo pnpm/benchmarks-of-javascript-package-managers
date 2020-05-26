@@ -6,7 +6,7 @@
   "scripts": {
     "prebenchmark": "rimraf .tmp",
     "benchmark": "node index",
-    "benchmark3": "node index && node index && node index",
+    "benchmark3": "pnpm run benchmark && pnpm run benchmark && pnpm run benchmark",
     "lint": "standard index.js lib/**"
   },
   "repository": {
@@ -28,7 +28,7 @@
     "mkdirp": "^0.5.1",
     "npm": "^6.14.5",
     "path-key": "^2.0.1",
-    "pnpm": "^5.0.0-rc.2",
+    "pnpm": "^5.0.0-rc.4",
     "pretty-bytes": "^4.0.2",
     "pretty-ms": "^2.1.0",
     "rimraf": "^2.5.4",
