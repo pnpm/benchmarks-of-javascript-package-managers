@@ -5,9 +5,9 @@ dependencies:
   get-folder-size: 1.0.1
   load-yaml-file: 0.1.1
   mkdirp: 0.5.1
-  npm: 6.14.5
+  npm: 6.14.6
   path-key: 2.0.1
-  pnpm: 5.0.2
+  pnpm: 5.4.0
   pretty-bytes: 4.0.2
   pretty-ms: 2.1.0
   rimraf: 2.7.1
@@ -998,7 +998,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-yobR/ogoFpsBICCOPchCS524NCw=
-  /npm/6.14.5:
+  /npm/6.14.6:
     bundledDependencies:
       - abbrev
       - ansicolors
@@ -1128,7 +1128,7 @@ packages:
       node: 6 >=6.2.0 || 8 || >=9.3.0
     hasBin: true
     resolution:
-      integrity: sha512-CDwa3FJd0XJpKDbWCST484H+mCNjF26dPrU+xnREW+upR0UODjMEfXPl3bxWuAwZIX6c2ASg1plLO7jP8ehWeA==
+      integrity: sha512-axnz6iHFK6WPE0js/+mRp+4IOwpHn5tJEw5KB6FiCU764zmffrhsYHbSHi2kKqNkRBt53XasXjngZfBD3FQzrQ==
   /number-is-nan/1.0.1:
     engines:
       node: '>=0.10.0'
@@ -1331,13 +1331,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-0aIUg/0iu0HlihL6NCGCMUCJfEU=
-  /pnpm/5.0.2:
+  /pnpm/5.4.0:
     dev: false
     engines:
       node: '>=10.13'
     hasBin: true
     resolution:
-      integrity: sha512-fx+FfKk2Uw5S2NSySQRQvKpRqs07VzcBgxnMpctEJ8615l0pDTj4etpG8sE4J9xGl6KAwiycKglsr/QniT6ZaA==
+      integrity: sha512-qdNKfChd8TfSje29oDsYzVRg1eWhKbvgQR82QL9gc3d4abNRc4Z4EKsGVblezSCu8RUdVXsT2h/AQgJ5DZpBgQ==
   /prelude-ls/1.1.2:
     dev: true
     engines:
@@ -1732,9 +1732,9 @@ specifiers:
   get-folder-size: ^1.0.0
   load-yaml-file: ^0.1.0
   mkdirp: ^0.5.1
-  npm: ^6.14.5
+  npm: ^6.14.6
   path-key: ^2.0.1
-  pnpm: ^5.0.2
+  pnpm: ^5.4.0
   pretty-bytes: ^4.0.2
   pretty-ms: ^2.1.0
   rimraf: ^2.5.4
