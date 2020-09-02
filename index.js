@@ -12,7 +12,7 @@ const generateSvg = require('./lib/generateSvg')
 const LIMIT_RUNS = 3
 
 const fixtures = [
-  {
+  /*{
     name: 'react-app',
     mdDesc: '## React App\n\nThe app\'s `package.json` [here](./fixtures/react-app/package.json)'
   },
@@ -27,7 +27,7 @@ const fixtures = [
   {
     name: 'medium-size-app',
     mdDesc: '## Medium Size App\n\nThe app\'s `package.json` [here](./fixtures/medium-size-app/package.json)'
-  },
+  },*/
   {
     name: 'alotta-files',
     mdDesc: '## Lots of Files\n\nThe app\'s `package.json` [here](./fixtures/alotta-files/package.json)'
