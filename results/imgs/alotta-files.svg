@@ -8,6 +8,7 @@
     .width { stroke-width: 0.5; }
     .text { fill: #888; }
   </style>
+  <rect x="0" y="0" width="300" height="319" fill="#fff"></rect>
   <circle cx="44" cy="6" r="4" fill="#cd3731"></circle>
   <text x="44" y="14" class="font s4" text-anchor="middle">npm</text>
   <text x="44" y="18" class="font s3" text-anchor="middle">v7.5.2</text>
