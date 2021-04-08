@@ -1,3 +1,9 @@
+**The benchmarks are now available [on the pnpm website](https://r.pnpm.io/benchmarks).**
+
+**The code that generates the benchmarks was moved [here](https://github.com/pnpm/pnpm.github.io/tree/main/benchmarks)**.
+
+***
+
 # Benchmarks of JavaScript Package Managers
 
 This benchmark compares the performance of [npm](https://github.com/npm/cli), [pnpm](https://github.com/pnpm/pnpm) and [Yarn](https://github.com/yarnpkg/yarn) (both regular and PnP variant).
